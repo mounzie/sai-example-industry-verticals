@@ -1,0 +1,12 @@
+---
+ID: "baef2b5f-ef99-4b35-816c-28dad05ab07b"
+Parent: "267e5224-323a-4b3f-bd56-ee0af22da1ec"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/SMC/SMC Up Next/Data/Status"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "200"

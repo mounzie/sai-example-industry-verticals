@@ -1,0 +1,12 @@
+---
+ID: "5e24903f-4240-475e-82de-dec6c56dc667"
+Parent: "c3d98b34-83eb-4f8a-924c-a338f76b9a4a"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/SMC/SMC Host Card/Data/MessageLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "600"

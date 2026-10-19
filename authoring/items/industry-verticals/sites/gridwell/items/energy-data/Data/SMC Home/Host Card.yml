@@ -1,0 +1,22 @@
+---
+ID: "2d0caa97-04f6-4af6-9450-03ec4ceeb588"
+Parent: "dc0f91cf-9eeb-4fd3-909f-2af6b293e960"
+Template: "d92e5d1a-9326-4c42-8f3e-733f3fa75da2"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/SMC Home/Host Card"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "96799a78-748e-4e4b-9ab4-1901cc204aca"
+      Hint: Label
+      Value: "Your host"
+    - ID: "f921e9d4-4e41-4fab-abec-779318c67c58"
+      Hint: Name
+      Value: "Khalid Al-Harbi"
+    - ID: "9cb33095-2e8d-45fd-a17b-8e1fbfe75347"
+      Hint: Role
+      Value: "SMC Guest Relations"
+    - ID: "b30077b5-4e4b-4cfb-8198-312687426c87"
+      Hint: Initials
+      Value: "KH"

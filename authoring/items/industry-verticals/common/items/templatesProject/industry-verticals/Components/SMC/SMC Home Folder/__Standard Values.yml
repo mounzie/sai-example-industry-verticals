@@ -1,0 +1,14 @@
+---
+ID: "cafbf737-10a1-401c-9a72-d593c40fbb7d"
+Parent: "e5184a33-d9aa-4212-bb84-ce957e454b81"
+Template: "e5184a33-d9aa-4212-bb84-ce957e454b81"
+Path: "/sitecore/templates/Project/industry-verticals/Components/SMC/SMC Home Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {C2F6E5E7-BECB-4F3D-82B0-32890F1F174A}
+    {B8350F75-DB2E-45D6-8F41-EF5D86EFE0E3}
+    {FCAC485B-9F64-4B7A-9EE3-109A4049EFE7}
+    {D92E5D1A-9326-4C42-8F3E-733F3FA75DA2}
+    {E5184A33-D9AA-4212-BB84-CE957E454B81}

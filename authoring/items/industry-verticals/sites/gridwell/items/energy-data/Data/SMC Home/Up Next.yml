@@ -1,0 +1,34 @@
+---
+ID: "23ef895a-3f48-44bf-9364-ea1c7cb987c7"
+Parent: "dc0f91cf-9eeb-4fd3-909f-2af6b293e960"
+Template: "b8350f75-db2e-45d6-8f41-ef5d86efe0e3"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/SMC Home/Up Next"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "78d1de8d-4720-43d5-8d2c-2ad714faa171"
+      Hint: Kicker
+      Value: "Up next"
+    - ID: "baef2b5f-ef99-4b35-816c-28dad05ab07b"
+      Hint: Status
+      Value: "Driver assigned"
+    - ID: "4502142d-d4d3-4b58-91f0-230bebfb397f"
+      Hint: Title
+      Value: "Arrival · SV1021 Riyadh → Jeddah"
+    - ID: "327fe269-bd29-423c-87e5-39c91be606e0"
+      Hint: Subtitle
+      Value: "Thu 18 March · Greeted by your host on landing"
+    - ID: "9f8dd2f8-8375-4931-9b2c-0cc09fc60402"
+      Hint: FirstTimeLabel
+      Value: "Landing"
+    - ID: "ee260091-eb5f-4635-b996-6444c4be06e3"
+      Hint: FirstTime
+      Value: "08:55"
+    - ID: "41908beb-117a-4186-8914-84a5ee0b95d1"
+      Hint: SecondTimeLabel
+      Value: "Pickup"
+    - ID: "4ac9df87-c496-4f15-88a9-c450ec13d902"
+      Hint: SecondTime
+      Value: "09:10"

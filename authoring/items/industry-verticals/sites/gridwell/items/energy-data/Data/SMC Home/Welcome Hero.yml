@@ -1,0 +1,34 @@
+---
+ID: "6b6441e2-1fb3-45f9-bd1b-f346567215f3"
+Parent: "dc0f91cf-9eeb-4fd3-909f-2af6b293e960"
+Template: "c2f6e5e7-becb-4f3d-82b0-32890f1f174a"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/SMC Home/Welcome Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "e3f3d058-c2b7-4fe2-9003-9b04c6ea4fac"
+      Hint: Greeting
+      Value: "Good evening"
+    - ID: "cce453c6-e0fc-492c-a4c6-727bf4776032"
+      Hint: GuestName
+      Value: "Mr. Faisal"
+    - ID: "dc137cb9-ec99-447e-864b-73ce27cc76fa"
+      Hint: Initials
+      Value: "FM"
+    - ID: "7e899dc9-5a15-488d-a137-70429dd4c47d"
+      Hint: Category
+      Value: "Category A · VVIP"
+    - ID: "fafa1217-8014-4f28-a1b9-ba67b7ff359e"
+      Hint: EventName
+      Value: "Formula 1 STC Saudi Arabian Grand Prix 2027"
+    - ID: "d8714e86-02bc-4412-bab9-83d7719690ce"
+      Hint: Venue
+      Value: "Jeddah Corniche Circuit"
+    - ID: "2a13c0de-1a69-464c-a3d2-3414e328dabe"
+      Hint: CountdownLabel
+      Value: "Race weekend begins in"
+    - ID: "c5ac25d4-2f7c-4ad1-9f82-2b5252827a91"
+      Hint: EventStart
+      Value: "20270318T210000Z"

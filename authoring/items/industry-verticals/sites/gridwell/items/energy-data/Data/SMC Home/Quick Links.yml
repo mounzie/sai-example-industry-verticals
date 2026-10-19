@@ -1,0 +1,28 @@
+---
+ID: "54562874-b9a5-4058-a89f-aa4021cdde36"
+Parent: "dc0f91cf-9eeb-4fd3-909f-2af6b293e960"
+Template: "fcac485b-9f64-4b7a-9ee3-109a4049efe7"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/SMC Home/Quick Links"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e18c392-4aa5-4c9c-b24d-0ba11be1c348"
+      Hint: FirstTitle
+      Value: "Your car"
+    - ID: "6a5dda90-685a-43fb-b412-0ce335756cca"
+      Hint: FirstSubtitle
+      Value: "Driver assigned"
+    - ID: "b4dce862-1dee-49ec-af9c-033cfd4c7260"
+      Hint: SecondTitle
+      Value: "Your pass"
+    - ID: "ab1a76d5-554c-4594-b88e-f0cf135c25ea"
+      Hint: SecondSubtitle
+      Value: "Ready to scan"
+    - ID: "9b47e43e-f2ec-4f18-b901-f52a88f40f13"
+      Hint: ThirdTitle
+      Value: "Concierge"
+    - ID: "18094613-6d7c-4388-bd2c-b4f9ad2153f8"
+      Hint: ThirdSubtitle
+      Value: "Available 24/7"

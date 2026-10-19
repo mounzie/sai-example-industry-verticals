@@ -8,10 +8,9 @@
   top: 0;
   z-index: 50;
   width: 100%;
-  background: rgba(5, 10, 9, 0.72);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(214, 228, 223, 0.1);
+  /* SMC brand green */
+  background: #009667;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   font-family: 'Montserrat', system-ui, sans-serif;
 }
 
@@ -82,7 +81,7 @@
 }
 
 .smc-header__nav a {
-  color: #83908b;
+  color: rgba(255, 255, 255, 0.82);
   text-decoration: none;
 }
 
@@ -106,8 +105,8 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.3px;
-  color: #e2e9e6;
-  border: 1px solid rgba(214, 228, 223, 0.16);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: transparent;
   white-space: nowrap;
 }
@@ -129,26 +128,25 @@
   height: 42px;
   padding: 0 20px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 0;
   font-family: inherit;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.6px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
-  background: linear-gradient(180deg, #00806f 0%, #00625b 55%, #004c46 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    0 14px 30px -8px rgba(0, 98, 91, 0.65);
+  /* Light button so it stands out on the green bar */
+  color: #00524c;
+  background: #f3f6f5;
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.45);
   transition:
     background 0.2s,
     transform 0.2s;
 }
 
 .smc-header__btn:hover {
-  color: #fff;
-  background: linear-gradient(180deg, #008c7a, #006e66 55%, #00564f);
+  color: #00524c;
+  background: #fff;
   transform: translateY(-1px);
 }
 
@@ -159,9 +157,9 @@
   height: 42px;
   padding: 0 16px;
   border-radius: 14px;
-  border: 1px solid rgba(214, 228, 223, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: transparent;
-  color: #f3f6f5;
+  color: #fff;
   font-family: inherit;
   font-size: 12px;
   font-weight: 700;
@@ -182,8 +180,8 @@
     align-items: flex-start;
     gap: 18px;
     padding: 8px clamp(18px, 4vw, 40px) 22px;
-    background: rgba(5, 10, 9, 0.96);
-    border-bottom: 1px solid rgba(214, 228, 223, 0.1);
+    background: #009667;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 
   .smc-header__nav.is-open {

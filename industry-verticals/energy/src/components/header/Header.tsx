@@ -1,102 +1,68 @@
 'use client';
 
-import React, { JSX, useState, useEffect } from 'react';
+import React, { JSX, useState } from 'react';
 import { ComponentProps } from '@/lib/component-props';
-import { Placeholder } from '@sitecore-content-sdk/nextjs';
-import { Drawer, DrawerTrigger, DrawerContent, DrawerClose } from '@/shadcn/components/ui/drawer';
-import { Menu, Search, X } from 'lucide-react';
-import { usePathname, useSearchParams } from 'next/navigation';
-import PreviewSearch from '../non-sitecore/search/PreviewSearch';
-import { PREVIEW_WIDGET_ID } from '@/constants/search';
 
 export type HeaderProps = ComponentProps & {
   params: { [key: string]: string };
 };
 
-export const Default = (props: HeaderProps): JSX.Element => {
-  const { styles, RenderingIdentifier: id, DynamicPlaceholderId } = props.params;
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+const NAV_LINKS = [
+  { href: '#invitation', label: 'Invitation' },
+  { href: '#weekend', label: 'Your weekend' },
+  { href: '#itinerary', label: 'Itinerary' },
+  { href: '#pass', label: 'Pass' },
+  { href: '#concierge', label: 'Concierge' },
+];
 
-  // Close search when route changes
-  useEffect(() => {
-    setIsSearchOpen(false);
-  }, [pathname, searchParams]);
+export const Default = (props: HeaderProps): JSX.Element => {
+  const { styles, RenderingIdentifier: id } = props.params;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className={`component header bg-background border-b ${styles}`} id={id}>
-      <div className="container flex items-center gap-4 py-4 lg:gap-6">
-        <div className="header-block *:shrink max-lg:w-full max-lg:justify-between lg:shrink-0">
-          <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />
-        </div>
-        <div className="hidden! lg:flex! lg:shrink lg:basis-full">
-          <Placeholder name={`header-nav-${DynamicPlaceholderId}`} rendering={props.rendering} />
-        </div>
+    <div className={`component header smc-header ${styles ?? ''}`} id={id}>
+      <div className="smc-header__bar">
+        <a className="smc-header__lockup" href="#top" aria-label="Saudi Motorsport Company, home">
+          <img
+            className="smc-header__logo"
+            src="/images/logo-smc.png"
+            alt="Saudi Motorsport Company"
+          />
+          <span className="smc-header__divider" aria-hidden="true" />
+          <img className="smc-header__f1" src="/images/logo-f1-red.png" alt="Formula 1" />
+        </a>
 
-        {/* Search Button */}
-        <button
-          onClick={() => setIsSearchOpen(!isSearchOpen)}
-          className="text-gray-700 transition-colors hover:text-blue-600"
+        <nav
+          id="smc-header-nav"
+          className={`smc-header__nav${isMenuOpen ? ' is-open' : ''}`}
+          aria-label="Main"
         >
-          <Search className="size-5" />
-        </button>
+          {NAV_LINKS.map((link) => (
+            <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
 
-        {/* Mobile Drawer Trigger */}
-        <div className="lg:hidden">
-          <Drawer direction="left">
-            <DrawerTrigger asChild>
-              <button
-                type="button"
-                aria-label="Open menu"
-                className="text-foreground hover:text-foreground-light p-2 transition-colors"
-              >
-                <Menu className="h-6 w-6" />
-              </button>
-            </DrawerTrigger>
-
-            <DrawerContent className="bg-background-accent w-xl! max-w-full! p-5">
-              <div className="flex h-full flex-col">
-                <div className="mb-14 flex items-center justify-between self-end">
-                  <DrawerClose asChild>
-                    <button type="button" aria-label="Close menu">
-                      <X className="h-5 w-5" />
-                    </button>
-                  </DrawerClose>
-                </div>
-
-                <div className="mb-6 flex flex-col gap-y-6 px-12">
-                  <Placeholder
-                    name={`header-nav-${DynamicPlaceholderId}`}
-                    rendering={props.rendering}
-                  />
-                </div>
-              </div>
-            </DrawerContent>
-          </Drawer>
+        <div className="smc-header__actions">
+          <span className="smc-header__pill smc-header__pill--on">EN</span>
+          <span className="smc-header__pill smc-header__pill--ar" lang="ar">
+            العربية
+          </span>
+          <button
+            type="button"
+            className="smc-header__menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="smc-header-nav"
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            Menu
+          </button>
+          <a className="smc-header__btn" href="#invitation">
+            Respond
+          </a>
         </div>
       </div>
-
-      {isSearchOpen && (
-        <div className="border-border bg-background absolute top-full right-0 left-0 z-50 border-b shadow-lg">
-          <div className="mx-auto max-w-7xl px-4 py-4">
-            <div className="flex items-center gap-2">
-              <PreviewSearch
-                rfkId={PREVIEW_WIDGET_ID}
-                isOpen={isSearchOpen}
-                setIsSearchOpen={setIsSearchOpen}
-              />
-
-              <button
-                onClick={() => setIsSearchOpen(false)}
-                className="text-foreground-muted hover:text-foreground p-3 transition-colors"
-              >
-                <X className="size-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

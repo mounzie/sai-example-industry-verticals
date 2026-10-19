@@ -1,0 +1,63 @@
+<style>
+.lr{font-family:Montserrat,system-ui,sans-serif;color:#f3f6f5;font-size:13px}
+.lr-bar{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 16px;flex-wrap:wrap}
+.lr-pill{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:700}
+.lr-live{background:rgba(226,75,74,.16);color:#f09595}
+.lr-live i{width:7px;height:7px;border-radius:4px;background:#e24b4a}
+.lr-flag{background:rgba(66,173,128,.16);color:#7fd8b1}
+.lr-row{display:grid;grid-template-columns:30px 20px 4px minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr) 30px;gap:10px;align-items:center;padding:8px 16px;border-top:1px solid rgba(214,228,223,.08);transition:background .6s}
+.lr-head{color:#9da9a5;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.lr-num{font-variant-numeric:tabular-nums}
+.lr-hl{background:rgba(0,150,103,.18)}
+.lr-up{color:#7fd8b1;font-size:11px}.lr-down{color:#f09595;font-size:11px}.lr-same{color:#5f6b67;font-size:11px}
+.lr-tyre{width:20px;height:20px;border-radius:10px;border:2px solid;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
+.lr-foot{padding:8px 16px;color:#9da9a5;font-size:11px;border-top:1px solid rgba(214,228,223,.08)}
+</style>
+<div class="lr">
+  <div class="lr-bar">
+    <span class="lr-pill lr-live"><i></i>LIVE · RACE</span>
+    <span><span class="lr-pill lr-flag" id="lr-flag">Green flag</span> &nbsp;<span class="lr-num">Lap <b id="lr-lap">34</b>/50</span></span>
+  </div>
+  <div class="lr-row lr-head"><span>Pos</span><span></span><span></span><span>Driver</span><span>Gap</span><span>Last lap</span><span>Tyre</span></div>
+  <div id="lr-body"></div>
+  <div class="lr-foot">Sample data for demonstration. Replace this embed with your licensed timing provider's code.</div>
+</div>
+<script>
+(function () {
+  var tyres = { S: '#e24b4a', M: '#ef9f27', H: '#b4b2a9' };
+  var colors = ['#e24b4a', '#378add', '#1d9e75', '#ef9f27', '#d4537e', '#888780', '#7f77dd', '#5dcaa5'];
+  var codes = ['ALM', 'KHA', 'RIV', 'NOR', 'SAE', 'BEL', 'OKA', 'DUR'];
+  var cars = codes.map(function (c, i) {
+    return { code: c, color: colors[i], tyre: 'SMHMSHMH'[i], gap: i * 1.8, last: 91.5, start: i, hl: false };
+  });
+  var lap = 34;
+  function fmt(s) { var m = Math.floor(s / 60); return m + ':' + (s - m * 60).toFixed(3).padStart(6, '0'); }
+  function render() {
+    var best = Math.min.apply(null, cars.map(function (c) { return c.last; }));
+    document.getElementById('lr-body').innerHTML = cars.map(function (c, i) {
+      var d = c.start - i;
+      var arrow = d > 0 ? '<span class="lr-up">&#9650;' + d + '</span>' : d < 0 ? '<span class="lr-down">&#9660;' + -d + '</span>' : '<span class="lr-same">&ndash;</span>';
+      return '<div class="lr-row' + (c.hl ? ' lr-hl' : '') + '"><b class="lr-num">' + (i + 1) + '</b>' + arrow +
+        '<span style="height:18px;background:' + c.color + '"></span><b>' + c.code + '</b>' +
+        '<span class="lr-num" style="color:#9da9a5">' + (i === 0 ? 'Leader' : '+' + c.gap.toFixed(3)) + '</span>' +
+        '<span class="lr-num"' + (c.last === best ? ' style="color:#b5a8ff;font-weight:700"' : '') + '>' + fmt(c.last) + '</span>' +
+        '<span class="lr-tyre" style="border-color:' + tyres[c.tyre] + '">' + c.tyre + '</span></div>';
+    }).join('');
+  }
+  function tick() {
+    cars.forEach(function (c, i) {
+      c.hl = false;
+      c.last = 90.9 + Math.random() * 1.4;
+      if (i > 0) c.gap = Math.max(0.2, c.gap + (Math.random() - 0.5) * 0.6);
+    });
+    cars.sort(function (a, b) { return a.gap - b.gap; });
+    cars.forEach(function (c, i) { if (c.prev !== undefined && c.prev !== i) c.hl = true; c.prev = i; });
+    cars[0].gap = 0;
+    if (Math.random() < 0.35 && lap < 50) lap++;
+    document.getElementById('lr-lap').textContent = lap;
+    render();
+  }
+  render();
+  setInterval(tick, 2000);
+})();
+</script>

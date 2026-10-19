@@ -305,6 +305,60 @@
   color: var(--smc-muted);
 }
 
+/* ---------- Live hero (Welcome Hero look with an embedded results frame) ---------- */
+.smc-live-hero {
+  padding-top: 24px;
+}
+
+.smc-live-hero__card {
+  padding-top: clamp(80px, 10vw, 140px);
+}
+
+.smc-live-hero__embed {
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(5, 10, 9, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.smc-live-hero__embed:empty {
+  display: none;
+}
+
+.smc-live-hero__embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
+
+.smc-live-hero__empty {
+  padding: 28px 18px;
+  text-align: center;
+}
+
+.smc-live-hero__editor {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.smc-live-hero__code {
+  margin: 0 0 6px;
+  padding: 10px 12px;
+  max-height: 220px;
+  overflow: auto;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px dashed rgba(127, 216, 177, 0.35);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: var(--smc-mint);
+}
+
 /* ---------- Up next ---------- */
 .smc-up-next__card {
   padding: 18px 22px;

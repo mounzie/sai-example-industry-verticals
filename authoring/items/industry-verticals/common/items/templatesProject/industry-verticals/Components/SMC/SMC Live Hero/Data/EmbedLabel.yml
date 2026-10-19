@@ -1,0 +1,12 @@
+---
+ID: "bef53e6e-f395-4977-978d-72042fb881e7"
+Parent: "0b935711-6b37-4f5f-8fb1-42deb3592d36"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/SMC/SMC Live Hero/Data/EmbedLabel"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "600"

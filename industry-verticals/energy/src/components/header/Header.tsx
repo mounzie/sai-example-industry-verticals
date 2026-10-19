@@ -1,6 +1,7 @@
 'use client';
 
 import React, { JSX, useState } from 'react';
+import clsx from 'clsx';
 import { ComponentProps } from '@/lib/component-props';
 
 export type HeaderProps = ComponentProps & {
@@ -34,7 +35,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
 
         <nav
           id="smc-header-nav"
-          className={`smc-header__nav${isMenuOpen ? ' is-open' : ''}`}
+          className={clsx('smc-header__nav', isMenuOpen && 'is-open')}
           aria-label="Main"
         >
           {NAV_LINKS.map((link) => (

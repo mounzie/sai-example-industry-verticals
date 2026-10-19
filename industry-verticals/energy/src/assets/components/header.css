@@ -8,8 +8,8 @@
   top: 0;
   z-index: 50;
   width: 100%;
-  /* SMC brand green */
-  background: #009667;
+  /* Matches the SMC logo background */
+  background: #065951;
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   font-family: 'Montserrat', system-ui, sans-serif;
 }
@@ -180,7 +180,7 @@
     align-items: flex-start;
     gap: 18px;
     padding: 8px clamp(18px, 4vw, 40px) 22px;
-    background: #009667;
+    background: #065951;
     border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 

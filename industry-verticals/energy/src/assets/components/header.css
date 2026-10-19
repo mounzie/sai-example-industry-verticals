@@ -35,20 +35,41 @@
   text-decoration: none;
 }
 
-.smc-header__logo {
-  height: 40px;
-  width: auto;
+/* Logos are Image components in the header-left placeholder */
+.smc-header__lockup .component.image {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
 }
 
-.smc-header__divider {
+.smc-header__lockup .component-content {
+  display: flex;
+  align-items: center;
+}
+
+.smc-header__lockup .image-caption {
+  display: none;
+}
+
+.smc-header__lockup img {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: none;
+}
+
+/* Every logo after the first gets a divider and the smaller partner size */
+.smc-header__lockup .component.image ~ .component.image::before {
+  content: '';
   width: 1px;
   height: 22px;
   background: rgba(255, 255, 255, 0.35);
 }
 
-.smc-header__f1 {
+.smc-header__lockup .component.image ~ .component.image img {
   height: 16px;
-  width: auto;
 }
 
 .smc-header__nav {
@@ -176,8 +197,7 @@
 
 @media (max-width: 560px) {
   .smc-header__pill,
-  .smc-header__f1,
-  .smc-header__divider {
+  .smc-header__lockup .component.image ~ .component.image {
     display: none;
   }
 }

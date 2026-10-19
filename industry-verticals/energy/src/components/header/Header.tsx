@@ -2,6 +2,7 @@
 
 import React, { JSX, useState } from 'react';
 import clsx from 'clsx';
+import { Placeholder } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
 export type HeaderProps = ComponentProps & {
@@ -17,21 +18,16 @@ const NAV_LINKS = [
 ];
 
 export const Default = (props: HeaderProps): JSX.Element => {
-  const { styles, RenderingIdentifier: id } = props.params;
+  const { styles, RenderingIdentifier: id, DynamicPlaceholderId } = props.params;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className={`component header smc-header ${styles ?? ''}`} id={id}>
       <div className="smc-header__bar">
-        <a className="smc-header__lockup" href="#top" aria-label="Saudi Motorsport Company, home">
-          <img
-            className="smc-header__logo"
-            src="/images/logo-smc.png"
-            alt="Saudi Motorsport Company"
-          />
-          <span className="smc-header__divider" aria-hidden="true" />
-          <img className="smc-header__f1" src="/images/logo-f1-red.png" alt="Formula 1" />
-        </a>
+        {/* Logos are Image components added here by authors, so they can come from DAM */}
+        <div className="smc-header__lockup">
+          <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />
+        </div>
 
         <nav
           id="smc-header-nav"

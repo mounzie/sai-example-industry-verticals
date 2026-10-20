@@ -62,8 +62,7 @@
           "Project.Travel-Media",
           "Project.Travel-Content",
           "Project.Energy-Media",
-          "Project.Energy-Content",
-          "Project.IA-FormaLux-Content"
+          "Project.Energy-Content"
         ]
       },
       "warmUpCm": {

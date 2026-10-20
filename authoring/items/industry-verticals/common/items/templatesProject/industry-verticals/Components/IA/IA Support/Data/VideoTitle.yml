@@ -1,0 +1,12 @@
+---
+ID: "b20171e9-2134-430c-a4f8-9dc9ca7a821b"
+Parent: "6fa58d90-d5dc-4be5-bb29-c07e63786ccc"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Support/Data/VideoTitle"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "500"

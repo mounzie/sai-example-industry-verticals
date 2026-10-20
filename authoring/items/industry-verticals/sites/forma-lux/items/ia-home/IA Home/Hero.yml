@@ -1,0 +1,13 @@
+---
+ID: "ef585cea-b3e2-4ea9-a9b0-2cb412aa6e9d"
+Parent: "1b8233c9-af18-4692-9652-429c2f16d094"
+Template: "d2253be1-9368-4500-9e48-642fefeff32d"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "9a7775f1-b9e6-4654-a4a9-aa3497bf715f"
+      Hint: Slides
+      Value: "{C0F6C521-EA45-4EB6-BF84-7C00527D2AD1}|{84D3E3F5-1BBE-444D-A22F-51EAB972D53A}|{0E81D013-B3C9-48C2-8BEE-4D357D1ED52C}|{D19939B3-8DC2-4A8B-965B-A19AC7960F8D}"

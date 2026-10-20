@@ -1,0 +1,12 @@
+---
+ID: "54aebdf5-afd9-4049-93cd-a352ef086ab8"
+Parent: "e8284f1b-a88e-47e6-b351-2b31723156e4"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Content Folder"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/folder_window.png"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{2865E39B-CB3F-43E8-BBB1-76176D37B00C}"

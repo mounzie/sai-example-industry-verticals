@@ -1,0 +1,22 @@
+---
+ID: "677cc3c4-fcba-4aca-b1e9-fe89957d1292"
+Parent: "1b8233c9-af18-4692-9652-429c2f16d094"
+Template: "2e2a1af6-e132-4bf7-acbb-60d52e4f5277"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Services Directory"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d417fa31-676a-4db2-8fcc-b83215304908"
+      Hint: Title
+      Value: "Services Directory"
+    - ID: "c2657cd6-ff55-4345-aa0f-c274cd293691"
+      Hint: Intro
+      Value: "Through the e-services guide, you can easily access the required link and obtain the required service."
+    - ID: "5e977b73-0242-46bb-b81e-c54b34dff226"
+      Hint: Services
+      Value: "{A1ED735A-1D89-4282-B0CB-3352338E32D7}|{12C14BF6-8416-4EBF-8255-F62E043A0F11}|{2C84515F-4689-461A-96C2-A38D591E0ABA}|{D9F4AF19-EB20-46D7-9A5A-0AEB906210C6}|{5AB8A887-6622-4538-8EE8-1368029F4BED}|{0477215C-9DDE-49D9-AC5B-5904783C6610}|{F99150C3-317B-4587-8E9D-0DE58A6E9F82}|{86846063-18EB-4A0C-8B10-ED8DDE3F78C3}|{E28791CD-D705-48D7-B7C9-5CAC2E60A50D}"
+    - ID: "a55d9758-b465-4c0b-b9c4-893f4d51b942"
+      Hint: ViewAllLink
+      Value: "<link text=\"View All\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/eServices\" anchor=\"\" target=\"\" />"

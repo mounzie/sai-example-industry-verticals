@@ -1,0 +1,16 @@
+---
+ID: "0d699e66-cc0f-44b3-9c31-1721a7261bf3"
+Parent: "3621873e-2928-4557-a917-9668253a1bce"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Navigation/Information Center"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Information Center\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/information-center\" anchor=\"\" target=\"\" />"
+    - ID: "86e74138-5e3a-4730-b433-be0981255530"
+      Hint: SubLinks
+      Value: "{66A4AE38-CFB6-4E34-A5AB-7A56C7D003ED}|{8F56D694-8A63-44BB-848C-AB0BC4A5D87E}"

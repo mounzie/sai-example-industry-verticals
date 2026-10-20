@@ -1,0 +1,19 @@
+---
+ID: "0e81d013-b3c9-48c2-8bee-4d357d1ed52c"
+Parent: "9a21bcb2-628c-4ebb-85a6-2cd412e9f6b4"
+Template: "9a407762-2449-491c-9be6-7a15b14dcbc1"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Slides/Slide 3"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d256ac6c-60f0-48f0-87c1-34bb14be56f7"
+      Hint: Heading
+      Value: "Pursue Your Passion without Fear"
+    - ID: "5225261f-67e7-448a-ad37-301f9a783a09"
+      Hint: Slogan
+      Value: "Insuring Today, Shaping Tomorrow"
+    - ID: "0a5bd497-0ee9-4c77-84f9-7b227e640f47"
+      Hint: CtaLink
+      Value: "<link text=\"Explorer our news\" linktype=\"external\" url=\"#latest-news\" anchor=\"\" target=\"\" />"

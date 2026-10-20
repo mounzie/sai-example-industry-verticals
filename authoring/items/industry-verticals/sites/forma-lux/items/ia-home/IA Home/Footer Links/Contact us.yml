@@ -1,0 +1,13 @@
+---
+ID: "b38a8f81-e69d-40cd-9d65-e842be750c2e"
+Parent: "c53672a5-00c8-4b85-9866-9c1d69eb71d5"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Footer Links/Contact us"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Contact us\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/help-and-supports\" anchor=\"\" target=\"\" />"

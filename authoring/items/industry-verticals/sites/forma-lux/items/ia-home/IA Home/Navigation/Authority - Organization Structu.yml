@@ -1,0 +1,13 @@
+---
+ID: "9bf502b2-1c63-4107-8bf0-2fd387966b95"
+Parent: "3621873e-2928-4557-a917-9668253a1bce"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Navigation/Authority - Organization Structu"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Organization Structure\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/about-ia/Organization-Structure\" anchor=\"\" target=\"\" />"

@@ -1,0 +1,16 @@
+---
+ID: "dbdb67fd-22fd-4708-8430-7e0a931e3699"
+Parent: "c53672a5-00c8-4b85-9866-9c1d69eb71d5"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Footer Links/Social LinkedIn"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"LinkedIn\" linktype=\"external\" url=\"https://www.linkedin.com/company/%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%AA%D8%A3%D9%85%D9%8A%D9%86/\" anchor=\"\" target=\"\" />"
+    - ID: "020f7b5c-ee91-4bab-a7a9-79da648c3c1d"
+      Hint: Icon
+      Value: "linkedin"

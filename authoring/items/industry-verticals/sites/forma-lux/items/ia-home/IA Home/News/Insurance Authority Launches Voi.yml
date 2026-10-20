@@ -1,0 +1,22 @@
+---
+ID: "350a1f27-d780-41fa-b249-479d49fbe1ba"
+Parent: "64bde065-f73f-4936-a277-f8065de3c6dd"
+Template: "e9103074-1965-4328-8d9e-d4ef78dcfa5c"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/News/Insurance Authority Launches Voi"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7d3525d6-88c7-4d9b-b90d-3995e4e57226"
+      Hint: Date
+      Value: "20260929T000000Z"
+    - ID: "8c10c080-0571-4bde-94e7-076f13db151e"
+      Hint: Title
+      Value: "Insurance Authority Launches “Voice of the Sector” Program"
+    - ID: "ed1c86d5-7023-48e5-845e-a17e990a758b"
+      Hint: Summary
+      Value: "The Insurance Authority announces the launch of the “Voice of the Sector” Program, a key initiative within its Innovation Ecosystem, empowering experts, practitioners, insurance companies"
+    - ID: "92bd2962-d747-466c-8138-57a3549edc07"
+      Hint: Link
+      Value: "<link text=\"Read more\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/media-center/news/133\" anchor=\"\" target=\"\" />"

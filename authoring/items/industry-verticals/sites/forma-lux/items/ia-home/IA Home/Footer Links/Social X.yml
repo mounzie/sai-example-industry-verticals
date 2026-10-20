@@ -1,0 +1,16 @@
+---
+ID: "95d33c14-0d4d-4f6a-b14e-e4b9076bfa36"
+Parent: "c53672a5-00c8-4b85-9866-9c1d69eb71d5"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Footer Links/Social X"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"X\" linktype=\"external\" url=\"https://x.com/ia_gov\" anchor=\"\" target=\"\" />"
+    - ID: "020f7b5c-ee91-4bab-a7a9-79da648c3c1d"
+      Hint: Icon
+      Value: "x"

@@ -1,0 +1,16 @@
+---
+ID: "8775e830-16a6-4add-ba80-fdbe70f876b8"
+Parent: "3621873e-2928-4557-a917-9668253a1bce"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/forma-lux/Data/IA Home/Navigation/Regulations Licenses"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Regulations &amp; Licenses\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/regulations-and-licenses\" anchor=\"\" target=\"\" />"
+    - ID: "86e74138-5e3a-4730-b433-be0981255530"
+      Hint: SubLinks
+      Value: "{D95C4D89-5EBF-42CB-BBCB-EF55598BE20D}|{0D4002CF-163A-48C5-9D48-121749976B9B}|{587D10A5-6A8A-4988-9886-223821779DA8}"

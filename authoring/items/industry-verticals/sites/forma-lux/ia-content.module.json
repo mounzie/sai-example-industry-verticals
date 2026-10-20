@@ -1,0 +1,17 @@
+{
+  "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Project.IA-FormaLux-Content",
+  "references": [
+    "Project.IndustryVerticals"
+  ],
+  "items": {
+    "includes": [
+      {
+        "name": "ia-home",
+        "path": "/sitecore/content/industry-verticals/forma-lux/Data/IA Home",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      }
+    ]
+  }
+}

@@ -111,6 +111,15 @@
   white-space: nowrap;
 }
 
+a.smc-header__pill {
+  text-decoration: none;
+}
+
+a.smc-header__pill:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 .smc-header__pill--on {
   background: #f3f6f5;
   border-color: #f3f6f5;

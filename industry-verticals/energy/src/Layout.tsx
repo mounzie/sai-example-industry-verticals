@@ -1,7 +1,7 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { JSX } from 'react';
+import React, { JSX, useEffect } from 'react';
 import Head from 'next/head';
 import { Placeholder, Field, Page, ImageField } from '@sitecore-content-sdk/nextjs';
 import Scripts from 'src/Scripts';
@@ -23,12 +23,23 @@ interface RouteFields {
   ogImage?: ImageField;
 }
 
+// Languages written right to left, matched on the locale's language part (ar-SA -> ar)
+const RTL_LANGUAGES = ['ar', 'he', 'fa', 'ur'];
+
 const Layout = ({ page }: LayoutProps): JSX.Element => {
   const router = useRouter();
   const { layout, mode } = page;
   const { route } = layout.sitecore;
   const fields = route?.fields as RouteFields;
   const mainClassPageEditing = mode.isEditing ? 'editing-mode' : 'prod-mode';
+  const language = page.locale || layout.sitecore.context.language || 'en';
+  const dir = RTL_LANGUAGES.includes(language.split('-')[0].toLowerCase()) ? 'rtl' : 'ltr';
+
+  // Keep <html> in step with the page so scrollbars, form controls and selection follow the language
+  useEffect(() => {
+    document.documentElement.lang = language;
+    document.documentElement.dir = dir;
+  }, [language, dir]);
 
   const metaDescription =
     fields?.metadataDescription?.value?.toString() || fields?.pageSummary?.value?.toString() || '';
@@ -59,7 +70,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
-      <div className={mainClassPageEditing}>
+      <div className={mainClassPageEditing} dir={dir} lang={language}>
         {mode.isDesignLibrary ? (
           <DesignLibraryLayout />
         ) : (

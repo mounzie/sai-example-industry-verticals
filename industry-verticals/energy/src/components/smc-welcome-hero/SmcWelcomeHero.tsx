@@ -85,7 +85,7 @@ export const Default = (props: SmcWelcomeHeroProps): JSX.Element => {
               className="smc-welcome-hero__begins"
               field={fields.CountdownLabel}
             />
-            <SmcCountdown target={fields.EventStart?.value} />
+            <SmcCountdown target={fields.EventStart?.value} locale={page.locale} />
             {/* In Pages, show the date field so authors can change what the countdown runs to */}
             {isPageEditing && (
               <DateField

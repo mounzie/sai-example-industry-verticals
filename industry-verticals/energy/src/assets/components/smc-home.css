@@ -511,3 +511,26 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Right-to-left (Arabic) ---------- */
+[dir='rtl'] .smc-home,
+[dir='rtl'] .smc-home .smc-disp {
+  font-family: 'Cairo', 'Montserrat', sans-serif;
+  letter-spacing: 0;
+}
+
+[dir='rtl'] .smc-home .smc-kicker {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+/* Mirror SMC's angled panel so it sits on the opposite side */
+[dir='rtl'] .smc-welcome-hero__panel {
+  clip-path: polygon(0 0, 42% 0, calc(42% + 120px) 100%, 0 100%);
+}
+
+/* Times and lap counters stay left to right inside Arabic text */
+[dir='rtl'] .smc-countdown__value,
+[dir='rtl'] .smc-up-next__time {
+  direction: ltr;
+}

@@ -199,3 +199,14 @@
     display: none;
   }
 }
+
+/* Right-to-left (Arabic) */
+[dir='rtl'] .smc-header {
+  font-family: 'Cairo', 'Montserrat', sans-serif;
+}
+
+[dir='rtl'] .smc-header__nav,
+[dir='rtl'] .smc-header__btn,
+[dir='rtl'] .smc-header__menu {
+  letter-spacing: 0;
+}

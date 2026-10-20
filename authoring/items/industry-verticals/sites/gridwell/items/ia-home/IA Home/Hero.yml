@@ -1,0 +1,13 @@
+---
+ID: "e4da174c-1f3c-42cf-87cf-9199f2a967db"
+Parent: "8f047de3-4877-449f-8416-fe925e44ce82"
+Template: "d2253be1-9368-4500-9e48-642fefeff32d"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "9a7775f1-b9e6-4654-a4a9-aa3497bf715f"
+      Hint: Slides
+      Value: "{3FAEF2E4-1863-4D70-8524-7F9CD6633173}|{3D604D3D-B808-4059-B8F2-45B9FE9204D3}|{E788D51C-C959-484E-9867-E631DACCF361}|{2829D313-224E-4A13-A187-BB82367F4578}"

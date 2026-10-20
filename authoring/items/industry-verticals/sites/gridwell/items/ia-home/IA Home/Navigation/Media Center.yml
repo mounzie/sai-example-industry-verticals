@@ -1,0 +1,16 @@
+---
+ID: "5e7e8952-477a-43ed-b6ed-95dbe88bc910"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Media Center"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Media Center\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/media-center\" anchor=\"\" target=\"\" />"
+    - ID: "86e74138-5e3a-4730-b433-be0981255530"
+      Hint: SubLinks
+      Value: "{D45EAB38-3F81-4F1C-BA45-263B331F70F7}|{0ADDF169-8806-43D2-AF67-5E05E7190B69}"

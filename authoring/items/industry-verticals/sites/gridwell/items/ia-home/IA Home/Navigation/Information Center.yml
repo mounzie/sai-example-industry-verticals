@@ -1,0 +1,16 @@
+---
+ID: "7f876267-152d-43c7-a50a-fd80de122f7e"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Information Center"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Information Center\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/information-center\" anchor=\"\" target=\"\" />"
+    - ID: "86e74138-5e3a-4730-b433-be0981255530"
+      Hint: SubLinks
+      Value: "{424EF85F-E226-49AF-94D2-8AFE2F4C61A5}|{745E353A-C4C8-4C51-B8C0-30F076D70BF3}"

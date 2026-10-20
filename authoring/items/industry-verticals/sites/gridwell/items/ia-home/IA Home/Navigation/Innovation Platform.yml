@@ -1,0 +1,13 @@
+---
+ID: "70afb04b-6de1-457d-90e1-16a245b82f3d"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Innovation Platform"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Innovation Platform\" linktype=\"external\" url=\"https://il.ia.gov.sa\" anchor=\"\" target=\"\" />"

@@ -1,0 +1,40 @@
+---
+ID: "6f332f4a-33d2-4b17-ae2c-bd5bbcbd9891"
+Parent: "8f047de3-4877-449f-8416-fe925e44ce82"
+Template: "e3e897ce-2a2e-481c-90ee-76b9f0e711b0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Footer"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1af2e84a-3999-4cf6-a58a-da9a54cbf0ea"
+      Hint: FirstColumnTitle
+      Value: "General Look"
+    - ID: "51910c80-9946-42d7-b047-1de1b6de3e45"
+      Hint: FirstColumnLinks
+      Value: "{B8B24444-6F03-4572-8EBF-A881A4123E88}|{CFB18DE2-9614-4302-9759-EB1B646354E3}|{A452A44C-5B6C-42AB-AE5E-7F7C78A83921}|{755A8FE9-AE6A-40F7-B84C-CAB94AE612BD}|{AFD21C43-5582-404B-85D9-63D465425531}"
+    - ID: "4243802b-d9a6-49cc-9973-75e2e8e53026"
+      Hint: SecondColumnTitle
+      Value: "Help and Support"
+    - ID: "f79c6bf8-48e5-4a5f-b1e3-f000ed91a45c"
+      Hint: SecondColumnLinks
+      Value: "{6DA6CE9A-65C2-4944-AD42-38E77D52CD1A}|{7F380FE1-7906-4AD3-8FDE-317D85EA1BF0}|{97B5D95C-9356-440C-878E-35488FCE88D1}"
+    - ID: "749334bb-f492-42e5-b792-7c4333eeee22"
+      Hint: ThirdColumnTitle
+      Value: "Key Links"
+    - ID: "8953304e-fb0b-4020-856a-ff01803dd519"
+      Hint: ThirdColumnLinks
+      Value: "{502C7110-0DFD-4066-AEF4-828A4C82FAD8}|{DFE54F06-1370-4BA3-AB7C-CF9D67EB3FFA}|{758793C7-A857-4B8F-B141-1944EADAC78F}"
+    - ID: "3ff95586-36d4-4a75-b8eb-d85d2de5a891"
+      Hint: SocialLinks
+      Value: "{714C72D3-E4E4-40A1-A896-FFB7DC29911C}|{B9F9EB2A-9BAF-4FDE-B023-732E0CF07858}|{BCC81EA6-77B0-42C5-8C01-C15C13D22A81}|{5856B55C-D946-4F82-849C-99B4CDC9A6E9}|{8FF3785C-59FA-44BC-B7F4-880D17BCA518}"
+    - ID: "f25de1ca-f5ea-4b98-aba4-ac2701c25fbc"
+      Hint: LegalLinks
+      Value: "{2A701784-9BCC-43C5-8A89-3D941CD5C97A}|{9F0CCCD8-B932-43D9-BFE8-30296A0EF675}|{B1D6BDF4-F426-45FC-ACEC-918252EC828A}"
+    - ID: "231b8032-48a9-4541-90cf-e119e7de7f90"
+      Hint: Copyright
+      Value: "© 2026 Insurance Authority. All rights reserved."
+    - ID: "8f5419dc-f554-40ae-81b6-344cca747ca3"
+      Hint: BottomNote
+      Value: "Developed and maintained by the Insurance Authority"

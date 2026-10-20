@@ -1,0 +1,13 @@
+---
+ID: "b9a73d0f-a814-4bfa-944c-96f9b0a20853"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Regulations Licenses - Regulatio"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Regulations\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/regulations-and-licenses/regulations\" anchor=\"\" target=\"\" />"

@@ -1,0 +1,13 @@
+---
+ID: "758793c7-a857-4b8f-b141-1944eadac78f"
+Parent: "9984cd19-be29-4b94-bb66-d63881d86b53"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Footer Links/Report corruption"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Report corruption\" linktype=\"external\" url=\"https://my.gov.sa/ar/content/report-corruption\" anchor=\"\" target=\"\" />"

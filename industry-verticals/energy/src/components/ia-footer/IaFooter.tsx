@@ -1,3 +1,5 @@
+'use client';
+
 import React, { JSX } from 'react';
 import {
   Field,
@@ -7,6 +9,7 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { IaLinkFields, iaItems, useIaLabels } from '../non-sitecore/iaShared';
+import { IaIcon } from '../non-sitecore/IaIcon';
 
 interface Fields {
   FirstColumnTitle: Field<string>;
@@ -18,6 +21,7 @@ interface Fields {
   SocialLinks: unknown;
   LegalLinks: unknown;
   Copyright: Field<string>;
+  BottomNote: Field<string>;
 }
 
 export type IaFooterProps = ComponentProps & {
@@ -28,7 +32,7 @@ export type IaFooterProps = ComponentProps & {
 export const Default = (props: IaFooterProps): JSX.Element => {
   const { styles, RenderingIdentifier: id, DynamicPlaceholderId } = props.params;
   const { fields } = props;
-  const { label } = useIaLabels();
+  const { label, isEditing } = useIaLabels();
 
   if (!fields) {
     return (
@@ -47,13 +51,6 @@ export const Default = (props: IaFooterProps): JSX.Element => {
   return (
     <div className={`component ia ia-footer ${styles ?? ''}`} id={id}>
       <div className="ia-wrap ia-footer__top">
-        {/* Logos (IA, Vision 2030) are Image components authors add here */}
-        <div className="ia-footer__brand">
-          <Placeholder
-            name={`ia-footer-logos-${DynamicPlaceholderId}`}
-            rendering={props.rendering}
-          />
-        </div>
         {columns.map(([title, links], i) => (
           <div key={i} className="ia-footer__col">
             <ContentSdkText tag="h3" className="ia-footer__heading" field={title} />
@@ -71,24 +68,47 @@ export const Default = (props: IaFooterProps): JSX.Element => {
           <ul className="ia-footer__social">
             {iaItems<IaLinkFields>(fields.SocialLinks).map((item) => (
               <li key={item.id}>
-                <ContentSdkLink field={item.fields.Link} className="ia-footer__social-link" />
+                <ContentSdkLink
+                  field={item.fields.Link}
+                  className="ia-footer__social-link"
+                  aria-label={item.fields.Link?.value?.text}
+                >
+                  {!isEditing && <IaIcon name={item.fields.Icon?.value} size={20} />}
+                </ContentSdkLink>
               </li>
             ))}
           </ul>
         </div>
       </div>
+
       <div className="ia-footer__bottom">
         <div className="ia-wrap ia-footer__bottom-inner">
-          <ContentSdkText tag="p" className="ia-footer__copyright" field={fields.Copyright} />
-          <ul className="ia-footer__legal">
-            {iaItems<IaLinkFields>(fields.LegalLinks).map((item) => (
-              <li key={item.id}>
-                <ContentSdkLink field={item.fields.Link} />
-              </li>
-            ))}
-          </ul>
+          {/* Logos (IA, Year of AI, Vision 2030) are Image components authors add here */}
+          <div className="ia-footer__logos">
+            <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />
+          </div>
+          <div className="ia-footer__meta">
+            <ul className="ia-footer__legal">
+              {iaItems<IaLinkFields>(fields.LegalLinks).map((item) => (
+                <li key={item.id}>
+                  <ContentSdkLink field={item.fields.Link} />
+                </li>
+              ))}
+            </ul>
+            <ContentSdkText tag="p" className="ia-footer__copyright" field={fields.Copyright} />
+            <ContentSdkText tag="p" className="ia-footer__note" field={fields.BottomNote} />
+          </div>
         </div>
       </div>
+
+      <button
+        type="button"
+        className="ia-to-top"
+        aria-label={label('ia_back_to_top')}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <IaIcon name="arrowUp" size={22} strokeWidth={2.2} />
+      </button>
     </div>
   );
 };

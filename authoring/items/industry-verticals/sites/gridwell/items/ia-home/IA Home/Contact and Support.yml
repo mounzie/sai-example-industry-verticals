@@ -1,0 +1,43 @@
+---
+ID: "8c5019c1-9244-4c39-b8d0-1ba37fb5a437"
+Parent: "8f047de3-4877-449f-8416-fe925e44ce82"
+Template: "b3ab43b5-6b7b-4479-a622-f7e66d06e61d"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Contact and Support"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d3f8dcf9-c41d-4c90-b98c-bec04569432e"
+      Hint: Title
+      Value: "Contact and support"
+    - ID: "ec98e3ee-a13a-48fb-8863-f4b68c9f42a6"
+      Hint: Intro
+      Value: "We are here to serve you. We are happy to hear from you through the available communication channels."
+    - ID: "62289756-e0bf-450f-ba42-56c44abe8048"
+      Hint: PhoneTitle
+      Value: "Phone"
+    - ID: "9ccdb1d7-317a-4ec2-b6b2-64bff059482e"
+      Hint: PhoneSubtitle
+      Value: "We are happy to receive your calls"
+    - ID: "2864b179-bba4-4a4d-b16f-4b7de877075d"
+      Hint: Phone
+      Value: "8001240551"
+    - ID: "0412b11b-6e5e-46ea-8493-b1db08f0d8de"
+      Hint: EmailTitle
+      Value: "Email"
+    - ID: "9ba6cdb1-180d-4a9d-929d-80fafb556947"
+      Hint: EmailSubtitle
+      Value: "Contact us via email"
+    - ID: "a7f83dfe-d049-4399-a025-8559ad0b2fba"
+      Hint: Email
+      Value: "Info@ia.gov.sa"
+    - ID: "b20171e9-2134-430c-a4f8-9dc9ca7a821b"
+      Hint: VideoTitle
+      Value: "Video Call (Sign Language)"
+    - ID: "f625a284-6045-4180-b28d-d0030eb01744"
+      Hint: VideoSubtitle
+      Value: "Video calling service"
+    - ID: "e64f6433-bff4-4e63-b1b3-24091719fb42"
+      Hint: VideoLink
+      Value: "<link text=\"Click Here\" linktype=\"external\" url=\"https://experia.online/ia-videocall\" anchor=\"\" target=\"\" />"

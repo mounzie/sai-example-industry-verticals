@@ -7,41 +7,25 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { useIaLabels } from '../non-sitecore/iaShared';
+import { IaIcon } from '../non-sitecore/IaIcon';
 
 interface Fields {
   Title: Field<string>;
   Intro: Field<string>;
+  PhoneTitle: Field<string>;
+  PhoneSubtitle: Field<string>;
   Phone: Field<string>;
+  EmailTitle: Field<string>;
+  EmailSubtitle: Field<string>;
   Email: Field<string>;
-  SignLanguageLink: LinkField;
-  ComplaintLink: LinkField;
+  VideoTitle: Field<string>;
+  VideoSubtitle: Field<string>;
+  VideoLink: LinkField;
 }
 
 export type IaSupportProps = ComponentProps & {
   fields: Fields;
 };
-
-const Icon = ({ d }: { d: string }) => (
-  <svg
-    width="22"
-    height="22"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    aria-hidden="true"
-  >
-    <path d={d} />
-  </svg>
-);
-
-const PHONE =
-  'M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2';
-const MAIL = 'M4 6h16v12H4zM4 7l8 6 8-6';
-const VIDEO = 'M4 7h11v10H4zM15 10l5-3v10l-5-3';
-const FLAG = 'M5 21V4h11l-2 4 2 4H5';
 
 export const Default = (props: IaSupportProps): JSX.Element => {
   const { styles, RenderingIdentifier: id } = props.params;
@@ -60,39 +44,56 @@ export const Default = (props: IaSupportProps): JSX.Element => {
   const email = fields.Email?.value?.toString() ?? '';
 
   return (
-    <section className={`component ia ia-section ia-support ${styles ?? ''}`} id={id}>
+    <section
+      className={`component ia ia-section ia-section--mint ia-support ${styles ?? ''}`}
+      id={id}
+    >
       <div className="ia-wrap">
-        <div className="ia-support__panel">
-          <div className="ia-support__intro">
+        <div className="ia-section__head">
+          <div>
             <ContentSdkText tag="h2" className="ia-section__title" field={fields.Title} />
             <ContentSdkText tag="p" className="ia-section__intro" field={fields.Intro} />
           </div>
-          <div className="ia-support__grid">
-            <a className="ia-support__item" href={isEditing ? undefined : `tel:${phone}`}>
-              <Icon d={PHONE} />
-              <span className="ia-support__label">{label('ia_phone')}</span>
+        </div>
+        <div className="ia-support__grid">
+          <div className="ia-support__item">
+            <IaIcon name="headset" size={34} className="ia-support__icon" />
+            <ContentSdkText tag="h3" className="ia-support__title" field={fields.PhoneTitle} />
+            <ContentSdkText tag="p" className="ia-support__subtitle" field={fields.PhoneSubtitle} />
+            {isEditing ? (
               <ContentSdkText
                 tag="span"
                 className="ia-support__value ia-ltr"
                 field={fields.Phone}
               />
-            </a>
-            <a className="ia-support__item" href={isEditing ? undefined : `mailto:${email}`}>
-              <Icon d={MAIL} />
-              <span className="ia-support__label">{label('ia_email')}</span>
+            ) : (
+              <a className="ia-support__value ia-ltr" href={`tel:${phone}`}>
+                {phone}
+              </a>
+            )}
+          </div>
+          <div className="ia-support__item">
+            <IaIcon name="mail" size={34} className="ia-support__icon" />
+            <ContentSdkText tag="h3" className="ia-support__title" field={fields.EmailTitle} />
+            <ContentSdkText tag="p" className="ia-support__subtitle" field={fields.EmailSubtitle} />
+            {isEditing ? (
               <ContentSdkText
                 tag="span"
                 className="ia-support__value ia-ltr"
                 field={fields.Email}
               />
-            </a>
-            <ContentSdkLink field={fields.SignLanguageLink} className="ia-support__item">
-              <Icon d={VIDEO} />
-              <span className="ia-support__label">{label('ia_sign_language')}</span>
-            </ContentSdkLink>
-            <ContentSdkLink field={fields.ComplaintLink} className="ia-support__item">
-              <Icon d={FLAG} />
-              <span className="ia-support__label">{label('ia_complaint')}</span>
+            ) : (
+              <a className="ia-support__value ia-ltr" href={`mailto:${email}`}>
+                {email}
+              </a>
+            )}
+          </div>
+          <div className="ia-support__item">
+            <IaIcon name="video" size={34} className="ia-support__icon" />
+            <ContentSdkText tag="h3" className="ia-support__title" field={fields.VideoTitle} />
+            <ContentSdkText tag="p" className="ia-support__subtitle" field={fields.VideoSubtitle} />
+            <ContentSdkLink field={fields.VideoLink} className="ia-btn ia-btn--primary">
+              {!isEditing && (fields.VideoLink?.value?.text || label('ia_click_here'))}
             </ContentSdkLink>
           </div>
         </div>

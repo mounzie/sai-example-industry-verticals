@@ -1,0 +1,13 @@
+---
+ID: "755a8fe9-ae6a-40f7-b84c-cab94ae612bd"
+Parent: "9984cd19-be29-4b94-bb66-d63881d86b53"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Footer Links/News and events"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"News and events\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/media-center\" anchor=\"\" target=\"\" />"

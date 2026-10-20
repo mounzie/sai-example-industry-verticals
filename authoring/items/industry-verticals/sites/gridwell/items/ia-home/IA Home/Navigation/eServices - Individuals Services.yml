@@ -1,0 +1,13 @@
+---
+ID: "a71dcf85-95f6-4405-a27b-ea609ffb88ac"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/eServices - Individuals Services"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Individuals Services\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/eServices-ia/eservices?type=individual\" anchor=\"\" target=\"\" />"

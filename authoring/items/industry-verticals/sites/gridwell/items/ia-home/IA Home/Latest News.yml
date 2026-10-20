@@ -1,0 +1,22 @@
+---
+ID: "d6817755-222d-49f0-95ce-94daa17d3033"
+Parent: "8f047de3-4877-449f-8416-fe925e44ce82"
+Template: "1abcf187-6bce-49e3-b15b-73abb637ffd4"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Latest News"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3f3fd27b-9596-40dc-a3c7-cc88bc46c342"
+      Hint: Title
+      Value: "Latest News"
+    - ID: "e4d96510-52ce-4d0c-8fa3-292c11e282ce"
+      Hint: Intro
+      Value: "Check out the latest news from the Insurance Authority, media releases, and updates related to the regulation and development of the insurance sector in the Kingdom."
+    - ID: "594421cc-4308-40a2-9996-ba80950f1ed0"
+      Hint: Items
+      Value: "{1EA14BE7-2AC0-47FF-8E0E-9E7FA0C525C9}|{0C9A8963-DFCC-4080-9999-61CB423FB416}|{F92999CF-8B67-48C9-9E1C-55697F08A763}|{44F89ADE-D262-464E-BC19-114FD50BADA0}"
+    - ID: "561d67e7-800e-4a71-a189-638eb7fd4cf5"
+      Hint: ViewAllLink
+      Value: "<link text=\"View All\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/news\" anchor=\"\" target=\"\" />"

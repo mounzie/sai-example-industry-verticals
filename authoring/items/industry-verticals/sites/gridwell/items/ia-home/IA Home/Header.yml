@@ -1,0 +1,22 @@
+---
+ID: "278aee80-bdb4-48b8-abe2-ffa5d29996f8"
+Parent: "8f047de3-4877-449f-8416-fe925e44ce82"
+Template: "3f35f065-9821-4111-9db8-1613642dba3c"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Header"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc173d9d-a1e8-4c8f-bcd2-93e505b2d19b"
+      Hint: GovNotice
+      Value: "A government website registered with the Digital Government Authority."
+    - ID: "992ea8e5-8342-4bd4-90eb-79c0a498f0d6"
+      Hint: GovVerifyLink
+      Value: "<link text=\"How to verify\" linktype=\"external\" url=\"https://raqmi.dga.gov.sa/platforms/platforms/bcb78d09-6a32-498d-049e-08de7e87be6c/platform-license\" anchor=\"\" target=\"\" />"
+    - ID: "7a64e4a3-44ca-4e2e-a3b9-39bd5d01ddf8"
+      Hint: NavLinks
+      Value: "{E1E143F4-67E5-4D3C-8BDC-CCCD1F6A0C98}|{F524CB6B-95F1-4D8F-85DC-9C66849C92BA}|{BDAF8138-A362-42F6-A397-1878E2E129E5}|{7F876267-152D-43C7-A50A-FD80DE122F7E}|{5E7E8952-477A-43ED-B6ED-95DBE88BC910}|{70AFB04B-6DE1-457D-90E1-16A245B82F3D}|{337F8255-09B0-4DA0-8FAD-0B0742A4DB99}"
+    - ID: "2052e016-36c8-4fb5-b5a5-3361c718015d"
+      Hint: SearchLink
+      Value: "<link text=\"Search\" linktype=\"external\" url=\"/search\" anchor=\"\" target=\"\" />"

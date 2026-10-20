@@ -1,0 +1,13 @@
+---
+ID: "4c51cbcf-99bc-4ce6-ac2f-3af2f7eafa6c"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Authority - National Insurance S"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"National Insurance Sector Strategy\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/about-ia/national-insurance-sector-strategy\" anchor=\"\" target=\"\" />"

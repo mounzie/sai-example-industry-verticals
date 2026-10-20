@@ -1,3 +1,5 @@
+'use client';
+
 import React, { JSX } from 'react';
 import {
   Field,
@@ -6,7 +8,8 @@ import {
   Text as ContentSdkText,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import { IaPartnerFields, iaItems, useIaLabels } from '../non-sitecore/iaShared';
+import { IaPartnerFields, iaItems, useIaCarousel, useIaLabels } from '../non-sitecore/iaShared';
+import { IaIcon } from '../non-sitecore/IaIcon';
 
 interface Fields {
   Title: Field<string>;
@@ -20,8 +23,9 @@ export type IaPartnersProps = ComponentProps & {
 export const Default = (props: IaPartnersProps): JSX.Element => {
   const { styles, RenderingIdentifier: id } = props.params;
   const { fields } = props;
-  const { isEditing } = useIaLabels();
+  const { isEditing, label } = useIaLabels();
   const partners = iaItems<IaPartnerFields>(fields?.Partners);
+  const { trackRef, page, pages, prev, next } = useIaCarousel(partners.length);
 
   if (!fields) {
     return (
@@ -39,22 +43,42 @@ export const Default = (props: IaPartnersProps): JSX.Element => {
           className="ia-section__title ia-partners__title"
           field={fields.Title}
         />
-        <ul className="ia-partners__list">
-          {partners.map((partner) => {
-            const logo = (
-              <ContentSdkImage field={partner.fields.Logo} className="ia-partners__logo" />
-            );
-            return (
-              <li key={partner.id} className="ia-partners__item">
-                {partner.fields.Link?.value?.href && !isEditing ? (
-                  <ContentSdkLink field={partner.fields.Link}>{logo}</ContentSdkLink>
-                ) : (
-                  logo
-                )}
-              </li>
-            );
-          })}
-        </ul>
+        <div className="ia-partners__row">
+          <button
+            type="button"
+            className="ia-partners__arrow"
+            aria-label={label('ia_previous')}
+            disabled={page === 0}
+            onClick={prev}
+          >
+            <IaIcon name="chevronLeft" size={22} strokeWidth={2} className="ia-flip-rtl" />
+          </button>
+          <div className="ia-carousel__track ia-partners__track" ref={trackRef}>
+            {partners.map((partner) => {
+              const logo = (
+                <ContentSdkImage field={partner.fields.Logo} className="ia-partners__logo" />
+              );
+              return (
+                <div key={partner.id} className="ia-carousel__slide ia-partners__item">
+                  {partner.fields.Link?.value?.href && !isEditing ? (
+                    <ContentSdkLink field={partner.fields.Link}>{logo}</ContentSdkLink>
+                  ) : (
+                    logo
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <button
+            type="button"
+            className="ia-partners__arrow"
+            aria-label={label('ia_next')}
+            disabled={page >= pages - 1}
+            onClick={next}
+          >
+            <IaIcon name="chevronRight" size={22} strokeWidth={2} className="ia-flip-rtl" />
+          </button>
+        </div>
       </div>
     </section>
   );

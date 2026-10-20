@@ -1,0 +1,22 @@
+---
+ID: "1ea14be7-2ac0-47ff-8e0e-9e7fa0c525c9"
+Parent: "c665b516-4d03-4024-af44-0ff0f4cda98c"
+Template: "e9103074-1965-4328-8d9e-d4ef78dcfa5c"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/News/Insurance Authority Launches the"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7d3525d6-88c7-4d9b-b90d-3995e4e57226"
+      Hint: Date
+      Value: "20261018T000000Z"
+    - ID: "8c10c080-0571-4bde-94e7-076f13db151e"
+      Hint: Title
+      Value: "Insurance Authority Launches the Insurance Hackathon"
+    - ID: "ed1c86d5-7023-48e5-845e-a17e990a758b"
+      Hint: Summary
+      Value: "The Insurance Authority has launched the Insurance Hackathon, one of the programs of its recently announced Innovation Ecosystem. The ecosystem also includes the Business Incubator"
+    - ID: "92bd2962-d747-466c-8138-57a3549edc07"
+      Hint: Link
+      Value: "<link text=\"Read more\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/media-center/news/135\" anchor=\"\" target=\"\" />"

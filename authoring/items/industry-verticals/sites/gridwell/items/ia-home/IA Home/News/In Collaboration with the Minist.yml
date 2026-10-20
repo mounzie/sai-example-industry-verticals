@@ -1,0 +1,22 @@
+---
+ID: "f92999cf-8b67-48c9-9e1c-55697f08a763"
+Parent: "c665b516-4d03-4024-af44-0ff0f4cda98c"
+Template: "e9103074-1965-4328-8d9e-d4ef78dcfa5c"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/News/In Collaboration with the Minist"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7d3525d6-88c7-4d9b-b90d-3995e4e57226"
+      Hint: Date
+      Value: "20260928T000000Z"
+    - ID: "8c10c080-0571-4bde-94e7-076f13db151e"
+      Hint: Title
+      Value: "In Collaboration with the Ministry of Human Resources and Social Development"
+    - ID: "ed1c86d5-7023-48e5-845e-a17e990a758b"
+      Hint: Summary
+      Value: "The Insurance Authority (IA) is participating in the launch of five specialized training programs offered by the Financial Academy to qualify more than 125 recent graduates, in partnership with the Sector"
+    - ID: "92bd2962-d747-466c-8138-57a3549edc07"
+      Hint: Link
+      Value: "<link text=\"Read more\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/media-center/news/132\" anchor=\"\" target=\"\" />"

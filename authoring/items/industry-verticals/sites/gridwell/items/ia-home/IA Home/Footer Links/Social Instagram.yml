@@ -1,0 +1,16 @@
+---
+ID: "bcc81ea6-77b0-42c5-8c01-c15c13d22a81"
+Parent: "9984cd19-be29-4b94-bb66-d63881d86b53"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Footer Links/Social Instagram"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Instagram\" linktype=\"external\" url=\"https://www.instagram.com/ia_gov/\" anchor=\"\" target=\"\" />"
+    - ID: "020f7b5c-ee91-4bab-a7a9-79da648c3c1d"
+      Hint: Icon
+      Value: "instagram"

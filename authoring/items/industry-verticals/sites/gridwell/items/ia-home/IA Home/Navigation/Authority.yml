@@ -1,0 +1,16 @@
+---
+ID: "e1e143f4-67e5-4d3c-8bdc-cccd1f6a0c98"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Authority"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Authority\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/about-ia\" anchor=\"\" target=\"\" />"
+    - ID: "86e74138-5e3a-4730-b433-be0981255530"
+      Hint: SubLinks
+      Value: "{D0488563-4A26-4F01-94D8-C9562FE2BD51}|{B1B700DB-7D73-4DEF-8388-99FB3EB0D8FF}|{4C51CBCF-99BC-4CE6-AC2F-3AF2F7EAFA6C}|{0B57071A-0768-4C06-B6DB-83EB7A31B4C9}"

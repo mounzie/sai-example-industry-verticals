@@ -1,0 +1,13 @@
+---
+ID: "745e353a-c4c8-4c51-b8c0-30f076d70bf3"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Information Center - Review of a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Review of actuarial reports\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/information-center/Review-of-actuarial-reports\" anchor=\"\" target=\"\" />"

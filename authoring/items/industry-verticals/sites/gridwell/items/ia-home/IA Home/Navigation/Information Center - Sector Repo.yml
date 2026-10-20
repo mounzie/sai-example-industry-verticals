@@ -1,0 +1,13 @@
+---
+ID: "424ef85f-e226-49af-94d2-8afe2f4c61a5"
+Parent: "5ecc0a93-c7cf-49bf-a184-a2822be372bc"
+Template: "37b9b70b-55dc-40a6-8c5e-894bf80dcdc0"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Navigation/Information Center - Sector Repo"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3b0e8bbf-7f0f-4483-ae86-f3daf3b378b7"
+      Hint: Link
+      Value: "<link text=\"Sector Reports\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/information-center/reports/quarterly-publications\" anchor=\"\" target=\"\" />"

@@ -1,0 +1,28 @@
+---
+ID: "5a8943b8-bc35-48b0-a59b-99740f84f4f5"
+Parent: "45a0cc7e-6bb0-4968-a3ea-279d4d0ffbfa"
+Template: "7138a6cc-fb54-4f52-9dd2-7e8b90fb9055"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Services/Individuals and Corporate Insura"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "ba06c99e-8563-490e-8bb4-b1ce496e5896"
+      Hint: Icon
+      Value: "layers"
+    - ID: "ee7fe007-86c4-4736-a5e4-c5ebc4adc2c7"
+      Hint: Title
+      Value: "Individuals and Corporate Insurance Products"
+    - ID: "6404d2e6-ef49-49f3-9844-1490692e1ff0"
+      Hint: Description
+      Value: "Obtaining the Authority's approval for products targeted at both individual and corporate customers."
+    - ID: "336c6dd4-a56e-4f13-97b5-9fc674ca1186"
+      Hint: IsBusiness
+      Value: "1"
+    - ID: "f2e7be2b-dec8-4b7f-95cd-580ae2981944"
+      Hint: DetailsLink
+      Value: "<link text=\"Service Details\" linktype=\"external\" url=\"https://www.ia.gov.sa/en/eservices-ia/service-details/Individual-and-Group-Products\" anchor=\"\" target=\"\" />"
+    - ID: "d1549729-7c51-440c-bae8-3a110b5281e5"
+      Hint: StartLink
+      Value: "<link text=\"Start eService\" linktype=\"external\" url=\"https://es.ia.gov.sa/Site/login\" anchor=\"\" target=\"\" />"

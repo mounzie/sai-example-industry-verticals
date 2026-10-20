@@ -1,0 +1,40 @@
+---
+ID: "db420d18-11c0-4b47-904b-4a0bf5e81af7"
+Parent: "8f047de3-4877-449f-8416-fe925e44ce82"
+Template: "7aae454e-d54a-4a1f-96b7-dc3a37bd5556"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/IA Home/Authority in Numbers"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "383daa27-194a-4ee4-94e4-756bfdbc27e2"
+      Hint: Title
+      Value: "The Authority in numbers"
+    - ID: "01b83538-701b-4858-8e1d-763970efee16"
+      Hint: Intro
+      Value: "The Insurance Authority seeks to enhance transparency and highlight its impact on regulating and developing the insurance sector through digital indicators that reflect the size of the sector, the efficiency of services, and the level of compliance."
+    - ID: "9da6c5d9-f4fa-4e56-9345-d4587d9eea08"
+      Hint: FirstValue
+      Value: "84.3 Billion"
+    - ID: "c6e15e50-aa65-4fb5-90b0-759d534e75be"
+      Hint: FirstLabel
+      Value: "Market size"
+    - ID: "3eac0191-ccf8-40fd-a8fe-3763b9aa671b"
+      Hint: SecondValue
+      Value: "190 +"
+    - ID: "83b46890-dac5-4e31-9ac1-74562f4ea138"
+      Hint: SecondLabel
+      Value: "Number of companies"
+    - ID: "5a11769c-a653-4332-bfd0-4e08c3e63a59"
+      Hint: ThirdValue
+      Value: "17,800 +"
+    - ID: "bbd63e1b-154c-4353-ad6b-f43e8fd154eb"
+      Hint: ThirdLabel
+      Value: "Number of workers in the sector"
+    - ID: "471bfcaa-3544-4a01-ba3a-667208a7378b"
+      Hint: FourthValue
+      Value: "19 %"
+    - ID: "abcdc7f7-768f-4cbc-8397-285b83d10380"
+      Hint: FourthLabel
+      Value: "(CAGR) from 2021 to 2025"

@@ -1,12 +1,12 @@
 ---
-ID: "b0b528d1-dd6d-45c6-8ddb-0c931a941f89"
+ID: "f625a284-6045-4180-b28d-d0030eb01744"
 Parent: "6fa58d90-d5dc-4be5-bb29-c07e63786ccc"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Support/Data/SignLanguageLink"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Support/Data/VideoSubtitle"
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: "General Link"
+  Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: "500"
+  Value: "510"

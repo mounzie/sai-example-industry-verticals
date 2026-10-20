@@ -1,0 +1,12 @@
+---
+ID: "561d67e7-800e-4a71-a189-638eb7fd4cf5"
+Parent: "17be57ff-6a25-47a2-a054-fbb7ec9629c8"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA News/Data/ViewAllLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "400"

@@ -1,0 +1,27 @@
+---
+ID: "461d17f2-7cbd-4455-b637-2fa72923141b"
+Parent: "d1a2e140-cb85-4a6e-95a0-4956575cc3c7"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/industry-verticals/IA/IA Hero"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: "IaHero"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/photo_landscape.png"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Hero"
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: "0"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{C4ED2903-EF83-4E44-BDC0-0559C8BA66B7}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='IA Content Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='IA Content Folder']"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: "IsRenderingsWithDynamicPlaceholders=true"

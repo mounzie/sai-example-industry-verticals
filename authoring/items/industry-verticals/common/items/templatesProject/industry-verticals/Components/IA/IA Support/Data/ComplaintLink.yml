@@ -1,0 +1,12 @@
+---
+ID: "525d4181-4a7b-4010-a834-37e15a46f7bf"
+Parent: "6fa58d90-d5dc-4be5-bb29-c07e63786ccc"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Support/Data/ComplaintLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "600"

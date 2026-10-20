@@ -1,0 +1,12 @@
+---
+ID: "0a5bd497-0ee9-4c77-84f9-7b227e640f47"
+Parent: "c46d3d13-17f0-429f-abc2-f2a9797a78a4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Slide/Data/CtaLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "400"

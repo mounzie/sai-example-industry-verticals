@@ -1,0 +1,17 @@
+---
+ID: "e3e897ce-2a2e-481c-90ee-76b9f0e711b0"
+Parent: "e8284f1b-a88e-47e6-b351-2b31723156e4"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Footer"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/window_split_hor.png"
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{7EF6C171-84C8-457F-84E2-89D92E5013AE}"

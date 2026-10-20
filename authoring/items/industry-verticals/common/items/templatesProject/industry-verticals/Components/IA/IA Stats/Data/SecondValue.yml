@@ -1,0 +1,12 @@
+---
+ID: "3eac0191-ccf8-40fd-a8fe-3763b9aa671b"
+Parent: "79499f89-796d-45d3-988c-d1d41b69e511"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Stats/Data/SecondValue"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "500"

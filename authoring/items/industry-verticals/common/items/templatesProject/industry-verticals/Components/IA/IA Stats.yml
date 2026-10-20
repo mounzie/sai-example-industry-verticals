@@ -1,0 +1,17 @@
+---
+ID: "7aae454e-d54a-4a1f-96b7-dc3a37bd5556"
+Parent: "e8284f1b-a88e-47e6-b351-2b31723156e4"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Stats"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/chart_column.png"
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{883DBCF1-E0ED-402F-A81A-23EF13BD07E8}"

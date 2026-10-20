@@ -25,6 +25,15 @@
   line-height: 1.6;
 }
 
+/* Sites style headings, paragraphs and lists globally; IA content keeps its own font and weights */
+.ia :is(h1, h2, h3, h4, h5, h6, p, li, a, button) {
+  font-family: inherit;
+}
+
+.ia :is(p, li) {
+  font-weight: inherit;
+}
+
 .ia *,
 .ia *::before,
 .ia *::after {

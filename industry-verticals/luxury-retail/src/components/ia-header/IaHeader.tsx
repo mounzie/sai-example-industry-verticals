@@ -3,9 +3,9 @@
 import React, { JSX } from 'react';
 import {
   Field,
+  ImageField,
   Link as ContentSdkLink,
   LinkField,
-  Placeholder,
   Text as ContentSdkText,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
@@ -13,6 +13,8 @@ import { useIaLabels } from '../non-sitecore/iaShared';
 import { IaHeaderBar } from '../non-sitecore/IaHeaderBar';
 
 interface Fields {
+  Logo: ImageField;
+  LogoLink: LinkField;
   GovNotice: Field<string>;
   GovVerifyLink: LinkField;
   NavLinks: unknown;
@@ -26,7 +28,7 @@ export type IaHeaderProps = ComponentProps & {
 };
 
 export const Default = (props: IaHeaderProps): JSX.Element => {
-  const { styles, RenderingIdentifier: id, DynamicPlaceholderId } = props.params;
+  const { styles, RenderingIdentifier: id } = props.params;
   const { fields } = props;
   const { isEditing, label } = useIaLabels();
 
@@ -49,10 +51,8 @@ export const Default = (props: IaHeaderProps): JSX.Element => {
       )}
 
       <IaHeaderBar
-        // The logo is an Image component authors add here, so it can come from DAM
-        logo={
-          <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />
-        }
+        logo={fields?.Logo}
+        logoLink={fields?.LogoLink}
         navLinks={fields?.NavLinks}
         searchLink={fields?.SearchLink}
       />

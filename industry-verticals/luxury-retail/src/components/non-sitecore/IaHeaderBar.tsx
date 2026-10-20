@@ -1,16 +1,23 @@
 'use client';
 
-import React, { JSX, ReactNode, useState } from 'react';
+import React, { JSX, useState } from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Link as ContentSdkLink, LinkField } from '@sitecore-content-sdk/nextjs';
+import {
+  ImageField,
+  Link as ContentSdkLink,
+  LinkField,
+  NextImage as ContentSdkImage,
+} from '@sitecore-content-sdk/nextjs';
 import { IaLinkFields, iaItems, useIaLabels } from './iaShared';
 import { IaIcon } from './IaIcon';
 
 type IaHeaderBarProps = {
-  /** The logo area, usually a Placeholder authors drop an Image into */
-  logo: ReactNode;
+  /** Logo image picked in Pages (e.g. from DAM) */
+  logo?: ImageField;
+  /** Where the logo links to, usually the homepage */
+  logoLink?: LinkField;
   /** Multilist of IA Link items; each can carry dropdown SubLinks */
   navLinks: unknown;
   searchLink?: LinkField;
@@ -22,7 +29,12 @@ const LANGUAGES = [
 ];
 
 /** The ia.gov.sa main bar: logo, menu with dropdowns, Search and the language switch */
-export const IaHeaderBar = ({ logo, navLinks, searchLink }: IaHeaderBarProps): JSX.Element => {
+export const IaHeaderBar = ({
+  logo,
+  logoLink,
+  navLinks,
+  searchLink,
+}: IaHeaderBarProps): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openItem, setOpenItem] = useState<string | null>(null);
   const { arabic, isEditing, label } = useIaLabels();
@@ -32,9 +44,26 @@ export const IaHeaderBar = ({ logo, navLinks, searchLink }: IaHeaderBarProps): J
   // The language the visitor can switch to
   const other = LANGUAGES.find((l) => (l.lang === 'ar') !== arabic) ?? LANGUAGES[0];
 
+  // In Pages the image stays editable (click to pick from DAM); on the site it links home
+  const logoImage = logo && (logo.value?.src || isEditing) && (
+    <ContentSdkImage field={logo} className="ia-header__logo-img" />
+  );
+
   return (
     <div className="ia-wrap ia-header__bar">
-      <div className="ia-header__logo">{logo}</div>
+      <div className="ia-header__logo">
+        {logoImage && !isEditing && logoLink?.value?.href ? (
+          <Link
+            href={logoLink.value.href}
+            aria-label={logoLink.value.text || undefined}
+            className="ia-header__logo-link"
+          >
+            {logoImage}
+          </Link>
+        ) : (
+          logoImage
+        )}
+      </div>
 
       <nav
         id="ia-header-nav"

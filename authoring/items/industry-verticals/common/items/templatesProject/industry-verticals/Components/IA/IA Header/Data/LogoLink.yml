@@ -1,0 +1,12 @@
+---
+ID: "0b3e1849-ca1b-4e46-990c-b61f499d5afc"
+Parent: "481c86a1-e314-4dbc-9f6a-3161934d5f9c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/IA/IA Header/Data/LogoLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "60"

@@ -462,6 +462,45 @@
   cursor: pointer;
 }
 
+/* The script sets is-compact when the links don't fit; the media query covers the first paint */
+.ia-header__bar.is-compact .ia-header__nav {
+  display: none;
+  position: absolute;
+  inset-inline: 0;
+  top: 100%;
+  padding: 8px clamp(16px, 2vw, 32px) 16px;
+  background: var(--ia-white);
+  box-shadow: 0 16px 24px -18px rgba(32, 38, 45, 0.4);
+}
+
+.ia-header__bar.is-compact .ia-header__nav.is-open {
+  display: block;
+}
+
+.ia-header__bar.is-compact .ia-header__menu-list {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.ia-header__bar.is-compact .ia-header__item {
+  flex-wrap: wrap;
+}
+
+.ia-header__bar.is-compact .ia-header__link {
+  padding-block: 12px;
+}
+
+.ia-header__bar.is-compact .ia-header__sub {
+  position: static;
+  width: 100%;
+  box-shadow: none;
+}
+
+.ia-header__bar.is-compact .ia-header__menu {
+  display: inline-flex;
+  align-items: center;
+}
+
 @media (max-width: 1180px) {
   .ia-header__nav {
     display: none;

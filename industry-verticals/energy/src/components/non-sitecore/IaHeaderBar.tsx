@@ -1,6 +1,6 @@
 'use client';
 
-import React, { JSX, useState } from 'react';
+import React, { JSX, useLayoutEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -40,6 +40,48 @@ export const IaHeaderBar = ({
   const { arabic, isEditing, label } = useIaLabels();
   const router = useRouter();
   const items = iaItems<IaLinkFields>(navLinks);
+  const [isCompact, setIsCompact] = useState(false);
+  const barRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
+  const actionsRef = useRef<HTMLDivElement>(null);
+  const neededWidth = useRef(0);
+
+  // Fold the menu behind the Menu button whenever its links don't fit beside the logo and tools.
+  // Label widths differ by language and authors can add links, so this measures rather than
+  // relying on a fixed breakpoint
+  useLayoutEffect(() => {
+    const bar = barRef.current;
+    if (!bar) return;
+
+    const check = () => {
+      const nav = navRef.current;
+      const list = listRef.current;
+      if (!nav || !list) return;
+      if (!bar.classList.contains('is-compact')) {
+        neededWidth.current = list.scrollWidth;
+        setIsCompact(list.scrollWidth > nav.clientWidth + 1);
+        return;
+      }
+      // The folded menu can't be measured, so compare with its last full width. The Menu
+      // button counts as taken space, which keeps the header from flipping back and forth
+      const style = getComputedStyle(bar);
+      const available =
+        bar.clientWidth -
+        parseFloat(style.paddingLeft) -
+        parseFloat(style.paddingRight) -
+        (logoRef.current?.offsetWidth ?? 0) -
+        (actionsRef.current?.offsetWidth ?? 0) -
+        2 * (parseFloat(style.columnGap) || 0);
+      if (neededWidth.current <= available) setIsCompact(false);
+    };
+
+    check();
+    const observer = new ResizeObserver(check);
+    observer.observe(bar);
+    return () => observer.disconnect();
+  }, [isCompact, items.length, arabic, isEditing]);
 
   // The language the visitor can switch to
   const other = LANGUAGES.find((l) => (l.lang === 'ar') !== arabic) ?? LANGUAGES[0];
@@ -50,8 +92,8 @@ export const IaHeaderBar = ({
   );
 
   return (
-    <div className="ia-wrap ia-header__bar">
-      <div className="ia-header__logo">
+    <div ref={barRef} className={clsx('ia-wrap ia-header__bar', isCompact && 'is-compact')}>
+      <div ref={logoRef} className="ia-header__logo">
         {logoImage && !isEditing && logoLink?.value?.href ? (
           <Link
             href={logoLink.value.href}
@@ -66,11 +108,12 @@ export const IaHeaderBar = ({
       </div>
 
       <nav
+        ref={navRef}
         id="ia-header-nav"
         className={clsx('ia-header__nav', isMenuOpen && 'is-open')}
         aria-label={label('ia_main_nav')}
       >
-        <ul className="ia-header__menu-list">
+        <ul ref={listRef} className="ia-header__menu-list">
           {items.map((item) => {
             const subLinks = iaItems<IaLinkFields>(item.fields.SubLinks);
             const hasSub = subLinks.length > 0;
@@ -109,7 +152,7 @@ export const IaHeaderBar = ({
         </ul>
       </nav>
 
-      <div className="ia-header__actions">
+      <div ref={actionsRef} className="ia-header__actions">
         {searchLink && (searchLink.value?.href || isEditing) && (
           <ContentSdkLink field={searchLink} className="ia-header__tool">
             {!isEditing && (

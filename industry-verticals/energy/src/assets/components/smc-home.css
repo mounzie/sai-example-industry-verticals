@@ -534,3 +534,8 @@
 [dir='rtl'] .smc-up-next__time {
   direction: ltr;
 }
+
+/* ...but keep the Up Next times under their labels on the right */
+[dir='rtl'] .smc-up-next__time {
+  text-align: right;
+}

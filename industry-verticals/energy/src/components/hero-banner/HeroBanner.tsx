@@ -41,49 +41,83 @@ export const Default = ({ params, fields }: HeroBannerProps) => {
   }
 
   return (
-    <div className={`component hero-banner relative flex items-center py-24 ${styles}`} id={id}>
+    <div
+      className={`component hero-banner bg-background-muted relative flex min-h-[600px] items-center overflow-hidden pt-24 pb-28 lg:min-h-[720px] ${styles}`}
+      id={id}
+    >
       {/* Background Media */}
-      <div className="absolute inset-0 z-1">
-        {!isPageEditing && fields?.Video?.value?.src ? (
-          <video
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={fields.Image?.value?.src}
-          >
-            <source src={fields.Video?.value?.src} type="video/webm" />
-          </video>
-        ) : (
-          <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" priority />
-        )}
-      </div>
-      {/* Gradient Overlay using primary color */}
-      <div className="from-accent-dark to-accent absolute inset-0 z-0 bg-linear-to-r"></div>
-
-      {/* Content Container */}
-      <div className="relative z-3 container mx-auto flex flex-col items-center justify-center">
-        {/* Title - styled in accent/primary color */}
-        <h1 className={`${hasMedia ? 'text-accent' : 'text-background'} text-center`}>
-          <ContentSdkText field={fields.Title} />
-        </h1>
-
-        {/* Description/Tagline - white text */}
-        <div className="**:text-background mt-4 max-w-2xl text-xl **:text-center">
-          <ContentSdkRichText field={fields.Description} />
+      {hasMedia && (
+        <div className="absolute inset-0 z-0">
+          {!isPageEditing && fields?.Video?.value?.src ? (
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={fields.Image?.value?.src}
+            >
+              <source src={fields.Video?.value?.src} type="video/webm" />
+            </video>
+          ) : (
+            <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" priority />
+          )}
         </div>
+      )}
 
-        {/* CTA Buttons */}
-        {(fields?.CtaLink || fields?.SecondaryCtaLink) && (
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            {fields?.CtaLink && <Link field={fields.CtaLink} className="main-btn" />}
-            {fields?.SecondaryCtaLink && (
-              <Link field={fields.SecondaryCtaLink} className="secondary-btn" />
+      {/* Light wash: white on the reading side, fading into a magenta tint */}
+      <div
+        className="absolute inset-0 z-1"
+        style={{
+          backgroundImage:
+            'linear-gradient(90deg, rgb(255 255 255 / 0.94) 0%, rgb(255 255 255 / 0.78) 45%, rgb(203 46 121 / 0.18) 100%), linear-gradient(180deg, transparent 70%, var(--color-background-muted) 100%)',
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative z-3 container">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl leading-[1.15] lg:text-5xl">
+            {isPageEditing ? (
+              <ContentSdkText field={fields.Title} />
+            ) : (
+              <TwoToneTitle text={fields.Title?.value} />
             )}
+          </h1>
+
+          <div className="text-foreground mt-6 text-lg leading-loose lg:text-xl">
+            <ContentSdkRichText field={fields.Description} />
           </div>
-        )}
+
+          {(fields?.CtaLink?.value?.href ||
+            fields?.SecondaryCtaLink?.value?.href ||
+            isPageEditing) && (
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link field={fields.CtaLink} className="main-btn" />
+              {(fields?.SecondaryCtaLink?.value?.href || isPageEditing) && (
+                <Link field={fields.SecondaryCtaLink} className="secondary-btn" />
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </div>
+  );
+};
+
+/**
+ * Renders the title with its last two words in the plum → magenta gradient.
+ * Only used outside editing mode, so authors still edit the plain Title field.
+ */
+const TwoToneTitle = ({ text }: { text?: string }) => {
+  const words = (text || '').trim().split(/\s+/).filter(Boolean);
+  if (words.length < 3) return <span className="gradient-text">{text}</span>;
+
+  const plain = words.slice(0, -2).join(' ');
+  const highlight = words.slice(-2).join(' ');
+  return (
+    <>
+      {plain} <span className="gradient-text">{highlight}</span>
+    </>
   );
 };

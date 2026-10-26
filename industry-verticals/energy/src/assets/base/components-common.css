@@ -31,7 +31,16 @@
 }
 
 .main-btn {
-  @apply bg-accent text-background hover:bg-accent/95 flex items-center justify-center rounded-md px-6 py-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply bg-accent-dark text-background hover:bg-accent-hover flex items-center justify-center gap-2 rounded-sm px-7 py-2.5 text-center text-base font-semibold transition-all hover:shadow-md;
+
+  &::after {
+    content: '→';
+    @apply transition-transform;
+  }
+
+  &:hover::after {
+    @apply translate-x-1;
+  }
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -39,7 +48,7 @@
 }
 
 .secondary-btn {
-  @apply bg-background text-foreground hover:bg-background/95 flex items-center justify-center rounded-md px-6 py-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply border-accent-dark text-accent-dark hover:bg-background-tint flex items-center justify-center rounded-sm border bg-transparent px-7 py-2.5 text-center text-base font-semibold transition-all;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -47,7 +56,39 @@
 }
 
 .outline-btn {
-  @apply border-border hover:bg-background-muted rounded-md border px-4 py-1.5 text-sm transition-colors;
+  @apply text-accent hover:text-accent-dark inline-flex items-center gap-1.5 text-sm font-bold transition-colors;
+
+  &::after {
+    content: '→';
+  }
+}
+
+/* Two-tone plum → magenta text, used for heading highlights */
+.gradient-text {
+  background-image: linear-gradient(90deg, var(--color-accent-dark) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Small pill label above section headings */
+.section-badge {
+  @apply text-accent mb-4 inline-block rounded-3xl border px-4 py-0.5 text-base font-bold;
+  background-color: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  border-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+}
+
+/* Full-bleed plum gradient band */
+.gradient-band {
+  background-image: linear-gradient(270deg, var(--color-accent-dark) 17%, var(--color-accent) 250%);
+}
+
+/* Soft, elevated white card */
+.soft-card {
+  @apply bg-background rounded-3xl;
+  box-shadow:
+    0 0 0.5rem rgb(0 0 0 / 0.04),
+    0 1.5rem 2rem rgb(0 0 0 / 0.02);
 }
 
 .simple-btn {

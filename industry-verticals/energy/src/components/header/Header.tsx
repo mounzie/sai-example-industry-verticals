@@ -8,6 +8,7 @@ import { Menu, Search, X } from 'lucide-react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import PreviewSearch from '../non-sitecore/search/PreviewSearch';
 import { PREVIEW_WIDGET_ID } from '@/constants/search';
+import { isSearchConfigured } from '@/helpers/searchConfig';
 
 export type HeaderProps = ComponentProps & {
   params: { [key: string]: string };
@@ -25,8 +26,11 @@ export const Default = (props: HeaderProps): JSX.Element => {
   }, [pathname, searchParams]);
 
   return (
-    <div className={`component header bg-background border-b ${styles}`} id={id}>
-      <div className="container flex items-center gap-4 py-4 lg:gap-6">
+    <div
+      className={`component header bg-background-muted sticky top-0 z-40 pt-4 ${styles}`}
+      id={id}
+    >
+      <div className="container flex items-center gap-4 rounded-2xl bg-white/80 py-3 shadow-[0_0_0.5rem_rgb(0_0_0/0.04),0_1.5rem_2rem_rgb(0_0_0/0.03)] backdrop-blur-md lg:gap-6">
         <div className="header-block *:shrink max-lg:w-full max-lg:justify-between lg:shrink-0">
           <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />
         </div>
@@ -34,13 +38,16 @@ export const Default = (props: HeaderProps): JSX.Element => {
           <Placeholder name={`header-nav-${DynamicPlaceholderId}`} rendering={props.rendering} />
         </div>
 
-        {/* Search Button */}
-        <button
-          onClick={() => setIsSearchOpen(!isSearchOpen)}
-          className="text-gray-700 transition-colors hover:text-blue-600"
-        >
-          <Search className="size-5" />
-        </button>
+        {/* Search Button (hidden until Sitecore Search credentials are configured) */}
+        {isSearchConfigured && (
+          <button
+            onClick={() => setIsSearchOpen(!isSearchOpen)}
+            aria-label="Search"
+            className="text-accent-dark hover:text-accent transition-colors"
+          >
+            <Search className="size-5" />
+          </button>
+        )}
 
         {/* Mobile Drawer Trigger */}
         <div className="lg:hidden">
@@ -77,7 +84,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
         </div>
       </div>
 
-      {isSearchOpen && (
+      {isSearchConfigured && isSearchOpen && (
         <div className="border-border bg-background absolute top-full right-0 left-0 z-50 border-b shadow-lg">
           <div className="mx-auto max-w-7xl px-4 py-4">
             <div className="flex items-center gap-2">

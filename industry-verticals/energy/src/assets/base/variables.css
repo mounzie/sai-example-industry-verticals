@@ -1,24 +1,28 @@
 @theme {
-  --color-foreground: #111828;
-  --color-foreground-light: #4a5565;
-  --color-foreground-muted: #384354;
-  --color-foreground-secondary: #99a1af;
+  /* Masdar demo theme: deep plum + magenta on a soft grey canvas */
+  --color-foreground: #1e1e1e;
+  --color-foreground-light: #595959;
+  --color-foreground-muted: #424242;
+  --color-foreground-secondary: #7a7a7a;
 
   --color-background: #fff;
-  --color-background-accent: #dbf3f5;
-  --color-background-muted: #f5f5f5;
+  --color-background-accent: #ede6ef;
+  --color-background-muted: #f7f7f7;
+  --color-background-tint: #f7f4f8;
 
-  --color-accent: #3cbed1;
-  --color-accent-dark: #228091;
+  --color-accent: #cb2e79;
+  --color-accent-dark: #662577;
+  --color-accent-hover: #855192;
+  --color-accent-soft: #eaabc9;
 
   --color-success: #2ec1ac;
   --color-warning: #f5a623;
   --color-danger: #e7000b;
 
-  --color-border: #e5e5e5;
+  --color-border: #dedede;
 
-  --font-heading: 'Open Sans', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Cairo', sans-serif;
+  --font-body: 'Cairo', sans-serif;
 
   --radius-base: 0.5rem;
 

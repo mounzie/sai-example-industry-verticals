@@ -28,15 +28,16 @@ export const Default = (props: SelectedArticlesProps) => {
   const articles = props.fields?.Articles || [];
 
   return (
-    <section className={`py-16 ${styles}`} id={id}>
+    <section className={`bg-background-muted py-16 lg:py-28 ${styles}`} id={id}>
       <div className="container">
         {/* header */}
         <div className="in-[.column-splitter]:px-0">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4">
+          <div className="mb-12 max-w-3xl">
+            <span className="section-badge">{t('selected_articles_badge') || 'Newsroom'}</span>
+            <h2 className="mb-4 text-3xl">
               <ContentSdkText field={props.fields.Title} />
             </h2>
-            <div className="text-foreground-light text-xl">
+            <div className="text-foreground-light text-lg">
               <ContentSdkRichText field={props.fields.Description} />
             </div>
           </div>
@@ -46,27 +47,27 @@ export const Default = (props: SelectedArticlesProps) => {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {articles.map((article, index) => {
             return (
-              <div
+              <Link
                 key={index}
-                className="bg-background flex flex-col overflow-hidden rounded-lg border shadow-lg"
+                href={article.url}
+                className="soft-card group flex flex-col overflow-hidden transition-shadow hover:shadow-xl"
               >
-                <ContentSdkImage
-                  field={article.fields.Image}
-                  className="h-36 w-full shrink-0 object-cover"
-                />
-                <div className="flex grow flex-col justify-between p-6">
-                  <h6 className="mb-4 text-lg">
-                    <ContentSdkText field={article.fields.Title} />
-                  </h6>
-                  <Link
-                    href={article.url}
-                    className="text-accent-dark inline-flex items-center gap-1 self-start text-sm font-bold transition-colors hover:underline"
-                  >
-                    {t('read_more') || 'Read More'}
-                    <ArrowRight className="h-4 w-5" />
-                  </Link>
+                <div className="overflow-hidden">
+                  <ContentSdkImage
+                    field={article.fields.Image}
+                    className="h-48 w-full shrink-0 object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-              </div>
+                <div className="flex grow flex-col justify-between gap-6 p-6">
+                  <h3 className="text-lg leading-snug">
+                    <ContentSdkText field={article.fields.Title} />
+                  </h3>
+                  <span className="text-accent inline-flex items-center gap-1 self-start text-sm font-bold">
+                    {t('read_more') || 'Read More'}
+                    <ArrowRight className="h-4 w-5 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </Link>
             );
           })}
         </div>

@@ -6,12 +6,7 @@ import { SitecorePageProps } from '@sitecore-content-sdk/nextjs';
 import scConfig from 'sitecore.config';
 import 'assets/main.css';
 import { Environment, PageController, WidgetsProvider } from '@sitecore-search/react';
-
-const SEARCH_CONFIG = {
-  env: process.env.NEXT_PUBLIC_SEARCH_ENV,
-  customerKey: process.env.NEXT_PUBLIC_SEARCH_CUSTOMER_KEY,
-  apiKey: process.env.NEXT_PUBLIC_SEARCH_API_KEY,
-};
+import { SEARCH_CONFIG, isSearchConfigured } from '@/helpers/searchConfig';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
@@ -37,14 +32,19 @@ function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element
         lngDict={dictionary}
         locale={pageProps.page?.locale || scConfig.defaultLanguage}
       >
-        <WidgetsProvider
-          env={SEARCH_CONFIG.env as Environment}
-          customerKey={SEARCH_CONFIG.customerKey}
-          apiKey={SEARCH_CONFIG.apiKey}
-          publicSuffix={true}
-        >
+        {isSearchConfigured ? (
+          <WidgetsProvider
+            env={SEARCH_CONFIG.env as Environment}
+            customerKey={SEARCH_CONFIG.customerKey}
+            apiKey={SEARCH_CONFIG.apiKey}
+            publicSuffix={true}
+          >
+            <Component {...rest} />
+          </WidgetsProvider>
+        ) : (
+          // No Search credentials: render without the Search SDK so the site still builds.
           <Component {...rest} />
-        </WidgetsProvider>
+        )}
       </I18nProvider>
     </>
   );

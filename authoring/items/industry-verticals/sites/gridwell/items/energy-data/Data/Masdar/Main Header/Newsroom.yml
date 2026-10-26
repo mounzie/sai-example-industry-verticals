@@ -3,6 +3,10 @@ ID: "61b0b529-a1fa-5294-a7a7-27d670fac018"
 Parent: "8c78796b-c0f5-5742-82c0-febd4db2c814"
 Template: "51138436-2ecd-53b7-9c6d-6a2ef7a5bd9d"
 Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Header/Newsroom"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "400"
 Languages:
 - Language: en
   Versions:
@@ -10,4 +14,4 @@ Languages:
     Fields:
     - ID: "855ed847-e7cd-55b9-9c8e-8238477221ce"
       Hint: Link
-      Value: "<link text=\"Newsroom\" linktype=\"internal\" url=\"/articles\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+      Value: "<link text=\"Newsroom\" linktype=\"external\" url=\"/articles\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

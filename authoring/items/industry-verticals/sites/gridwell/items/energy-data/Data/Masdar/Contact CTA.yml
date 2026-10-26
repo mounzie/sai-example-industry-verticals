@@ -23,4 +23,4 @@ Languages:
       Value: "Talk to our energy specialists about your network, your goals and where to start."
     - ID: "4fe2bb94-cdc5-5a1a-b82e-ebf7e96d1ee2"
       Hint: Link
-      Value: "<link text=\"Book a consultation\" linktype=\"anchor\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+      Value: "<link text=\"Book a consultation\" linktype=\"external\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

@@ -3,6 +3,10 @@ ID: "b1391173-3023-5a4c-8d00-d1a9352f4c0e"
 Parent: "8941718e-4e4e-56fc-a025-354e28894276"
 Template: "9b938a69-cd74-5767-88c2-a2c8a23cba68"
 Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partners/Horizon Data Centers"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "600"
 Languages:
 - Language: en
   Versions:

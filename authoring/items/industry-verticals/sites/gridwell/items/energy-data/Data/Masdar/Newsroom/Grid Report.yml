@@ -6,10 +6,13 @@ Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Newsroom/Grid R
 SharedFields:
 - ID: "44186000-e7f6-5fdf-9479-12c4b39e85f2"
   Hint: Image
-  Value: "<Image src=\"https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/24d5f5ee49814f4c813b04747fd8cb0d?v=c6100ecf\" dam-id=\"cSCIPYbASGGlGp7t14XuUA\" width=\"1920\" height=\"1280\" alt=\"Renewable energy infrastructure\" dam-content-type=\"Image\" thumbnailsrc=\"https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/70032/thumbnail\" />"
+  Value: "<Image src=\"https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/6e1d2d4f5089492bbb85e19d279ff8cf?v=55ba2c2c\" dam-id=\"CjznTsFbQiuDuq0tEATaqQ\" width=\"1920\" height=\"1080\" alt=\"Power lines across an open landscape\" dam-content-type=\"Image\" thumbnailsrc=\"https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/69665/thumbnail\" />"
 - ID: "33636daf-ad29-5c7b-91ae-2a637d0e1da2"
   Hint: Date
   Value: "20260902T000000Z"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "200"
 Languages:
 - Language: en
   Versions:

@@ -3,6 +3,10 @@ ID: "3e202d54-7dbc-55ef-91fc-d33d1f080072"
 Parent: "45ea2265-0405-52bc-8cd2-488b93264b08"
 Template: "c3f392fe-bdeb-59b6-9365-316c642581c1"
 Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partner Stories/Sara Mitchell"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "300"
 Languages:
 - Language: en
   Versions:

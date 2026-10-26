@@ -3,6 +3,10 @@ ID: "7e74dadd-55ed-52e6-a4a3-d05cbb32f9ea"
 Parent: "0a7f7d4c-0b7d-5061-9a43-6418c294f5c4"
 Template: "8450be1a-a2e3-5f54-8b87-6e52a867e486"
 Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Footer/Company"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"
 Languages:
 - Language: en
   Versions:

@@ -3,6 +3,10 @@ ID: "d57bc7c0-cf2e-5ec3-a6a0-8c7ec1b3214c"
 Parent: "48ed44ed-ca05-5972-95e4-ac4149f8fe97"
 Template: "3c15f8c0-e45f-51cf-9f95-73901e11ab34"
 Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Impact/Renewables"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "200"
 Languages:
 - Language: en
   Versions:

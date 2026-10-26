@@ -14,10 +14,10 @@ Languages:
     Fields:
     - ID: "fe541cce-e6aa-5857-89e6-7c5085ce84fe"
       Hint: LogoLink
-      Value: "<link text=\"Gridwell home\" linktype=\"internal\" url=\"/\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+      Value: "<link text=\"Gridwell home\" linktype=\"external\" url=\"/\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
     - ID: "dacaeb4a-2a18-56ca-a2aa-e1a9655cb150"
       Hint: LanguageLink
       Value: "<link text=\"العربية\" linktype=\"external\" url=\"#\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
     - ID: "418ac5c4-7f91-5a9d-a1dd-fd93047b576b"
       Hint: CtaLink
-      Value: "<link text=\"Contact us\" linktype=\"anchor\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+      Value: "<link text=\"Contact us\" linktype=\"external\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

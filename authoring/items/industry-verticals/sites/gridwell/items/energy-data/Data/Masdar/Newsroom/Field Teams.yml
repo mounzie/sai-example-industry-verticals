@@ -10,6 +10,9 @@ SharedFields:
 - ID: "33636daf-ad29-5c7b-91ae-2a637d0e1da2"
   Hint: Date
   Value: "20260818T000000Z"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "300"
 Languages:
 - Language: en
   Versions:

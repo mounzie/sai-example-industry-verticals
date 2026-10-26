@@ -16,4 +16,4 @@ Languages:
       Value: "Latest news and insights"
     - ID: "63a1789e-51a8-5bce-9f7a-bf3f5f0c5327"
       Hint: Link
-      Value: "<link text=\"View all news\" linktype=\"internal\" url=\"/articles\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+      Value: "<link text=\"View all news\" linktype=\"external\" url=\"/articles\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

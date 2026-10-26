@@ -23,7 +23,7 @@ Languages:
       Value: "<div class=\"ck-content\"><p>Gridwell connects utilities, cities and businesses to reliable, low-carbon power, with live grid intelligence that turns energy data into confident decisions.</p></div>"
     - ID: "d53c4c10-5dc6-5c8a-8cf8-a0311c4295c2"
       Hint: PrimaryLink
-      Value: "<link text=\"Book a consultation\" linktype=\"anchor\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+      Value: "<link text=\"Book a consultation\" linktype=\"external\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
     - ID: "7d071587-2db2-5865-bd5a-4e55167d0489"
       Hint: SecondaryLink
-      Value: "<link text=\"Explore our services\" linktype=\"anchor\" url=\"#solutions\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+      Value: "<link text=\"Explore our services\" linktype=\"external\" url=\"#solutions\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

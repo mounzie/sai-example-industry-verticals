@@ -3,6 +3,10 @@ ID: "7a2e81fb-1ba1-5113-8408-070e17cc1f6c"
 Parent: "8941718e-4e4e-56fc-a025-354e28894276"
 Template: "9b938a69-cd74-5767-88c2-a2c8a23cba68"
 Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partners/Al Noor Industrial City"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "500"
 Languages:
 - Language: en
   Versions:

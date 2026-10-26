@@ -1,0 +1,13 @@
+﻿---
+ID: "54073da9-62d7-5c05-ba0a-2661141a1709"
+Parent: "331045b1-3d0a-5d25-9824-8549b093725f"
+Template: "51138436-2ecd-53b7-9c6d-6a2ef7a5bd9d"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Header/Services/Smart Metering"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "855ed847-e7cd-55b9-9c8e-8238477221ce"
+      Hint: Link
+      Value: "<link text=\"Smart Metering\" linktype=\"internal\" url=\"#\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

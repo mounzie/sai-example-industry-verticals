@@ -1,0 +1,38 @@
+﻿---
+ID: "0a7f7d4c-0b7d-5061-9a43-6418c294f5c4"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "2bf471e3-543c-52c6-a32f-b19c79227f41"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Footer"
+SharedFields:
+- ID: "233ef4f0-9aae-52cf-ac6c-9f70a4a63120"
+  Hint: Logo
+  Value: "<Image src=\"https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/0628d1b761f548679707b2eb2856d81e?v=7cd24748\" dam-id=\"p6atlvHsSxOmaBtifqTHWg\" width=\"129\" height=\"33\" alt=\"Gridwell logo\" dam-content-type=\"Image\" thumbnailsrc=\"https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/81396/thumbnail\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "756e0f5c-60da-583a-94e7-899580ac0126"
+      Hint: Description
+      Value: "Gridwell keeps homes, cities and industry powered with a reliable, cleaner and smarter electricity network."
+    - ID: "e0cc59c3-ab5f-5550-bca9-72c750983276"
+      Hint: Copyright
+      Value: "© 2026 Gridwell. All rights reserved."
+    - ID: "0f1399ba-7040-527f-9e61-441efda7cc70"
+      Hint: Email
+      Value: "hello@gridwell.example"
+    - ID: "54a53aab-0216-5e98-8566-0dd94f9051e0"
+      Hint: Phone
+      Value: "+000 0000 0000"
+    - ID: "4e18e5eb-1647-5946-96b7-970659318630"
+      Hint: LinkedIn
+      Value: "<link text=\"LinkedIn\" linktype=\"external\" url=\"https://www.linkedin.com/\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+    - ID: "231d414e-d8d1-56e8-afba-7e5f36f210aa"
+      Hint: X
+      Value: "<link text=\"X\" linktype=\"external\" url=\"https://x.com/\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+    - ID: "999028d3-ac29-5b93-8c2a-3a31ebca5d29"
+      Hint: Instagram
+      Value: "<link text=\"Instagram\" linktype=\"external\" url=\"https://www.instagram.com/\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+    - ID: "92802518-da63-54c9-81d1-8c004294402b"
+      Hint: YouTube
+      Value: "<link text=\"YouTube\" linktype=\"external\" url=\"https://www.youtube.com/\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

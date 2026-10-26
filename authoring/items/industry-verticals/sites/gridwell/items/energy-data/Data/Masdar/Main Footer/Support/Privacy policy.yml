@@ -1,0 +1,13 @@
+﻿---
+ID: "dc775055-9f22-59fc-a926-82f61aec66d2"
+Parent: "eade9176-dce4-5362-9f43-9511f7cc87e0"
+Template: "51138436-2ecd-53b7-9c6d-6a2ef7a5bd9d"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Footer/Support/Privacy policy"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "855ed847-e7cd-55b9-9c8e-8238477221ce"
+      Hint: Link
+      Value: "<link text=\"Privacy policy\" linktype=\"internal\" url=\"#\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

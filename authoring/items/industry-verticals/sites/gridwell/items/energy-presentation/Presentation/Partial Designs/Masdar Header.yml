@@ -1,0 +1,25 @@
+﻿---
+ID: "764f2656-b5f7-55f9-9369-6a33203a40a8"
+Parent: "9b708dad-8e4d-4efd-9ff8-a929978ce342"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/industry-verticals/gridwell/Presentation/Partial Designs/Masdar Header"
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "masdar-header"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{5E8E03C2-FD6A-50C3-97DB-FE331CF517EF}"
+          p:before="*"
+          s:ds="8c78796b-c0f5-5742-82c0-febd4db2c814"
+          s:id="{5BA8415E-7EE2-55C8-9C5A-A6F57E2BEBD5}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="headless-header" />
+      </d>
+    </r>

@@ -1,0 +1,13 @@
+﻿---
+ID: "eade9176-dce4-5362-9f43-9511f7cc87e0"
+Parent: "0a7f7d4c-0b7d-5061-9a43-6418c294f5c4"
+Template: "8450be1a-a2e3-5f54-8b87-6e52a867e486"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Footer/Support"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1ef7a5f2-cf8e-501f-9e91-8df54a6b2028"
+      Hint: Title
+      Value: "Support"

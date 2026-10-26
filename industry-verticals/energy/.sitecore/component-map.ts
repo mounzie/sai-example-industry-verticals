@@ -36,6 +36,8 @@ import * as MasdarNews from 'src/components/masdar/MasdarNews';
 import * as MasdarLogoStrip from 'src/components/masdar/MasdarLogoStrip';
 import * as MasdarImpact from 'src/components/masdar/MasdarImpact';
 import * as MasdarHero from 'src/components/masdar/MasdarHero';
+import * as MasdarHeader from 'src/components/masdar/MasdarHeader';
+import * as MasdarFooter from 'src/components/masdar/MasdarFooter';
 import * as MasdarCta from 'src/components/masdar/MasdarCta';
 import * as LinkList from 'src/components/link-list/LinkList';
 import * as Image from 'src/components/image/Image';
@@ -90,6 +92,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['MasdarLogoStrip', { ...MasdarLogoStrip }],
   ['MasdarImpact', { ...MasdarImpact }],
   ['MasdarHero', { ...MasdarHero }],
+  ['MasdarHeader', { ...MasdarHeader, componentType: 'client' }],
+  ['MasdarFooter', { ...MasdarFooter }],
   ['MasdarCta', { ...MasdarCta }],
   ['LinkList', { ...LinkList }],
   ['Image', { ...Image }],

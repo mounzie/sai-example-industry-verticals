@@ -1,0 +1,25 @@
+﻿---
+ID: "0d4736d5-fe98-5b5c-8923-43ccc709ab14"
+Parent: "9b708dad-8e4d-4efd-9ff8-a929978ce342"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/industry-verticals/gridwell/Presentation/Partial Designs/Masdar Footer"
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "masdar-footer"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{C59223DC-6781-5912-B177-D6E094DB6A94}"
+          p:before="*"
+          s:ds="0a7f7d4c-0b7d-5061-9a43-6418c294f5c4"
+          s:id="{0A447B7D-6CD6-542A-A3AB-408C6569225A}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="headless-footer" />
+      </d>
+    </r>

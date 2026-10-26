@@ -1,0 +1,9 @@
+﻿---
+ID: "44120abb-3eda-5385-8903-0919c6cfbbf9"
+Parent: "8450be1a-a2e3-5f54-8b87-6e52a867e486"
+Template: "8450be1a-a2e3-5f54-8b87-6e52a867e486"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Footer Column/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{51138436-2ECD-53B7-9C6D-6A2EF7A5BD9D}"

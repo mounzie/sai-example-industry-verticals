@@ -1,0 +1,9 @@
+﻿---
+ID: "38744077-eb3c-5adc-8f04-8936fb1073e3"
+Parent: "51138436-2ecd-53b7-9c6d-6a2ef7a5bd9d"
+Template: "51138436-2ecd-53b7-9c6d-6a2ef7a5bd9d"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Nav Link/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{51138436-2ECD-53B7-9C6D-6A2EF7A5BD9D}"

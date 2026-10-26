@@ -1,0 +1,62 @@
+﻿---
+ID: "5ba8415e-7ee2-55c8-9c5a-a6f57e2bebd5"
+Parent: "abe51320-be96-5d0f-b87b-080b249368d7"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/industry-verticals/Masdar/Masdar Header"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: "MasdarHeader"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "office/32x32/window_dialog.png"
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query MasdarHeaderQuery($datasource: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+        logo: field(name: "Logo") {
+          jsonValue
+        }
+        logoLink: field(name: "LogoLink") {
+          jsonValue
+        }
+        languageLink: field(name: "LanguageLink") {
+          jsonValue
+        }
+        ctaLink: field(name: "CtaLink") {
+          jsonValue
+        }
+        children {
+          results {
+            id
+            link: field(name: "Link") {
+              jsonValue
+            }
+            children {
+              results {
+                id
+                link: field(name: "Link") {
+                  jsonValue
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Header"
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: "0"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{21F16AD6-DA0D-5E14-B504-77D0A2F4560D}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Masdar Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Masdar Folder']"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: "IsRenderingsWithDynamicPlaceholders=true"

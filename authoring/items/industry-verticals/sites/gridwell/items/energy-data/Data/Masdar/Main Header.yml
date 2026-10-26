@@ -1,0 +1,23 @@
+﻿---
+ID: "8c78796b-c0f5-5742-82c0-febd4db2c814"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "784adc1d-2edf-5765-bd41-3e4c6054eaa5"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Header"
+SharedFields:
+- ID: "0bace0cd-98c5-551b-9184-68f0b34d7f55"
+  Hint: Logo
+  Value: "<Image src=\"https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/0628d1b761f548679707b2eb2856d81e?v=7cd24748\" dam-id=\"p6atlvHsSxOmaBtifqTHWg\" width=\"129\" height=\"33\" alt=\"Gridwell logo\" dam-content-type=\"Image\" thumbnailsrc=\"https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/81396/thumbnail\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "fe541cce-e6aa-5857-89e6-7c5085ce84fe"
+      Hint: LogoLink
+      Value: "<link text=\"Gridwell home\" linktype=\"internal\" url=\"/\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+    - ID: "dacaeb4a-2a18-56ca-a2aa-e1a9655cb150"
+      Hint: LanguageLink
+      Value: "<link text=\"العربية\" linktype=\"external\" url=\"#\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+    - ID: "418ac5c4-7f91-5a9d-a1dd-fd93047b576b"
+      Hint: CtaLink
+      Value: "<link text=\"Contact us\" linktype=\"anchor\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

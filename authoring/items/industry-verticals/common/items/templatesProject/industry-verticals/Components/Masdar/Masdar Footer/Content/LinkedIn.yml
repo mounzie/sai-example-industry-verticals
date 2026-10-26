@@ -1,0 +1,12 @@
+﻿---
+ID: "4e18e5eb-1647-5946-96b7-970659318630"
+Parent: "ec3c6b98-2840-50d7-aba3-e77110cc8328"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Footer/Content/LinkedIn"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "600"

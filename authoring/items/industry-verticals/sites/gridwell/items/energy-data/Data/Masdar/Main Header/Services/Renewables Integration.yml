@@ -1,0 +1,13 @@
+﻿---
+ID: "6af199c9-1f43-59f9-82b7-5b44d4d7c75e"
+Parent: "331045b1-3d0a-5d25-9824-8549b093725f"
+Template: "51138436-2ecd-53b7-9c6d-6a2ef7a5bd9d"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Main Header/Services/Renewables Integration"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "855ed847-e7cd-55b9-9c8e-8238477221ce"
+      Hint: Link
+      Value: "<link text=\"Renewables Integration\" linktype=\"internal\" url=\"#\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

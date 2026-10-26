@@ -1,0 +1,12 @@
+﻿---
+ID: "1ef7a5f2-cf8e-501f-9e91-8df54a6b2028"
+Parent: "86efff39-212b-5e9b-b1be-44d4e15c2313"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Footer Column/Content/Title"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

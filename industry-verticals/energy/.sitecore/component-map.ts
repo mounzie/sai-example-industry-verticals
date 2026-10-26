@@ -30,13 +30,20 @@ import * as CardViewSwitcher from 'src/components/non-sitecore/search/CardViewSw
 import * as ArticleHorizontalCard from 'src/components/non-sitecore/search/ArticleHorizontalCard';
 import * as ArticleCard from 'src/components/non-sitecore/search/ArticleCard';
 import * as Navigation from 'src/components/navigation/Navigation';
+import * as MasdarTestimonials from 'src/components/masdar/MasdarTestimonials';
+import * as MasdarSolutions from 'src/components/masdar/MasdarSolutions';
+import * as MasdarNews from 'src/components/masdar/MasdarNews';
+import * as MasdarLogoStrip from 'src/components/masdar/MasdarLogoStrip';
+import * as MasdarImpact from 'src/components/masdar/MasdarImpact';
+import * as MasdarHero from 'src/components/masdar/MasdarHero';
+import * as MasdarCta from 'src/components/masdar/MasdarCta';
 import * as LinkList from 'src/components/link-list/LinkList';
 import * as Image from 'src/components/image/Image';
 import * as HeroBanner from 'src/components/hero-banner/HeroBanner';
 import * as Header from 'src/components/header/Header';
 import * as GridStatusGauge from 'src/components/gridstatusgauge/GridStatusGauge';
-import * as GridDemand from 'src/components/grid-demand/GridDemand';
 import * as gridChartData from 'src/components/grid-demand/gridChartData';
+import * as GridDemand from 'src/components/grid-demand/GridDemand';
 import * as gridData from 'src/components/grid-conditions/gridData';
 import * as GridConditions from 'src/components/grid-conditions/GridConditions';
 import * as Footer from 'src/components/footer/Footer';
@@ -77,13 +84,20 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ArticleHorizontalCard', { ...ArticleHorizontalCard }],
   ['ArticleCard', { ...ArticleCard }],
   ['Navigation', { ...Navigation, componentType: 'client' }],
+  ['MasdarTestimonials', { ...MasdarTestimonials }],
+  ['MasdarSolutions', { ...MasdarSolutions }],
+  ['MasdarNews', { ...MasdarNews }],
+  ['MasdarLogoStrip', { ...MasdarLogoStrip }],
+  ['MasdarImpact', { ...MasdarImpact }],
+  ['MasdarHero', { ...MasdarHero }],
+  ['MasdarCta', { ...MasdarCta }],
   ['LinkList', { ...LinkList }],
   ['Image', { ...Image }],
   ['HeroBanner', { ...HeroBanner }],
   ['Header', { ...Header, componentType: 'client' }],
   ['GridStatusGauge', { ...GridStatusGauge }],
-  ['GridDemand', { ...GridDemand }],
   ['gridChartData', { ...gridChartData }],
+  ['GridDemand', { ...GridDemand }],
   ['gridData', { ...gridData }],
   ['GridConditions', { ...GridConditions }],
   ['Footer', { ...Footer }],

@@ -1,0 +1,12 @@
+﻿---
+ID: "ca827133-de0c-5fe0-89c2-58d9d7ca1c32"
+Parent: "110924bd-4b78-56a9-9bba-4815718a7969"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Hero/Content/Description"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Rich Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "300"

@@ -1,0 +1,19 @@
+﻿---
+ID: "cefa8935-4b5d-5dfe-95ea-51f3fc2d7dad"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "91585f45-1ea1-5ad3-8fa6-de7b9a5949b3"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Newsroom"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "fc307fa7-54d2-5ca8-9396-ea3ab8fba6a1"
+      Hint: Badge
+      Value: "Newsroom"
+    - ID: "0a91ce39-f8e6-5435-8b17-6f0e598d26e6"
+      Hint: Title
+      Value: "Latest news and insights"
+    - ID: "63a1789e-51a8-5bce-9f7a-bf3f5f0c5327"
+      Hint: Link
+      Value: "<link text=\"View all news\" linktype=\"internal\" url=\"/articles\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

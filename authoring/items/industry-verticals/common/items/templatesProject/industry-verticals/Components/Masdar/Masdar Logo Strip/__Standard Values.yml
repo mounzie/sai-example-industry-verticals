@@ -1,0 +1,9 @@
+﻿---
+ID: "6491a143-169b-5444-8891-0df210b8cb0f"
+Parent: "630c5ad2-5ccb-53d8-9363-b38e467e0458"
+Template: "630c5ad2-5ccb-53d8-9363-b38e467e0458"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Logo Strip/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{9B938A69-CD74-5767-88C2-A2C8A23CBA68}"

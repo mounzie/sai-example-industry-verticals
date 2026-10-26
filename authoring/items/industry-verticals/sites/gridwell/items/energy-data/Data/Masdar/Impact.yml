@@ -1,0 +1,19 @@
+﻿---
+ID: "48ed44ed-ca05-5972-95e4-ac4149f8fe97"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "1795570c-2e17-5303-a6a3-c05a376e39ca"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Impact"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8f29f917-e839-59c9-919b-4a9973208491"
+      Hint: Badge
+      Value: "Our Impact"
+    - ID: "217a60b2-50b3-5627-be48-08d1fb6f1ba6"
+      Hint: Title
+      Value: "Measurable results across the grid"
+    - ID: "18c424d9-24cb-55e7-a20e-ee83659d84d7"
+      Hint: Description
+      Value: "Illustrative figures for this demo site. Replace them with your own results."

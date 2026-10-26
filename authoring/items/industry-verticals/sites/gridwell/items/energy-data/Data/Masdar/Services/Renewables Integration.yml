@@ -1,0 +1,19 @@
+﻿---
+ID: "3190ed16-d4e3-51f6-a11d-6340107cff92"
+Parent: "74edc6a3-5b15-51e7-b1c6-3dac6ee5a2d9"
+Template: "51fa2db2-9873-564c-a804-a4e84fd4a570"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Services/Renewables Integration"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "9ba07273-5911-56d2-b576-0222334984ed"
+      Hint: Title
+      Value: "Renewables Integration"
+    - ID: "4c912ca8-a152-5bf4-9a52-2a541416cea1"
+      Hint: Description
+      Value: "Forecast solar and wind output and balance it against demand to keep the grid stable."
+    - ID: "f849000c-aa1a-54c9-a35e-4b6d76a4f17f"
+      Hint: Link
+      Value: "<link text=\"Learn more\" linktype=\"external\" url=\"#\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

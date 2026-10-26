@@ -1,0 +1,19 @@
+﻿---
+ID: "d3cef8ff-1158-575d-af0a-4689e0c7c9c9"
+Parent: "45ea2265-0405-52bc-8cd2-488b93264b08"
+Template: "c3f392fe-bdeb-59b6-9365-316c642581c1"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partner Stories/Layla Haddad"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1085b8bc-7755-59cf-9243-f5274f2051b7"
+      Hint: Quote
+      Value: "Gridwell gave our control room one view of the whole network. We now spot stress points hours earlier."
+    - ID: "8bf281f5-d10b-5fbb-9689-d99efd27ee4a"
+      Hint: Name
+      Value: "Layla Haddad"
+    - ID: "4d99fa63-91c7-56ed-a58e-5ef237634d88"
+      Hint: Role
+      Value: "Head of Grid Operations, Northwind Utilities"

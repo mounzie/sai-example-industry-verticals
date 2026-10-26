@@ -1,0 +1,19 @@
+﻿---
+ID: "d57bc7c0-cf2e-5ec3-a6a0-8c7ec1b3214c"
+Parent: "48ed44ed-ca05-5972-95e4-ac4149f8fe97"
+Template: "3c15f8c0-e45f-51cf-9f95-73901e11ab34"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Impact/Renewables"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0e962ada-d9e4-5fb8-8dca-168176c3ec23"
+      Hint: Value
+      Value: "2.4 GW"
+    - ID: "42f27bdd-7dba-55db-a31b-307162e39853"
+      Hint: Label
+      Value: "Renewables connected"
+    - ID: "bd84ec13-e7d8-5d4b-a2ee-c13252a431ab"
+      Hint: Description
+      Value: "Solar and wind capacity integrated into the network."

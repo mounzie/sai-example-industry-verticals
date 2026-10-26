@@ -1,0 +1,9 @@
+﻿---
+ID: "04663f38-219d-597b-a45d-91a13b99e60f"
+Parent: "91585f45-1ea1-5ad3-8fa6-de7b9a5949b3"
+Template: "91585f45-1ea1-5ad3-8fa6-de7b9a5949b3"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar News/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{9290A69D-575C-535F-BAB9-126848A617EE}"

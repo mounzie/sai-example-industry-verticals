@@ -122,3 +122,32 @@
     }
   }
 }
+
+/* Masdar logo strip: seamless horizontal marquee (track holds two copies of the logos) */
+.masdar-marquee {
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.masdar-marquee-track {
+  animation: masdar-marquee 40s linear infinite;
+}
+
+.masdar-marquee:hover .masdar-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes masdar-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .masdar-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+  }
+}

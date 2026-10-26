@@ -1,0 +1,16 @@
+﻿---
+ID: "018ecb0f-8f06-5d27-9168-6eaee090cce0"
+Parent: "9ce8f2bc-c650-498e-82aa-b32665438c94"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/industry-verticals/gridwell/Presentation/Available Renderings/Masdar"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {1CFAD0CB-4404-53BE-A7D8-7ED27F6B06F1}
+    {BD0E44F3-2059-51F0-ADCD-8E8919309C1E}
+    {3A6123B0-CAD1-5D96-A81A-6D9D847DF444}
+    {45A4816A-1462-550E-9F29-4D47734EA482}
+    {8A36B92D-AECE-50C7-B80C-B8E745C5B57D}
+    {E1DB25C2-04C9-54C3-BCA2-246055D82F68}
+    {0C703F55-9CED-588C-BEA8-7CA1F226B20C}

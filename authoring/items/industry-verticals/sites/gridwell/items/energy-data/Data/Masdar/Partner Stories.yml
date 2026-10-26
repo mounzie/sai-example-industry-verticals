@@ -1,0 +1,16 @@
+﻿---
+ID: "45ea2265-0405-52bc-8cd2-488b93264b08"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "91987c33-85a1-5021-b6e8-133041a559d1"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partner Stories"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "bc9968a7-23eb-54fa-9cd3-787fad4d4de8"
+      Hint: Badge
+      Value: "Partner Stories"
+    - ID: "e386e496-0917-58ef-af51-9c565c40da68"
+      Hint: Title
+      Value: "What our partners say"

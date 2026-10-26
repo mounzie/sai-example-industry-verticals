@@ -1,0 +1,75 @@
+﻿---
+ID: "7a30a9c9-1750-57c6-abab-64c85d9f170d"
+Parent: "a3a58074-c4b7-478b-b0b4-386243e7e48e"
+Template: "98e60957-0783-4a9a-85cc-77dad30e9711"
+Path: "/sitecore/content/industry-verticals/gridwell/Home/Masdar Demo"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "900"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+          <r
+            uid="{A618BCB4-13D8-577D-8E63-A30E4D7E9DBF}"
+            p:before="*"
+            s:ds="f461b949-b044-5c33-9810-0e6cef4be622"
+            s:id="{1CFAD0CB-4404-53BE-A7D8-7ED27F6B06F1}"
+            s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+            s:ph="headless-main" />
+          <r
+            uid="{258BA4E2-1666-5E39-B0BE-563897F8F1EB}"
+            p:after="r[@uid='{A618BCB4-13D8-577D-8E63-A30E4D7E9DBF}']"
+            s:ds="8941718e-4e4e-56fc-a025-354e28894276"
+            s:id="{BD0E44F3-2059-51F0-ADCD-8E8919309C1E}"
+            s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+            s:ph="headless-main" />
+          <r
+            uid="{7D92ECC8-D65A-56F5-9A7A-3289B672A714}"
+            p:after="r[@uid='{258BA4E2-1666-5E39-B0BE-563897F8F1EB}']"
+            s:ds="74edc6a3-5b15-51e7-b1c6-3dac6ee5a2d9"
+            s:id="{3A6123B0-CAD1-5D96-A81A-6D9D847DF444}"
+            s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+            s:ph="headless-main" />
+          <r
+            uid="{496DA88D-527B-580F-BBEC-FBB3C3D72BF9}"
+            p:after="r[@uid='{7D92ECC8-D65A-56F5-9A7A-3289B672A714}']"
+            s:ds="48ed44ed-ca05-5972-95e4-ac4149f8fe97"
+            s:id="{45A4816A-1462-550E-9F29-4D47734EA482}"
+            s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+            s:ph="headless-main" />
+          <r
+            uid="{04995576-0BCB-5505-AEB2-B39CFF08E8EA}"
+            p:after="r[@uid='{496DA88D-527B-580F-BBEC-FBB3C3D72BF9}']"
+            s:ds="cefa8935-4b5d-5dfe-95ea-51f3fc2d7dad"
+            s:id="{8A36B92D-AECE-50C7-B80C-B8E745C5B57D}"
+            s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+            s:ph="headless-main" />
+          <r
+            uid="{0EA9425D-EA7A-5704-B247-03E78C5022D7}"
+            p:after="r[@uid='{04995576-0BCB-5505-AEB2-B39CFF08E8EA}']"
+            s:ds="45ea2265-0405-52bc-8cd2-488b93264b08"
+            s:id="{E1DB25C2-04C9-54C3-BCA2-246055D82F68}"
+            s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+            s:ph="headless-main" />
+          <r
+            uid="{A39291AD-1634-57E2-94B4-C2A44CD5D0D8}"
+            p:after="r[@uid='{0EA9425D-EA7A-5704-B247-03E78C5022D7}']"
+            s:ds="557eaec1-c0dc-57d4-a4fa-0ab6648515e2"
+            s:id="{0C703F55-9CED-588C-BEA8-7CA1F226B20C}"
+            s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+            s:ph="headless-main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
+      Hint: Title
+      Value: "Masdar Demo"

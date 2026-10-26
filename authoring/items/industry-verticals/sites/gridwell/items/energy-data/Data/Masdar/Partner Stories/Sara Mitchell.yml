@@ -1,0 +1,19 @@
+﻿---
+ID: "3e202d54-7dbc-55ef-91fc-d33d1f080072"
+Parent: "45ea2265-0405-52bc-8cd2-488b93264b08"
+Template: "c3f392fe-bdeb-59b6-9365-316c642581c1"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partner Stories/Sara Mitchell"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1085b8bc-7755-59cf-9243-f5274f2051b7"
+      Hint: Quote
+      Value: "Integrating new solar farms used to take months of studies. With Gridwell forecasts it takes weeks."
+    - ID: "8bf281f5-d10b-5fbb-9689-d99efd27ee4a"
+      Hint: Name
+      Value: "Sara Mitchell"
+    - ID: "4d99fa63-91c7-56ed-a58e-5ef237634d88"
+      Hint: Role
+      Value: "Renewables Lead, Horizon Data Centers"

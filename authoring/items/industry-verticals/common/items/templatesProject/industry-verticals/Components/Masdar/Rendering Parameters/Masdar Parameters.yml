@@ -1,0 +1,15 @@
+﻿---
+ID: "21f16ad6-da0d-5e14-b504-77d0a2f4560d"
+Parent: "1c93d8d3-a2ad-5aa4-8c32-aaffa8b9d6fd"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Rendering Parameters/Masdar Parameters"
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {4247AAD4-EBDE-4994-998F-E067A51B1FE4}
+    {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
+    {3DB3EB10-F8D0-4CC9-BE26-18CE7B139EC8}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{EF234C27-34DE-5148-AC7D-AF843EA35C4E}"

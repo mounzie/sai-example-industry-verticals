@@ -1,0 +1,13 @@
+﻿---
+ID: "8941718e-4e4e-56fc-a025-354e28894276"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "630c5ad2-5ccb-53d8-9363-b38e467e0458"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partners"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "c847ea86-0389-5972-8066-2065b12e2130"
+      Hint: Title
+      Value: "Trusted by utilities, cities and industry leaders"

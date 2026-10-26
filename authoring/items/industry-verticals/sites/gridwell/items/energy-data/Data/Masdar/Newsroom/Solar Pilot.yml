@@ -1,0 +1,26 @@
+﻿---
+ID: "bd55885e-9731-5329-9bc6-2d1e2eeee653"
+Parent: "cefa8935-4b5d-5dfe-95ea-51f3fc2d7dad"
+Template: "9290a69d-575c-535f-bab9-126848a617ee"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Newsroom/Solar Pilot"
+SharedFields:
+- ID: "44186000-e7f6-5fdf-9479-12c4b39e85f2"
+  Hint: Image
+  Value: "<Image src=\"https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/26883bf12de9417381f9d97356d030ec?v=51a62579\" dam-id=\"FczZZT2ETVCgOaa142v0cw\" width=\"1024\" height=\"683\" alt=\"Clean energy in the city\" dam-content-type=\"Image\" thumbnailsrc=\"https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/70020/thumbnail\" />"
+- ID: "33636daf-ad29-5c7b-91ae-2a637d0e1da2"
+  Hint: Date
+  Value: "20260914T000000Z"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "f32e82c5-a16c-572f-962b-abf5312a518a"
+      Hint: Category
+      Value: "Projects"
+    - ID: "ce904d9f-2ff4-5582-b865-a26fff27c7e0"
+      Hint: Title
+      Value: "Gridwell completes its first rooftop solar pilot with city partners"
+    - ID: "86c9587b-45ea-509b-9dc5-036e90aab0e0"
+      Hint: Link
+      Value: "<link text=\"Read more\" linktype=\"external\" url=\"#\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

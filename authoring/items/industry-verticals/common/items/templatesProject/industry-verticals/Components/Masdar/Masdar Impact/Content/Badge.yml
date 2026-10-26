@@ -1,0 +1,12 @@
+﻿---
+ID: "8f29f917-e839-59c9-919b-4a9973208491"
+Parent: "fc373bfa-b46b-585f-81ea-5a4095aaca4f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Impact/Content/Badge"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

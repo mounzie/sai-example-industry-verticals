@@ -1,0 +1,9 @@
+﻿---
+ID: "e4bd5280-fc28-5fa3-ae65-b4812b3ec12d"
+Parent: "1795570c-2e17-5303-a6a3-c05a376e39ca"
+Template: "1795570c-2e17-5303-a6a3-c05a376e39ca"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Impact/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{3C15F8C0-E45F-51CF-9F95-73901E11AB34}"

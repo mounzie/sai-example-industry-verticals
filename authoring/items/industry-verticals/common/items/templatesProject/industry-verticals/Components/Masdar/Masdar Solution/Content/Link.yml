@@ -1,0 +1,12 @@
+﻿---
+ID: "f849000c-aa1a-54c9-a35e-4b6d76a4f17f"
+Parent: "790101c3-a22f-5985-b3a0-7c947c223401"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Solution/Content/Link"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "400"

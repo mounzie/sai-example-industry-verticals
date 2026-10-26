@@ -1,0 +1,19 @@
+﻿---
+ID: "74edc6a3-5b15-51e7-b1c6-3dac6ee5a2d9"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "867b664e-f2d8-5a7c-ac4d-27db5edf68ba"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Services"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "a3baaa9d-6627-593e-850c-79fce2c7a763"
+      Hint: Badge
+      Value: "Our Services"
+    - ID: "f5b0585b-cb40-5a1e-af9d-c3d1f9d6dc02"
+      Hint: Title
+      Value: "Energy solutions for every scale"
+    - ID: "eb3b91aa-fe7e-52e0-956f-3d002081e0d3"
+      Hint: Description
+      Value: "From national networks to a single building, Gridwell helps you see, manage and optimise every kilowatt."

@@ -1,0 +1,29 @@
+﻿---
+ID: "f461b949-b044-5c33-9810-0e6cef4be622"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "9a0f2a84-f10c-5014-9902-ae03a3ad07fe"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Home Hero"
+SharedFields:
+- ID: "5af03912-02de-5bdd-8db7-5a079fe0eea2"
+  Hint: Image
+  Value: "<Image src=\"https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/18a0c7804ffa4fbcb58e0c6c2ec41e1b?v=075678ec\" dam-id=\"9kvntgm5SYCwdMGUycIzgQ\" width=\"1536\" height=\"1024\" alt=\"Gridwell line worker at a large transformer\" dam-content-type=\"Image\" thumbnailsrc=\"https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/70165/thumbnail\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "516ca57a-e08c-5811-9d7b-810c72004867"
+      Hint: Title
+      Value: "Powering the region with"
+    - ID: "6153dfa3-1488-5567-83d5-25570a4a0661"
+      Hint: Highlight
+      Value: "smarter, cleaner energy"
+    - ID: "ca827133-de0c-5fe0-89c2-58d9d7ca1c32"
+      Hint: Description
+      Value: "<div class=\"ck-content\"><p>Gridwell connects utilities, cities and businesses to reliable, low-carbon power, with live grid intelligence that turns energy data into confident decisions.</p></div>"
+    - ID: "d53c4c10-5dc6-5c8a-8cf8-a0311c4295c2"
+      Hint: PrimaryLink
+      Value: "<link text=\"Book a consultation\" linktype=\"anchor\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"
+    - ID: "7d071587-2db2-5865-bd5a-4e55167d0489"
+      Hint: SecondaryLink
+      Value: "<link text=\"Explore our services\" linktype=\"anchor\" url=\"#solutions\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

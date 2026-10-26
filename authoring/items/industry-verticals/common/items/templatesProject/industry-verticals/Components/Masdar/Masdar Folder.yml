@@ -1,0 +1,12 @@
+﻿---
+ID: "6ee9f3b9-e19c-5389-8c6a-0e1a9ce496a1"
+Parent: "599a7d16-dae1-5b9c-9f3b-27f1a18fe919"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdar/Masdar Folder"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "office/32x32/folder_window.png"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{88E5C234-8D34-5769-88C7-572AFB19262A}"

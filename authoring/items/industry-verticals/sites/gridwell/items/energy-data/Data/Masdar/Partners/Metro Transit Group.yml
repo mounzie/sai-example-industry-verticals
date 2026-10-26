@@ -1,0 +1,13 @@
+﻿---
+ID: "19d6f998-74c4-5921-878c-6313a0b7ef9a"
+Parent: "8941718e-4e4e-56fc-a025-354e28894276"
+Template: "9b938a69-cd74-5767-88c2-a2c8a23cba68"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partners/Metro Transit Group"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "79328ca0-3200-5358-b717-007c5eb8af73"
+      Hint: Name
+      Value: "Metro Transit Group"

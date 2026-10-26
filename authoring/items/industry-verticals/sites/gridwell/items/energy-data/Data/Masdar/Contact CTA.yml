@@ -1,0 +1,26 @@
+﻿---
+ID: "557eaec1-c0dc-57d4-a4fa-0ab6648515e2"
+Parent: "2edcd5b2-f03f-56d6-8204-e227acce9c23"
+Template: "e83ffca7-3dbe-56cd-b4ed-e65ffd3f2874"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Contact CTA"
+SharedFields:
+- ID: "022df723-a730-594a-aad2-6aedfca69e05"
+  Hint: Image
+  Value: "<Image src=\"https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/6e1d2d4f5089492bbb85e19d279ff8cf?v=55ba2c2c\" dam-id=\"CjznTsFbQiuDuq0tEATaqQ\" width=\"1920\" height=\"1080\" alt=\"Power lines across an open landscape\" dam-content-type=\"Image\" thumbnailsrc=\"https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/69665/thumbnail\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12d1d4bb-c9eb-54df-a37c-9de27bfeb38b"
+      Hint: Title
+      Value: "Ready to build a"
+    - ID: "747e3294-ad64-54f5-971c-d02b50fc4c84"
+      Hint: Highlight
+      Value: "smarter grid?"
+    - ID: "463174a2-4fcf-5bce-8761-54d204e9be29"
+      Hint: Description
+      Value: "Talk to our energy specialists about your network, your goals and where to start."
+    - ID: "4fe2bb94-cdc5-5a1a-b82e-ebf7e96d1ee2"
+      Hint: Link
+      Value: "<link text=\"Book a consultation\" linktype=\"anchor\" url=\"#contact\" anchor=\"\" title=\"\" class=\"\" target=\"\" />"

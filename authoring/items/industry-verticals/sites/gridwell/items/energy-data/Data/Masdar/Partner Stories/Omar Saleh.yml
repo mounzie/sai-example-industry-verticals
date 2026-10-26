@@ -1,0 +1,19 @@
+﻿---
+ID: "c10fae38-f5c9-583d-a206-500863d11b44"
+Parent: "45ea2265-0405-52bc-8cd2-488b93264b08"
+Template: "c3f392fe-bdeb-59b6-9365-316c642581c1"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Partner Stories/Omar Saleh"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1085b8bc-7755-59cf-9243-f5274f2051b7"
+      Hint: Quote
+      Value: "The demand response programme paid for itself in its first summer and our customers love the rewards."
+    - ID: "8bf281f5-d10b-5fbb-9689-d99efd27ee4a"
+      Hint: Name
+      Value: "Omar Saleh"
+    - ID: "4d99fa63-91c7-56ed-a58e-5ef237634d88"
+      Hint: Role
+      Value: "Customer Programmes Director, Desert Sun Power"

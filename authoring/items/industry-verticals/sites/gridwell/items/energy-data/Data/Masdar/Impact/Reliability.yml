@@ -1,0 +1,19 @@
+﻿---
+ID: "02a51576-37de-5cc8-8d2a-301cfd883a57"
+Parent: "48ed44ed-ca05-5972-95e4-ac4149f8fe97"
+Template: "3c15f8c0-e45f-51cf-9f95-73901e11ab34"
+Path: "/sitecore/content/industry-verticals/gridwell/Data/Masdar/Impact/Reliability"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0e962ada-d9e4-5fb8-8dca-168176c3ec23"
+      Hint: Value
+      Value: "99.98%"
+    - ID: "42f27bdd-7dba-55db-a31b-307162e39853"
+      Hint: Label
+      Value: "Grid reliability"
+    - ID: "bd84ec13-e7d8-5d4b-a2ee-c13252a431ab"
+      Hint: Description
+      Value: "Average network availability across connected regions."

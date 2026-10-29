@@ -30,6 +30,35 @@ export type Ex2Fields<TParent> = {
   };
 };
 
+type RawField = { name: string; jsonValue: unknown };
+type RawItem = {
+  fields?: RawField[];
+  children?: { results?: RawItem[] };
+  [key: string]: unknown;
+};
+
+/**
+ * Header and Footer use a generic ComponentQuery (`fields(ownFields: true) { name jsonValue }`)
+ * to stay under the GraphQL depth/complexity limits of the layout service.
+ * This turns that field list back into camelCase `{ jsonValue }` properties, recursively,
+ * so components read `item.link?.jsonValue` exactly as with aliased queries.
+ */
+export const normalizeEx2Item = <T,>(raw?: RawItem | null): T | undefined => {
+  if (!raw) return undefined;
+  const out: Record<string, unknown> = { ...raw };
+  if (Array.isArray(raw.fields)) {
+    for (const f of raw.fields) {
+      if (!f?.name) continue;
+      out[f.name.charAt(0).toLowerCase() + f.name.slice(1)] = { jsonValue: f.jsonValue };
+    }
+    delete out.fields;
+  }
+  if (raw.children?.results) {
+    out.children = { results: raw.children.results.map((c) => normalizeEx2Item<RawItem>(c)) };
+  }
+  return out as T;
+};
+
 export const childrenOf = (item?: { children?: { results?: Ex2Item[] } }): Ex2Item[] =>
   item?.children?.results ?? [];
 

@@ -42,7 +42,7 @@ SharedFields:
         googlePlayBadge: field(name: "GooglePlayBadge") {
           jsonValue
         }
-        children(first: 50) {
+        children {
           results {
             id
             name

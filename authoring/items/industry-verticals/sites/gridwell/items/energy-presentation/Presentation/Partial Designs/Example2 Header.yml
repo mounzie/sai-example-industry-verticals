@@ -17,7 +17,7 @@ SharedFields:
         <r
           uid="{608A0357-383A-5065-8247-6E3D0C75D63C}"
           p:before="*"
-          s:ds="/sitecore/content/industry-verticals/gridwell/Data/Example2/Main Header"
+          s:ds="75ff793e-6488-4710-bd0e-e255d6d003d1"
           s:id="{EA238DE6-A36C-518A-812C-165916617441}"
           s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
           s:ph="headless-header" />

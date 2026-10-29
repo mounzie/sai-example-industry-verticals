@@ -17,7 +17,7 @@ SharedFields:
         <r
           uid="{A9C63618-A9AC-59F7-AAD8-A8CB479D2FD0}"
           p:before="*"
-          s:ds="/sitecore/content/industry-verticals/gridwell/Data/Example2/Main Footer"
+          s:ds="665bcd3d-e599-48c2-879e-45522d947632"
           s:id="{DA62EE87-FB7B-5AE9-9E7D-37F7007EB6BF}"
           s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
           s:ph="headless-footer" />

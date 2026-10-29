@@ -15,58 +15,35 @@ SharedFields:
   Value: |
     query Example2HeaderQuery($datasource: String!, $language: String!) {
       datasource: item(path: $datasource, language: $language) {
-        logo: field(name: "Logo") {
+        fields(ownFields: true) {
+          name
           jsonValue
         }
-        logoLink: field(name: "LogoLink") {
-          jsonValue
-        }
-        languageLink: field(name: "LanguageLink") {
-          jsonValue
-        }
-        helpLink: field(name: "HelpLink") {
-          jsonValue
-        }
-        loginLabel: field(name: "LoginLabel") {
-          jsonValue
-        }
-        children(first: 50) {
+        children {
           results {
             id
             name
             template {
               name
             }
-            link: field(name: "Link") {
+            fields(ownFields: true) {
+              name
               jsonValue
             }
-            title: field(name: "Title") {
-              jsonValue
-            }
-            children(first: 50) {
+            children {
               results {
                 id
                 name
-                template {
+                fields(ownFields: true) {
                   name
-                }
-                title: field(name: "Title") {
                   jsonValue
                 }
-                link: field(name: "Link") {
-                  jsonValue
-                }
-                icon: field(name: "Icon") {
-                  jsonValue
-                }
-                children(first: 50) {
+                children {
                   results {
                     id
                     name
-                    link: field(name: "Link") {
-                      jsonValue
-                    }
-                    icon: field(name: "Icon") {
+                    fields(ownFields: true) {
+                      name
                       jsonValue
                     }
                   }

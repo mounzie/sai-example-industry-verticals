@@ -13,10 +13,12 @@ import {
   EMPTY_LINK,
   Ex2Empty,
   Ex2Fields,
+  Ex2Item,
   JsonField,
   byTemplate,
   childrenOf,
   hasLink,
+  normalizeEx2Item,
 } from '@/helpers/example2';
 
 type Parent = {
@@ -37,7 +39,9 @@ export const Default = ({ params, fields }: Example2FooterProps): JSX.Element =>
   const { page } = useSitecore();
   const isEditing = page.mode.isEditing;
   const { styles, RenderingIdentifier: id } = params;
-  const ds = fields?.data?.datasource;
+  const ds = normalizeEx2Item<Parent & { children?: { results?: Ex2Item[] } }>(
+    fields?.data?.datasource as Parameters<typeof normalizeEx2Item>[0]
+  );
 
   if (!ds) {
     return isEditing ? <Ex2Empty name="EXAMPLE2 FOOTER" id={id} /> : <></>;

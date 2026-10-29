@@ -15,60 +15,27 @@ SharedFields:
   Value: |
     query Example2FooterQuery($datasource: String!, $language: String!) {
       datasource: item(path: $datasource, language: $language) {
-        wordmark: field(name: "Wordmark") {
+        fields(ownFields: true) {
+          name
           jsonValue
         }
-        logo: field(name: "Logo") {
-          jsonValue
-        }
-        countryFlag: field(name: "CountryFlag") {
-          jsonValue
-        }
-        countryLabel: field(name: "CountryLabel") {
-          jsonValue
-        }
-        changeCountryLink: field(name: "ChangeCountryLink") {
-          jsonValue
-        }
-        arabicLink: field(name: "ArabicLink") {
-          jsonValue
-        }
-        englishLink: field(name: "EnglishLink") {
-          jsonValue
-        }
-        regulatorText: field(name: "RegulatorText") {
-          jsonValue
-        }
-        copyright: field(name: "Copyright") {
-          jsonValue
-        }
-        children(first: 50) {
+        children {
           results {
             id
             name
             template {
               name
             }
-            title: field(name: "Title") {
+            fields(ownFields: true) {
+              name
               jsonValue
             }
-            icon: field(name: "Icon") {
-              jsonValue
-            }
-            link: field(name: "Link") {
-              jsonValue
-            }
-            children(first: 50) {
+            children(first: 12) {
               results {
                 id
                 name
-                template {
+                fields(ownFields: true) {
                   name
-                }
-                link: field(name: "Link") {
-                  jsonValue
-                }
-                icon: field(name: "Icon") {
                   jsonValue
                 }
               }

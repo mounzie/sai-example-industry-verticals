@@ -1,6 +1,5 @@
 import { ComponentParams, ComponentRendering } from '@sitecore-content-sdk/nextjs';
 import { useI18n } from 'next-localization';
-import React from 'react';
 
 type GridStatusGaugeProps = {
   rendering: ComponentRendering & { params: ComponentParams };

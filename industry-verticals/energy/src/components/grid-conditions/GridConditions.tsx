@@ -1,4 +1,4 @@
-import React, { JSX } from 'react';
+import { JSX } from 'react';
 import { ComponentProps } from 'lib/component-props';
 import { useI18n } from 'next-localization';
 import { Activity, Thermometer, TrendingDown, TrendingUp, Unplug, Zap } from 'lucide-react';

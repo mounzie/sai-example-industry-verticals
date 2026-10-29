@@ -1,9 +1,11 @@
 // Below are built-in components that are available in the app, it's recommended to keep them as is
+import { NextjsContentSdkComponent } from '@sitecore-content-sdk/nextjs';
 
-import { BYOCWrapper, NextjsContentSdkComponent, FEaaSWrapper } from '@sitecore-content-sdk/nextjs';
+
+import { BYOCWrapper, FEaaSWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
-// end of built-in components
+// end of built-in import section
 import * as Title from 'src/components/title/Title';
 import * as ThemeEditor from 'src/components/theme-editor/ThemeEditor';
 import * as SocialFollow from 'src/components/social-follow/SocialFollow';
@@ -53,9 +55,9 @@ import * as Image from 'src/components/image/Image';
 import * as HeroBanner from 'src/components/hero-banner/HeroBanner';
 import * as Header from 'src/components/header/Header';
 import * as GridStatusGauge from 'src/components/gridstatusgauge/GridStatusGauge';
-import * as gridChartData from 'src/components/grid-demand/gridChartData';
+import * as GridChartData from 'src/components/grid-demand/gridChartData';
 import * as GridDemand from 'src/components/grid-demand/GridDemand';
-import * as gridData from 'src/components/grid-conditions/gridData';
+import * as GridData from 'src/components/grid-conditions/gridData';
 import * as GridConditions from 'src/components/grid-conditions/GridConditions';
 import * as Footer from 'src/components/footer/Footer';
 import * as Features from 'src/components/features/Features';
@@ -118,9 +120,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['HeroBanner', { ...HeroBanner }],
   ['Header', { ...Header, componentType: 'client' }],
   ['GridStatusGauge', { ...GridStatusGauge }],
-  ['gridChartData', { ...gridChartData }],
+  ['gridChartData', { ...GridChartData }],
   ['GridDemand', { ...GridDemand }],
-  ['gridData', { ...gridData }],
+  ['gridData', { ...GridData }],
   ['GridConditions', { ...GridConditions }],
   ['Footer', { ...Footer }],
   ['Features', { ...Features, componentType: 'client' }],

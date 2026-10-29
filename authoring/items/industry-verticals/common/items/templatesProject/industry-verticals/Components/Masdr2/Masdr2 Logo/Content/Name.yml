@@ -1,0 +1,12 @@
+﻿---
+ID: "a45e120a-aa13-54c8-b647-cf6feddb0e47"
+Parent: "cdd50dda-b78f-5234-b1c2-0f1fcead09d1"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Logo/Content/Name"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

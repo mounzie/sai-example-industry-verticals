@@ -1,0 +1,9 @@
+﻿---
+ID: "821c64e7-9bb4-5925-bd96-fd08cb9b5182"
+Parent: "0c0569d5-52f2-5971-b107-7c7fc452fbde"
+Template: "0c0569d5-52f2-5971-b107-7c7fc452fbde"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 News/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{04DF049E-8742-5589-9919-17375217D97B}"

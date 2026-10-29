@@ -1,0 +1,9 @@
+﻿---
+ID: "dec483a5-db3d-5718-9d0d-1e4a8e791316"
+Parent: "52025f4b-04ec-5f62-b89e-8cc37711116b"
+Template: "52025f4b-04ec-5f62-b89e-8cc37711116b"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Nav Link/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{52025F4B-04EC-5F62-B89E-8CC37711116B}"

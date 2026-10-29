@@ -1,0 +1,15 @@
+﻿---
+ID: "3b350609-6438-5a99-bc3e-af51c6cc2e63"
+Parent: "e6be3f2a-ba32-5905-b7d2-bb2f70340b3b"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 News Item/Content/Date"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Date"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "200"
+- ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
+  Hint: Shared
+  Value: "1"

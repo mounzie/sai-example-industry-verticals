@@ -25,6 +25,10 @@
   color: var(--ex2-text);
 }
 
+.example2 :where(p, span, a, li, button, div, label) {
+  font-family: var(--ex2-font);
+}
+
 .example2 h1,
 .example2 h2,
 .example2 h3,

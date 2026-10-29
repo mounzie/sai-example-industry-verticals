@@ -7,6 +7,7 @@ import {
 } from '@sitecore-content-sdk/nextjs/codegen';
 // end of built-in imports
 
+import { jsx, Fragment, jsxs } from 'react/jsx-runtime';
 import { Link, Text, useSitecore, RichText, Image, Placeholder, NextImage, DateField, withDatasourceCheck, CdpHelper } from '@sitecore-content-sdk/nextjs';
 import { useMemo, useState, useCallback, useRef, useEffect } from 'react';
 import React from 'react';
@@ -59,6 +60,9 @@ import { Chart } from 'src/components/non-sitecore/Chart';
 import { GRID_SUPPLY_DEMAND_CHART_DATA, GRID_SYSTEMWIDE_DATA } from 'src/components/grid-demand/gridChartData';
 import { Progress } from '@/shadcn/components/ui/progress';
 import { GRID_CONDITIONS_DATA } from 'src/components/grid-conditions/gridData';
+import { EMPTY_LINK as EMPTY_LINK_008d165aefb0129dd7cbc2126b4e05e3b57358c8, Ex2Empty, childrenOf, hasImage, byTemplate, hasLink } from '@/helpers/example2';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination as Pagination_8dba730cdca19ae0ff3cf106a6e16ccff9e9cae7 } from 'swiper/modules';
 import client from 'lib/sitecore-client';
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 import nextConfig from 'next.config';
@@ -71,6 +75,14 @@ import { ParentPathLink } from 'src/components/non-sitecore/ParentPathLink';
 import SocialShare from 'src/components/non-sitecore/SocialShare';
 
 const importMap = [
+  {
+    module: 'react/jsx-runtime',
+    exports: [
+      { name: 'jsx', value: jsx },
+      { name: 'Fragment', value: Fragment },
+      { name: 'jsxs', value: jsxs },
+    ]
+  },
   {
     module: '@sitecore-content-sdk/nextjs',
     exports: [
@@ -478,6 +490,32 @@ const importMap = [
     module: 'src/components/grid-conditions/gridData',
     exports: [
       { name: 'GRID_CONDITIONS_DATA', value: GRID_CONDITIONS_DATA },
+    ]
+  },
+  {
+    module: '@/helpers/example2',
+    exports: [
+      { name: 'EMPTY_LINK', value: EMPTY_LINK_008d165aefb0129dd7cbc2126b4e05e3b57358c8 },
+      { name: 'Ex2Empty', value: Ex2Empty },
+      { name: 'childrenOf', value: childrenOf },
+      { name: 'hasImage', value: hasImage },
+      { name: 'byTemplate', value: byTemplate },
+      { name: 'hasLink', value: hasLink },
+    ]
+  },
+  {
+    module: 'swiper/react',
+    exports: [
+      { name: 'Swiper', value: Swiper },
+      { name: 'SwiperSlide', value: SwiperSlide },
+    ]
+  },
+  {
+    module: 'swiper/modules',
+    exports: [
+      { name: 'Autoplay', value: Autoplay },
+      { name: 'Navigation', value: Navigation },
+      { name: 'Pagination', value: Pagination_8dba730cdca19ae0ff3cf106a6e16ccff9e9cae7 },
     ]
   },
   {

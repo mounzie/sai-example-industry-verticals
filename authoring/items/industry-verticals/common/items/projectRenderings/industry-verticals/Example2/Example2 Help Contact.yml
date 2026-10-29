@@ -1,0 +1,73 @@
+﻿---
+ID: "7097f073-accb-59b6-add7-71621515f6ab"
+Parent: "06f1b8e2-0708-54d7-85ce-342175478224"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/industry-verticals/Example2/Example2 Help Contact"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: "Example2HelpContact"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "office/32x32/telephone.png"
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query Example2HelpContactQuery($datasource: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+        backgroundImage: field(name: "BackgroundImage") {
+          jsonValue
+        }
+        helpIcon: field(name: "HelpIcon") {
+          jsonValue
+        }
+        helpTitle: field(name: "HelpTitle") {
+          jsonValue
+        }
+        helpText: field(name: "HelpText") {
+          jsonValue
+        }
+        helpLink: field(name: "HelpLink") {
+          jsonValue
+        }
+        callTitle: field(name: "CallTitle") {
+          jsonValue
+        }
+        children(first: 50) {
+          results {
+            id
+            name
+            template {
+              name
+            }
+            icon: field(name: "Icon") {
+              jsonValue
+            }
+            label: field(name: "Label") {
+              jsonValue
+            }
+            phone: field(name: "Phone") {
+              jsonValue
+            }
+            phoneLink: field(name: "PhoneLink") {
+              jsonValue
+            }
+          }
+        }
+      }
+    }
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Help Contact"
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: "0"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{21F16AD6-DA0D-5E14-B504-77D0A2F4560D}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Example2 Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Example2 Folder']"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: "IsRenderingsWithDynamicPlaceholders=true"

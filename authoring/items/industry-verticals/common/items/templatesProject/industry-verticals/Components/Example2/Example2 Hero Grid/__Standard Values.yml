@@ -1,0 +1,12 @@
+﻿---
+ID: "29417477-5b0b-566f-97d9-38e0fa0fdbd8"
+Parent: "8f2f7559-c00f-5075-8672-ef56cd00f016"
+Template: "8f2f7559-c00f-5075-8672-ef56cd00f016"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Hero Grid/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {0061DC4D-E512-5B95-A09D-79D1F0DAD29C}
+    {82B35FA6-D484-5304-937A-C788BBD4B059}
+    {BC1F3AE1-014C-5156-BACA-4644495021AF}

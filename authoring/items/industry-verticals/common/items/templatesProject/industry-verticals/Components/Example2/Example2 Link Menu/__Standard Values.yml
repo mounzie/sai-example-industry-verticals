@@ -1,0 +1,9 @@
+﻿---
+ID: "e33e27e9-53bc-5925-9a4c-dd381407f3b7"
+Parent: "5db0fd57-6a2b-52dc-a8e7-b316cc714c6e"
+Template: "5db0fd57-6a2b-52dc-a8e7-b316cc714c6e"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Link Menu/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{86E08CB7-B441-5556-A5DA-178D0F6DF749}"

@@ -1,0 +1,12 @@
+﻿---
+ID: "93410bf1-946d-51fe-8dd3-0013e79e285f"
+Parent: "dd45d010-6b71-5ba0-b308-77358cdf4e05"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Folder"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "office/32x32/folder_window.png"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{A752D8BB-6AAF-5BCB-B66D-8BBD1142A464}"

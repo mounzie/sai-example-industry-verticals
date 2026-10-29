@@ -1,0 +1,12 @@
+﻿---
+ID: "8727b3d5-85e9-5a27-9fdb-92b18f6b22e4"
+Parent: "41fc0627-d5e6-515e-8749-736e57f2af09"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Footer/Content/EnglishLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "700"

@@ -61,6 +61,13 @@ import * as GridData from 'src/components/grid-conditions/gridData';
 import * as GridConditions from 'src/components/grid-conditions/GridConditions';
 import * as Footer from 'src/components/footer/Footer';
 import * as Features from 'src/components/features/Features';
+import * as Example2Privileges from 'src/components/example2/Example2Privileges';
+import * as Example2HeroGrid from 'src/components/example2/Example2HeroGrid';
+import * as Example2HelpContact from 'src/components/example2/Example2HelpContact';
+import * as Example2Header from 'src/components/example2/Example2Header';
+import * as Example2Footer from 'src/components/example2/Example2Footer';
+import * as Example2CardShowcase from 'src/components/example2/Example2CardShowcase';
+import * as Example2AppPromo from 'src/components/example2/Example2AppPromo';
 import * as ContentBlock from 'src/components/content-block/ContentBlock';
 import * as Container from 'src/components/container/Container';
 import * as ColumnSplitter from 'src/components/column-splitter/ColumnSplitter';
@@ -126,6 +133,13 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['GridConditions', { ...GridConditions }],
   ['Footer', { ...Footer }],
   ['Features', { ...Features, componentType: 'client' }],
+  ['Example2Privileges', { ...Example2Privileges }],
+  ['Example2HeroGrid', { ...Example2HeroGrid, componentType: 'client' }],
+  ['Example2HelpContact', { ...Example2HelpContact }],
+  ['Example2Header', { ...Example2Header, componentType: 'client' }],
+  ['Example2Footer', { ...Example2Footer }],
+  ['Example2CardShowcase', { ...Example2CardShowcase }],
+  ['Example2AppPromo', { ...Example2AppPromo }],
   ['ContentBlock', { ...ContentBlock }],
   ['Container', { ...Container }],
   ['ColumnSplitter', { ...ColumnSplitter }],

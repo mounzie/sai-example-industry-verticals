@@ -1,0 +1,9 @@
+﻿---
+ID: "eee58103-993e-5c1e-9b3a-4c5439c1e210"
+Parent: "62035e6a-3275-5417-b897-ca2cb94b5bd2"
+Template: "62035e6a-3275-5417-b897-ca2cb94b5bd2"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Card Showcase/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{A4FD3A55-A500-5E61-B149-DE0ED4D64E58}"

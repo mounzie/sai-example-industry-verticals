@@ -1,0 +1,9 @@
+﻿---
+ID: "c23e5b97-58ed-5997-b185-c4bc8acff0d4"
+Parent: "453a5319-04b8-5055-b250-3d0c696cb5a3"
+Template: "453a5319-04b8-5055-b250-3d0c696cb5a3"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Help Contact/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{BB86F5DA-3F8A-595F-A9B0-4499EBD5BD5D}"

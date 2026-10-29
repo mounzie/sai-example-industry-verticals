@@ -1,0 +1,12 @@
+﻿---
+ID: "7b3edfed-d84a-57f1-86f4-46f15a6f7347"
+Parent: "8b632fa8-487b-5972-8157-8362eda3c516"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Example2/Example2 Link Menu/Content/Title"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

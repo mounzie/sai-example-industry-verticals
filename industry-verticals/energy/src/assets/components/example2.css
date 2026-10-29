@@ -1,0 +1,96 @@
+/*
+ * Example2 demo theme (tokens from the AmexKSA capture, 29 Oct 2026).
+ * Scoped to `.example2` so the Gridwell and Masdar pages in this app keep their own theme.
+ * The source brand font (BentonSans) is licensed and not shipped; Inter is the fallback.
+ */
+.example2 {
+  --ex2-primary: #006fcf;
+  --ex2-text: #212529;
+  --ex2-text-strong: #333333;
+  --ex2-text-heading-muted: #53565a;
+  --ex2-text-muted: #888b8d;
+  --ex2-text-subtle: #888888;
+  --ex2-band: #ecedee;
+  --ex2-band-light: #f7f8fa;
+  --ex2-border: #c8c9c7;
+  --ex2-border-light: #dfdfdf;
+  --ex2-white: #ffffff;
+  --ex2-overlay: rgb(0 0 0 / 0.6);
+  --ex2-shadow-menu: 0 5px 10px 0 rgb(0 0 0 / 0.2);
+  --ex2-radius-sm: 3px;
+  --ex2-radius-md: 6px;
+  --ex2-font: 'BentonSans', 'Inter', Arial, sans-serif;
+
+  font-family: var(--ex2-font);
+  color: var(--ex2-text);
+}
+
+.example2 h1,
+.example2 h2,
+.example2 h3,
+.example2 h4,
+.example2 h5 {
+  font-family: var(--ex2-font);
+  color: var(--ex2-text);
+  letter-spacing: normal;
+}
+
+.ex2-container {
+  width: 100%;
+  max-width: 1304px;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+
+.ex2-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--ex2-radius-sm);
+  background: var(--ex2-primary);
+  color: var(--ex2-white);
+  padding: 8px 20px;
+  font-size: 15px;
+  line-height: 22px;
+  transition: opacity 0.2s;
+}
+
+.ex2-btn:hover {
+  opacity: 0.88;
+}
+
+.ex2-btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ex2-primary);
+  border-radius: var(--ex2-radius-sm);
+  color: var(--ex2-primary);
+  padding: 16px;
+  font-size: 16px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.ex2-btn-outline:hover {
+  background: var(--ex2-primary);
+  color: var(--ex2-white);
+}
+
+.ex2-link {
+  color: var(--ex2-primary);
+}
+
+.ex2-link:hover {
+  text-decoration: underline;
+}
+
+.example2 .swiper-pagination-bullet {
+  background: var(--ex2-white);
+  opacity: 0.6;
+}
+
+.example2 .swiper-pagination-bullet-active {
+  opacity: 1;
+}

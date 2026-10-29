@@ -96,13 +96,13 @@ export const Default = ({ params, fields }: Example2HeroGridProps): JSX.Element 
       id={id}
     >
       <div className="ex2-container grid gap-3 lg:grid-cols-[3fr_5fr_4fr]">
-        <div className="order-2 flex flex-row lg:order-1 lg:flex-col">
+        <div className="order-2 flex min-w-0 flex-row lg:order-1 lg:flex-col">
           {categories.map((item) => (
             <CategoryTile key={item.id} item={item} />
           ))}
         </div>
 
-        <div className="relative order-1 min-h-[420px] overflow-hidden lg:order-2 lg:min-h-[560px]">
+        <div className="relative order-1 min-w-0 min-h-[420px] overflow-hidden lg:order-2 lg:min-h-[560px]">
           <Swiper
             modules={[Autoplay, Navigation, Pagination]}
             slidesPerView={1}
@@ -127,7 +127,7 @@ export const Default = ({ params, fields }: Example2HeroGridProps): JSX.Element 
           </Swiper>
         </div>
 
-        <div className="order-3 flex flex-col gap-3">
+        <div className="order-3 flex min-w-0 flex-col gap-3">
           {promos.map((item) => (
             <PromoTile key={item.id} item={item} isEditing={isEditing} />
           ))}

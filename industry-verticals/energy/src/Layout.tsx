@@ -1,12 +1,11 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { JSX } from 'react';
+import { JSX } from 'react';
 import Head from 'next/head';
-import { Placeholder, Field, Page, ImageField } from '@sitecore-content-sdk/nextjs';
+import { Placeholder, Field, Page, ImageField, DesignLibrary } from '@sitecore-content-sdk/nextjs';
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'src/components/content-sdk/SitecoreStyles';
-import { DesignLibraryLayout } from './DesignLibraryLayout';
 import { useRouter } from 'next/router';
 
 interface LayoutProps {
@@ -61,7 +60,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={mainClassPageEditing}>
         {mode.isDesignLibrary ? (
-          <DesignLibraryLayout />
+          <DesignLibrary />
         ) : (
           <>
             <header>

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { JSX, useState, useEffect } from 'react';
+import { JSX, useState, useEffect } from 'react';
 import { ComponentProps } from '@/lib/component-props';
 import { Placeholder } from '@sitecore-content-sdk/nextjs';
 import { Drawer, DrawerTrigger, DrawerContent, DrawerClose } from '@/shadcn/components/ui/drawer';

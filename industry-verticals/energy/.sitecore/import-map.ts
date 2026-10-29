@@ -11,9 +11,9 @@ import { Link, Text, useSitecore, RichText, Image, Placeholder, NextImage, DateF
 import { useMemo, useState, useCallback, useRef, useEffect } from 'react';
 import React from 'react';
 import Head from 'next/head';
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, faYoutube, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ArrowRight, Share2, ChevronLeft, Calendar, User, LoaderCircle, ChevronRight, ArrowLeft, X, Menu, Search, Activity, Thermometer, TrendingDown, TrendingUp, Unplug, Zap, Loader2, Bookmark } from 'lucide-react';
+import { ArrowRight, Share2, ChevronLeft, Calendar, User, LoaderCircle, ChevronRight, ArrowLeft, X, Quote, ChevronDown, Menu, Mail, Phone, Search, Activity, Thermometer, TrendingDown, TrendingUp, Unplug, Zap, Loader2, Bookmark } from 'lucide-react';
 import Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 from 'next/link';
 import { useI18n } from 'next-localization';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
@@ -51,7 +51,9 @@ import { getLinkContent, getLinkField, isNavLevel, isNavRootItem, prepareFields 
 import clsx from 'clsx';
 import { isParamEnabled } from '@/helpers/isParamEnabled';
 import { Drawer, DrawerTrigger, DrawerContent, DrawerClose } from '@/shadcn/components/ui/drawer';
+import { MasdarSectionHeader, EMPTY_LINK, EMPTY_DATE } from '@/helpers/masdar';
 import PreviewSearch_938f3b0320996fc3fe6ab3d953daf2e708e085ca from 'src/components/non-sitecore/search/PreviewSearch';
+import { isSearchConfigured } from '@/helpers/searchConfig';
 import { filterStyle, generateChartData } from '@/helpers/chartDataHelper';
 import { Chart } from 'src/components/non-sitecore/Chart';
 import { GRID_SUPPLY_DEMAND_CHART_DATA, GRID_SYSTEMWIDE_DATA } from 'src/components/grid-demand/gridChartData';
@@ -60,7 +62,7 @@ import { GRID_CONDITIONS_DATA } from 'src/components/grid-conditions/gridData';
 import client from 'lib/sitecore-client';
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 import nextConfig from 'next.config';
-import { pageView } from '@sitecore-cloudsdk/events/browser';
+import { pageView } from '@sitecore-content-sdk/events';
 import config from 'sitecore.config';
 import { getArticlesCountsByCategory } from '@/helpers/articleHelpers';
 import InfiniteScroll from '@/shadcn/components/ui/infiniteScroll';
@@ -109,6 +111,7 @@ const importMap = [
       { name: 'faLinkedinIn', value: faLinkedinIn },
       { name: 'faTwitter', value: faTwitter },
       { name: 'faYoutube', value: faYoutube },
+      { name: 'faXTwitter', value: faXTwitter },
     ]
   },
   {
@@ -129,7 +132,11 @@ const importMap = [
       { name: 'ChevronRight', value: ChevronRight },
       { name: 'ArrowLeft', value: ArrowLeft },
       { name: 'X', value: X },
+      { name: 'Quote', value: Quote },
+      { name: 'ChevronDown', value: ChevronDown },
       { name: 'Menu', value: Menu },
+      { name: 'Mail', value: Mail },
+      { name: 'Phone', value: Phone },
       { name: 'Search', value: Search },
       { name: 'Activity', value: Activity },
       { name: 'Thermometer', value: Thermometer },
@@ -422,9 +429,23 @@ const importMap = [
     ]
   },
   {
+    module: '@/helpers/masdar',
+    exports: [
+      { name: 'MasdarSectionHeader', value: MasdarSectionHeader },
+      { name: 'EMPTY_LINK', value: EMPTY_LINK },
+      { name: 'EMPTY_DATE', value: EMPTY_DATE },
+    ]
+  },
+  {
     module: 'src/components/non-sitecore/search/PreviewSearch',
     exports: [
       { name: 'default', value: PreviewSearch_938f3b0320996fc3fe6ab3d953daf2e708e085ca },
+    ]
+  },
+  {
+    module: '@/helpers/searchConfig',
+    exports: [
+      { name: 'isSearchConfigured', value: isSearchConfigured },
     ]
   },
   {
@@ -478,7 +499,7 @@ const importMap = [
     ]
   },
   {
-    module: '@sitecore-cloudsdk/events/browser',
+    module: '@sitecore-content-sdk/events',
     exports: [
       { name: 'pageView', value: pageView },
     ]

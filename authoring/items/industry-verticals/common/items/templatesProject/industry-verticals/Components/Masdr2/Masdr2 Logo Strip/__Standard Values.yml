@@ -1,0 +1,9 @@
+﻿---
+ID: "339543fa-1461-5f6d-bb91-a3974cb4e1eb"
+Parent: "fe6de84a-0f5d-521b-abc6-5c42a542b055"
+Template: "fe6de84a-0f5d-521b-abc6-5c42a542b055"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Logo Strip/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{D505533A-23B0-5A43-B671-F5BF784FD50A}"

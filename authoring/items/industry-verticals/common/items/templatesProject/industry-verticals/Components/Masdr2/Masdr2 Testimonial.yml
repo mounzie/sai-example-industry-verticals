@@ -1,0 +1,20 @@
+﻿---
+ID: "12837e3e-694c-572f-a6c4-b7b8d9f0edc9"
+Parent: "c775f4cb-c2c5-5b4b-81b0-6d7b3c88345d"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Testimonial"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "office/32x32/speech_balloon.png"
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{192C65C9-A21F-584B-B7D0-7E14A29AF79E}"

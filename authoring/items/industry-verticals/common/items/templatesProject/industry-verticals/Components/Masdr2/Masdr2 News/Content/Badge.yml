@@ -1,0 +1,12 @@
+﻿---
+ID: "57de503d-6d49-5631-ac5f-d0e58842a860"
+Parent: "10e76477-d8c7-5135-90d8-095104cad3fa"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 News/Content/Badge"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

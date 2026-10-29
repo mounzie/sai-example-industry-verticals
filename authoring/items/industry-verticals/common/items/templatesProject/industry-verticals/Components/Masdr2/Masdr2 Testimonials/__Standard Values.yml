@@ -1,0 +1,9 @@
+﻿---
+ID: "d0cb540b-7608-57b4-9798-07c576d19844"
+Parent: "43187ee9-60f2-5f77-932b-cd29586603ef"
+Template: "43187ee9-60f2-5f77-932b-cd29586603ef"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Testimonials/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{12837E3E-694C-572F-A6C4-B7B8D9F0EDC9}"

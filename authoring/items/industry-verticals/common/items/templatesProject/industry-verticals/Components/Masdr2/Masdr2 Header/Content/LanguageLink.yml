@@ -1,0 +1,12 @@
+﻿---
+ID: "01f84449-c1e2-5442-899a-01b7e474a022"
+Parent: "3d51d0c0-a511-5962-bb0e-28b0cea8efc5"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Header/Content/LanguageLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "300"

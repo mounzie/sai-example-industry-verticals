@@ -1,0 +1,12 @@
+﻿---
+ID: "0322d54a-4c32-5f7b-866b-b0a740188b66"
+Parent: "b98f52db-8b59-5931-ac1b-c982cb7cac9c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Footer Column/Content/Title"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

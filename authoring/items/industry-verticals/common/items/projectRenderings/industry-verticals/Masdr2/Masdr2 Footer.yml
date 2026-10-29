@@ -1,0 +1,77 @@
+﻿---
+ID: "44333eb4-580d-50c8-aec8-92285b3b0baa"
+Parent: "40eef310-c54e-5f91-a0c8-7ca9348466e9"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/industry-verticals/Masdr2/Masdr2 Footer"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: "Masdr2Footer"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "office/32x32/window_split_ver.png"
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query Masdr2FooterQuery($datasource: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+        logo: field(name: "Logo") {
+          jsonValue
+        }
+        description: field(name: "Description") {
+          jsonValue
+        }
+        copyright: field(name: "Copyright") {
+          jsonValue
+        }
+        email: field(name: "Email") {
+          jsonValue
+        }
+        phone: field(name: "Phone") {
+          jsonValue
+        }
+        linkedIn: field(name: "LinkedIn") {
+          jsonValue
+        }
+        x: field(name: "X") {
+          jsonValue
+        }
+        instagram: field(name: "Instagram") {
+          jsonValue
+        }
+        youTube: field(name: "YouTube") {
+          jsonValue
+        }
+        children {
+          results {
+            id
+            title: field(name: "Title") {
+              jsonValue
+            }
+            children {
+              results {
+                id
+                link: field(name: "Link") {
+                  jsonValue
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Footer"
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: "0"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{21F16AD6-DA0D-5E14-B504-77D0A2F4560D}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Masdr2 Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Masdr2 Folder']"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: "IsRenderingsWithDynamicPlaceholders=true"

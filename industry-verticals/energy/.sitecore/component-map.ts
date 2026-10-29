@@ -30,6 +30,15 @@ import * as CardViewSwitcher from 'src/components/non-sitecore/search/CardViewSw
 import * as ArticleHorizontalCard from 'src/components/non-sitecore/search/ArticleHorizontalCard';
 import * as ArticleCard from 'src/components/non-sitecore/search/ArticleCard';
 import * as Navigation from 'src/components/navigation/Navigation';
+import * as Masdr2Testimonials from 'src/components/masdr2/Masdr2Testimonials';
+import * as Masdr2Solutions from 'src/components/masdr2/Masdr2Solutions';
+import * as Masdr2News from 'src/components/masdr2/Masdr2News';
+import * as Masdr2LogoStrip from 'src/components/masdr2/Masdr2LogoStrip';
+import * as Masdr2Impact from 'src/components/masdr2/Masdr2Impact';
+import * as Masdr2Hero from 'src/components/masdr2/Masdr2Hero';
+import * as Masdr2Header from 'src/components/masdr2/Masdr2Header';
+import * as Masdr2Footer from 'src/components/masdr2/Masdr2Footer';
+import * as Masdr2Cta from 'src/components/masdr2/Masdr2Cta';
 import * as MasdarTestimonials from 'src/components/masdar/MasdarTestimonials';
 import * as MasdarSolutions from 'src/components/masdar/MasdarSolutions';
 import * as MasdarNews from 'src/components/masdar/MasdarNews';
@@ -86,6 +95,15 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ArticleHorizontalCard', { ...ArticleHorizontalCard }],
   ['ArticleCard', { ...ArticleCard }],
   ['Navigation', { ...Navigation, componentType: 'client' }],
+  ['Masdr2Testimonials', { ...Masdr2Testimonials }],
+  ['Masdr2Solutions', { ...Masdr2Solutions }],
+  ['Masdr2News', { ...Masdr2News }],
+  ['Masdr2LogoStrip', { ...Masdr2LogoStrip }],
+  ['Masdr2Impact', { ...Masdr2Impact }],
+  ['Masdr2Hero', { ...Masdr2Hero }],
+  ['Masdr2Header', { ...Masdr2Header, componentType: 'client' }],
+  ['Masdr2Footer', { ...Masdr2Footer }],
+  ['Masdr2Cta', { ...Masdr2Cta }],
   ['MasdarTestimonials', { ...MasdarTestimonials }],
   ['MasdarSolutions', { ...MasdarSolutions }],
   ['MasdarNews', { ...MasdarNews }],

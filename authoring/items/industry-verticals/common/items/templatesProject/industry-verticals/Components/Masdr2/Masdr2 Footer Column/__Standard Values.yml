@@ -1,0 +1,9 @@
+﻿---
+ID: "28a17c72-49c2-5648-8f40-ad96c7003550"
+Parent: "975343aa-e24a-56d4-8dc3-82309a569b6b"
+Template: "975343aa-e24a-56d4-8dc3-82309a569b6b"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Footer Column/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{52025F4B-04EC-5F62-B89E-8CC37711116B}"

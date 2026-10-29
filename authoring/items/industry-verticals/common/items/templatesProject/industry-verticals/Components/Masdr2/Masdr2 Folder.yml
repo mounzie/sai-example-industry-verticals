@@ -1,0 +1,12 @@
+﻿---
+ID: "f6a6a2ce-9546-5ee0-9a49-5f0138f3df34"
+Parent: "c775f4cb-c2c5-5b4b-81b0-6d7b3c88345d"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Folder"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "office/32x32/folder_window.png"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{04A13D01-700B-5484-8A04-7294144A576B}"

@@ -1,0 +1,12 @@
+﻿---
+ID: "a1f86a76-3bde-5f43-b80a-48dde7690b9a"
+Parent: "91d30d32-0da9-5724-b40e-d1790ff1b013"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Hero/Content/PrimaryLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "500"

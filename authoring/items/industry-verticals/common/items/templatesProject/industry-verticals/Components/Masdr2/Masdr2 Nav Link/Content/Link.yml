@@ -1,0 +1,12 @@
+﻿---
+ID: "a1f745ab-da49-5cc5-b364-d89ef0c8cfff"
+Parent: "0c0ca2a5-3bc3-535b-82aa-859f02b35a58"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 Nav Link/Content/Link"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

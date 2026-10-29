@@ -1,0 +1,12 @@
+﻿---
+ID: "f8f9d44c-f571-5a6c-9ebe-66582aafb7c4"
+Parent: "e6be3f2a-ba32-5905-b7d2-bb2f70340b3b"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Masdr2/Masdr2 News Item/Content/Title"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "400"

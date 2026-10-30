@@ -3,3 +3,18 @@ ID: "9c1a5dc4-15cc-5975-9fa3-72931675bffa"
 Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
 Template: "b201f19f-c96f-558c-a542-aa1eef8ed540"
 Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Why Bupa"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261030T090000Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261030T090000Z

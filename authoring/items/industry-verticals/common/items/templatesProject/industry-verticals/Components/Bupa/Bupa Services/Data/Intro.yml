@@ -1,0 +1,12 @@
+---
+ID: "c3c998d9-aa2e-5f84-91fd-7fcc5cf550a5"
+Parent: "853ff5d7-8974-59f4-b6b6-56cf522b1097"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Bupa/Bupa Services/Data/Intro"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Multi-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "200"

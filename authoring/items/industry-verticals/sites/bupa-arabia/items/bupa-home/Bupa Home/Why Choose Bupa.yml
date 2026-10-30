@@ -1,0 +1,30 @@
+---
+ID: "8ff476bb-5342-5a06-a39a-d0e65ca24c6c"
+Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
+Template: "d916d2c9-1db0-5ac3-9dc8-55c05d814f01"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Why Choose Bupa"
+SharedFields:
+- ID: "79de22a6-8f20-5bc5-950b-453a38d39566"
+  Hint: Features
+  Value: "{D0C264B7-4D63-578B-9E00-AA67250D2067}|{AC855134-7FEC-55F5-A9AC-C617A8E7F70A}|{623C3497-A6D9-5B04-9BD0-E70F2E13C0DE}|{ABFEEBE0-9B8E-56E3-ACE0-AE46B3220221}"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "f48ceab2-2022-5fa5-9e9c-9aeca51c6771"
+      Hint: Title
+      Value: "Why choose Bupa medical insurance in Saudi Arabia"
+    - ID: "a232a204-e245-5265-a302-19ec899bb15f"
+      Hint: Intro
+      Value: "Trusted by millions of members across the Kingdom."
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "f48ceab2-2022-5fa5-9e9c-9aeca51c6771"
+      Hint: Title
+      Value: "لماذا تختار التأمين الصحي من بوبا العربية في السعودية؟"
+    - ID: "a232a204-e245-5265-a302-19ec899bb15f"
+      Hint: Intro
+      Value: "موثوقة من ملايين الأعضاء في جميع أنحاء المملكة."

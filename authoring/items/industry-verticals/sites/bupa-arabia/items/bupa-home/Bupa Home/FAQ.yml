@@ -1,0 +1,42 @@
+---
+ID: "1b5d465e-eb2f-5c04-bfc0-ca29db15181b"
+Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
+Template: "e2579639-9b69-55a3-9bb0-d158c44a0efa"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/FAQ"
+SharedFields:
+- ID: "cd71053e-ae13-558a-b461-590bd59d2f6d"
+  Hint: Faqs
+  Value: "{799B6B63-95EB-5774-8E43-83554910514A}|{7759F117-108C-53FF-AF98-8E1C7E6FC72E}|{BD6A3B62-1E86-5EA6-B1C7-70E82FF9A53B}|{C51B58E5-0B1E-539B-99E6-CA400971310B}|{EE1A1125-65AC-54B4-A047-D84BFB0B5A6D}"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "b1b4a98d-e43f-5610-a501-67d0a125b6d6"
+      Hint: Title
+      Value: "Frequently Asked Questions"
+    - ID: "028f729e-dec7-5bca-8d5c-9af8ae42f7a0"
+      Hint: Subtitle
+      Value: "Looking For Answers?"
+    - ID: "108dc7a7-a263-50a2-abdc-0951d2b19caa"
+      Hint: AllLabel
+      Value: "All"
+    - ID: "0d9fbafb-879b-5d30-bff0-0873c1d89989"
+      Hint: ViewAllLink
+      Value: "<link text=\"View all FAQs\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/faqs\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "b1b4a98d-e43f-5610-a501-67d0a125b6d6"
+      Hint: Title
+      Value: "الأسئلة الشائعة"
+    - ID: "028f729e-dec7-5bca-8d5c-9af8ae42f7a0"
+      Hint: Subtitle
+      Value: "هل تبحث عن إجابات؟"
+    - ID: "108dc7a7-a263-50a2-abdc-0951d2b19caa"
+      Hint: AllLabel
+      Value: "الكل"
+    - ID: "0d9fbafb-879b-5d30-bff0-0873c1d89989"
+      Hint: ViewAllLink
+      Value: "<link text=\"عرض جميع الأسئلة\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/faqs\" anchor=\"\" target=\"_blank\" />"

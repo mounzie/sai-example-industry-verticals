@@ -1,0 +1,12 @@
+---
+ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+Parent: "883ae901-f01f-58d4-8fdf-f985746b05c1"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Bupa/Bupa Faq/Data/Answer"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Rich Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "300"

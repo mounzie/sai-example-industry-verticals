@@ -1,0 +1,20 @@
+---
+ID: "148d4db1-7b75-50f5-9ff9-dcefdf3094fa"
+Parent: "c14ccf16-e89c-5aa6-8c37-0306b0955dd6"
+Template: "75696fad-9b8c-5c89-a2cd-1184c20e883a"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Top Links/Complaints and Inquiries"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"Complaints & Inquiries\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/contactus?page=make-an-enquiry\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"الشكاوى والاستفسارات\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/contactus?page=make-an-enquiry\" anchor=\"\" target=\"_blank\" />"

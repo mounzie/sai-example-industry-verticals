@@ -1,0 +1,16 @@
+---
+ID: "11aa9416-484e-5728-abac-e85198382dfb"
+Parent: "72678652-f4d4-5384-b6d6-3003365c4eb1"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Presentation/Available Renderings/Bupa"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {5F0344DC-80F2-5B9E-9A83-832580912A1C}
+    {FD5DF6EA-F337-5074-99DA-EF95A0C38A23}
+    {3D815BBE-7C00-5E8A-8F79-9842AD93F7EC}
+    {71172BF7-2B7F-5C87-B491-9653DCCC8941}
+    {1AB607C8-95F8-517B-8D48-4CFB18060B52}
+    {3EBF48B7-DAB4-542B-A6E6-A5962A052C29}
+    {AFD0DFA4-18B2-5021-9D22-F4E214221E70}

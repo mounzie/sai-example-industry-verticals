@@ -1,0 +1,30 @@
+---
+ID: "ac855134-7fec-55f5-a9ac-c617a8e7f70a"
+Parent: "9c1a5dc4-15cc-5975-9fa3-72931675bffa"
+Template: "e5606bac-51e5-53cc-8489-31e416055354"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Why Bupa/Comprehensive coverage"
+SharedFields:
+- ID: "2c28dfd6-5f96-56e6-b87b-2fd553098a7b"
+  Hint: Icon
+  Value: "shield"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "Comprehensive and compliant coverage"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "Our health insurance plans are fully aligned with Saudi regulatory requirements, offering clear benefits for families and businesses."
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "تغطية شاملة ومتوافقة مع التنظيمات"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "جميع خطط التأمين الطبي لدينا تتماشى بالكامل مع متطلبات الجهات التنظيمية في المملكة، وتوفر مزايا واضحة تناسب العائلات والشركات."

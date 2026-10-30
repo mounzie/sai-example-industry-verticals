@@ -1,0 +1,32 @@
+---
+ID: "c51b58e5-0b1e-539b-99e6-ca400971310b"
+Parent: "5bbbf9d0-43eb-5207-ac4a-5be07a3a48c7"
+Template: "9a927d82-2929-5cf8-b753-0370854a29b9"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/FAQs/Track medical approval"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "Medical Approvals"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "How can I track my medical approval?"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>You can follow the status of your medical approvals at any time in the Bupa Arabia app.</p>"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "الموافقات الطبية"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "كيف يمكنني تتبع الموافقة الطبية؟"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>يمكنك متابعة حالة الموافقات الطبية الخاصة بك في أي وقت عبر تطبيق بوبا العربية.</p>"

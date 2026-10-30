@@ -1,0 +1,26 @@
+---
+ID: "f3f99c5e-eefd-5853-b934-be7723bc4a55"
+Parent: "bfc78d9b-6fbc-5f1e-ad63-6f665c66ef37"
+Template: "e8e8c94f-4248-43c3-a79f-99fbb49d78e6"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Media"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "de8257d9-43aa-4eff-a2f4-2e9fbbd20e79"
+  Hint: AdditionalChildren
+  Value: |
+    {5A81E116-E7E1-5AD0-9BD3-0FDEE44F3551}
+    {D6CFA4C3-B639-4C22-BFD9-24F71C3F50D7}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A7F39EA2-9018-4622-891D-CB65627E5AF2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261030T090000Z

@@ -1,0 +1,57 @@
+---
+ID: "e1b20646-345e-5ff3-9732-11c24c89b70b"
+Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
+Template: "eab444c4-180b-5d32-8dec-b02ef3410e90"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Header"
+SharedFields:
+- ID: "829e4170-e19d-5a50-bc93-90b2c3ce69d9"
+  Hint: TopLinks
+  Value: "{E8524D82-8A00-5F60-83B7-CB75AD50D7CB}|{148D4DB1-7B75-50F5-9FF9-DCEFDF3094FA}|{2CB6A5D1-5C82-5287-82F0-87E86375512E}"
+- ID: "38341f76-2bb5-554e-aaf1-e90a15c33647"
+  Hint: NavLinks
+  Value: "{D71938A5-9DB4-555F-BC76-2138EDE453B0}|{5B058DAA-28E1-5808-8213-0AA6FDB9408B}|{D07E8EE1-5FDA-5FBA-A8B4-6413EC888B34}|{A0F1A522-5F1E-543D-961C-5C4452EB4B14}|{C72FEBF4-2F82-5E56-A31B-E9E6C6D09A37}|{CD43D2E6-FB60-502C-BFC6-5B81C7933D53}|{601278AC-1933-534C-8055-E77A64490934}"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "f67dcad1-00a2-5327-b4bc-53c55f8ce033"
+      Hint: LogoLink
+      Value: "<link text=\"Bupa Arabia\" linktype=\"external\" url=\"/\" anchor=\"\" target=\"\" />"
+    - ID: "b3421e03-5430-5606-a464-107c69482cec"
+      Hint: Greeting
+      Value: "Welcome"
+    - ID: "03174c02-8322-51a1-ae0d-2c92db825a81"
+      Hint: HelpLink
+      Value: "<link text=\"Help\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/contactus\" anchor=\"\" target=\"_blank\" />"
+    - ID: "2e98c4f3-67c4-5e1a-8c7e-27f5e597a3b1"
+      Hint: StoreLink
+      Value: "<link text=\"E-Store\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/estore\" anchor=\"\" target=\"_blank\" />"
+    - ID: "839962dd-dbb1-5421-b25d-c8e8554484cb"
+      Hint: LoginLink
+      Value: "<link text=\"Login / Register\" linktype=\"external\" url=\"https://buy.bupa.com.sa/en/login\" anchor=\"\" target=\"_blank\" />"
+    - ID: "33d034c6-a64f-5d43-824c-e6dc5d46a45a"
+      Hint: SearchLink
+      Value: "<link text=\"Search\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/search\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "f67dcad1-00a2-5327-b4bc-53c55f8ce033"
+      Hint: LogoLink
+      Value: "<link text=\"بوبا العربية\" linktype=\"external\" url=\"/\" anchor=\"\" target=\"\" />"
+    - ID: "b3421e03-5430-5606-a464-107c69482cec"
+      Hint: Greeting
+      Value: "أهلاً بك"
+    - ID: "03174c02-8322-51a1-ae0d-2c92db825a81"
+      Hint: HelpLink
+      Value: "<link text=\"للمساعدة\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/contactus\" anchor=\"\" target=\"_blank\" />"
+    - ID: "2e98c4f3-67c4-5e1a-8c7e-27f5e597a3b1"
+      Hint: StoreLink
+      Value: "<link text=\"المتجر الإلكتروني\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/estore\" anchor=\"\" target=\"_blank\" />"
+    - ID: "839962dd-dbb1-5421-b25d-c8e8554484cb"
+      Hint: LoginLink
+      Value: "<link text=\"دخول / التسجيل\" linktype=\"external\" url=\"https://buy.bupa.com.sa/ar/login\" anchor=\"\" target=\"_blank\" />"
+    - ID: "33d034c6-a64f-5d43-824c-e6dc5d46a45a"
+      Hint: SearchLink
+      Value: "<link text=\"البحث\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/search\" anchor=\"\" target=\"_blank\" />"

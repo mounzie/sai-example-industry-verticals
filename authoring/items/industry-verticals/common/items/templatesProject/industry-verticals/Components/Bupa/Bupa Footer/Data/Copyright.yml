@@ -1,0 +1,12 @@
+---
+ID: "2d81753c-ab48-564a-83cb-0cbad5b56da5"
+Parent: "652502fc-6966-5e73-a367-0a0eb3746a1f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Bupa/Bupa Footer/Data/Copyright"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

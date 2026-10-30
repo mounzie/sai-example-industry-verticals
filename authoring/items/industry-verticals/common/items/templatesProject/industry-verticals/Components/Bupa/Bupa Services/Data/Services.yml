@@ -1,0 +1,18 @@
+---
+ID: "ddb9bef1-2b53-5a0c-99a3-27e74ac00a68"
+Parent: "853ff5d7-8974-59f4-b6b6-56cf522b1097"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Bupa/Bupa Services/Data/Services"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Multilist"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "300"
+- ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
+  Hint: Shared
+  Value: 1
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "query:$site/*[@@name='Data']//*[@@templatename='Bupa Service']"

@@ -1,0 +1,36 @@
+---
+ID: "547403c0-899f-5769-8304-3f0c264b2e1c"
+Parent: "c8a8de84-1737-5b95-aa52-15b8d69f2cb3"
+Template: "dd69a742-09ca-57b2-a586-a6fa5aa8030f"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Services/Bupa Digital Clinic"
+SharedFields:
+- ID: "941241e7-1b1c-5f15-b2c4-4dbd5fdbd735"
+  Hint: Icon
+  Value: "video"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "77f5a4f0-2684-533f-8c67-9bfdaa05974b"
+      Hint: Title
+      Value: "Bupa Digital Clinic"
+    - ID: "d88e3fb4-b318-5089-a085-465c9490bfca"
+      Hint: Description
+      Value: "Bridging Distances with Cutting-Edge Telemedicine Services for Your Health Journey!"
+    - ID: "6bf25201-838f-58e4-89fc-34614702bab8"
+      Hint: Link
+      Value: "<link text=\"Learn More\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/services\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "77f5a4f0-2684-533f-8c67-9bfdaa05974b"
+      Hint: Title
+      Value: "التطبيب عن بعد"
+    - ID: "d88e3fb4-b318-5089-a085-465c9490bfca"
+      Hint: Description
+      Value: "مع خدمة التطبيب عن بعد رحلتك الصحية أصبحت أسهل"
+    - ID: "6bf25201-838f-58e4-89fc-34614702bab8"
+      Hint: Link
+      Value: "<link text=\"اعرف المزيد\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/services\" anchor=\"\" target=\"_blank\" />"

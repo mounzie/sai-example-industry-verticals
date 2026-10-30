@@ -1,0 +1,30 @@
+---
+ID: "d0c264b7-4d63-578b-9e00-aa67250d2067"
+Parent: "9c1a5dc4-15cc-5975-9fa3-72931675bffa"
+Template: "e5606bac-51e5-53cc-8489-31e416055354"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Why Bupa/Local expertise"
+SharedFields:
+- ID: "2c28dfd6-5f96-56e6-b87b-2fd553098a7b"
+  Hint: Icon
+  Value: "globe"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "Local expertise, Global standards"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "Bupa Arabia brings decades of healthcare experience, combining international best practices with a deep understanding of healthcare needs in Saudi Arabia."
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "خبرة محلية بمعايير عالمية"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "تجمع بوبا العربية بين خبرة تمتد لعقود في مجال الرعاية الصحية وأفضل الممارسات العالمية، إلى جانب فهم عميق لمتطلبات الرعاية الصحية في السعودية."

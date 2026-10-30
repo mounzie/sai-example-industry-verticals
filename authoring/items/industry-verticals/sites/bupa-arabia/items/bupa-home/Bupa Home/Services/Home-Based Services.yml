@@ -1,0 +1,36 @@
+---
+ID: "502d2995-7231-5619-ad58-26da88147264"
+Parent: "c8a8de84-1737-5b95-aa52-15b8d69f2cb3"
+Template: "dd69a742-09ca-57b2-a586-a6fa5aa8030f"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Services/Home-Based Services"
+SharedFields:
+- ID: "941241e7-1b1c-5f15-b2c4-4dbd5fdbd735"
+  Hint: Icon
+  Value: "home"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "77f5a4f0-2684-533f-8c67-9bfdaa05974b"
+      Hint: Title
+      Value: "Home-Based Services"
+    - ID: "d88e3fb4-b318-5089-a085-465c9490bfca"
+      Hint: Description
+      Value: "Our health insurance plans make care simpler and easier. We provide vaccine services at your home or office from the comfort of your home."
+    - ID: "6bf25201-838f-58e4-89fc-34614702bab8"
+      Hint: Link
+      Value: "<link text=\"Learn More\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/services\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "77f5a4f0-2684-533f-8c67-9bfdaa05974b"
+      Hint: Title
+      Value: "خدمة التطعيمات المنزلية"
+    - ID: "d88e3fb4-b318-5089-a085-465c9490bfca"
+      Hint: Description
+      Value: "تسهل خطط التأمين الصحي من بوبا خدمات الرعاية الصحية، وتمكنك من حجز موعد تطعيمات الأطفال أو الموسمية أو للحج من راحة منزلك."
+    - ID: "6bf25201-838f-58e4-89fc-34614702bab8"
+      Hint: Link
+      Value: "<link text=\"اعرف المزيد\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/services\" anchor=\"\" target=\"_blank\" />"

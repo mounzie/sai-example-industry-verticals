@@ -1,0 +1,38 @@
+---
+ID: "4cdaf8a2-9e8d-588c-8230-a5321089f716"
+Parent: "a2b32ca6-b73f-5bda-9c95-f1f710f14cb4"
+Template: "003e1de9-3250-5367-86d2-5a37fea52573"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Products/Bupa Munshaat"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "572d8d16-1eef-511d-b96c-0ccb64643311"
+      Hint: Brand
+      Value: "Bupa"
+    - ID: "defd24c9-2f2c-530c-bbd4-4c75f0e9c56e"
+      Hint: Name
+      Value: "Munshaat"
+    - ID: "b5f45f09-62db-5885-baff-0f70cd063d19"
+      Hint: Description
+      Value: "Catering to SME business with 200 employees or less."
+    - ID: "21db8231-a444-5a76-96ea-38e60f796db9"
+      Hint: CtaLink
+      Value: "<link text=\"Buy/Renew Now\" linktype=\"external\" url=\"https://ecom.bupa.com.sa/en/sme-landing\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "572d8d16-1eef-511d-b96c-0ccb64643311"
+      Hint: Brand
+      Value: "بوبا"
+    - ID: "defd24c9-2f2c-530c-bbd4-4c75f0e9c56e"
+      Hint: Name
+      Value: "منشآت"
+    - ID: "b5f45f09-62db-5885-baff-0f70cd063d19"
+      Hint: Description
+      Value: "منتج مخصص للمنشآت الصغيرة أو المتوسطة ل200 موظف أو أقل"
+    - ID: "21db8231-a444-5a76-96ea-38e60f796db9"
+      Hint: CtaLink
+      Value: "<link text=\"اشترِ/ جدد الآن\" linktype=\"external\" url=\"https://ecom.bupa.com.sa/ar/sme-landing\" anchor=\"\" target=\"_blank\" />"

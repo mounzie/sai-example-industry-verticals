@@ -1,0 +1,36 @@
+---
+ID: "fcc4018c-a328-5bf7-adaa-ae0d196133ca"
+Parent: "c8a8de84-1737-5b95-aa52-15b8d69f2cb3"
+Template: "dd69a742-09ca-57b2-a586-a6fa5aa8030f"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Services/Medication Delivery"
+SharedFields:
+- ID: "941241e7-1b1c-5f15-b2c4-4dbd5fdbd735"
+  Hint: Icon
+  Value: "pill"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "77f5a4f0-2684-533f-8c67-9bfdaa05974b"
+      Hint: Title
+      Value: "Medication Delivery"
+    - ID: "d88e3fb4-b318-5089-a085-465c9490bfca"
+      Hint: Description
+      Value: "Seamless Medication Delivery at Your Doorstep for a Healthier Tomorrow."
+    - ID: "6bf25201-838f-58e4-89fc-34614702bab8"
+      Hint: Link
+      Value: "<link text=\"Learn More\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/services\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "77f5a4f0-2684-533f-8c67-9bfdaa05974b"
+      Hint: Title
+      Value: "خدمة توصيل الأدوية"
+    - ID: "d88e3fb4-b318-5089-a085-465c9490bfca"
+      Hint: Description
+      Value: "توصيل أدوية حالة المزمنة أينما كنت"
+    - ID: "6bf25201-838f-58e4-89fc-34614702bab8"
+      Hint: Link
+      Value: "<link text=\"اعرف المزيد\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/services\" anchor=\"\" target=\"_blank\" />"

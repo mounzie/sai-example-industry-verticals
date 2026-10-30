@@ -1,0 +1,32 @@
+---
+ID: "bd6a3b62-1e86-5ea6-b1c7-70e82ff9a53b"
+Parent: "5bbbf9d0-43eb-5207-ac4a-5be07a3a48c7"
+Template: "9a927d82-2929-5cf8-b753-0370854a29b9"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/FAQs/Submit a claim"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "Claims"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "How do I submit a reimbursement claim?"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>Submit your claim in a few steps from the Bupa Arabia app and track its status there.</p>"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "المطالبات"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "كيف أرفع مطالبة مالية؟"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>ارفع مطالبتك المالية بخطوات بسيطة عبر تطبيق بوبا العربية وتابع حالتها من خلاله.</p>"

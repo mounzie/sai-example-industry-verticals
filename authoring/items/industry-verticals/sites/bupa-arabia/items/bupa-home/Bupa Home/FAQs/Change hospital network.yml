@@ -1,0 +1,32 @@
+---
+ID: "7759f117-108c-53ff-af98-8e1c7e6fc72e"
+Parent: "5bbbf9d0-43eb-5207-ac4a-5be07a3a48c7"
+Template: "9a927d82-2929-5cf8-b753-0370854a29b9"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/FAQs/Change hospital network"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "Table of Benefits"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "Can I change my hospital network?"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>Employees can upgrade their provider network through the Bupa Arabia app, where their policy allows it.</p>"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "جدول المزايا"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "هل يمكنني تغيير شبكة المستشفيات الخاصة بي؟"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>يمكن للموظفين ترقية شبكة مقدمي الخدمة عبر تطبيق بوبا العربية متى ما سمحت وثيقتهم بذلك.</p>"

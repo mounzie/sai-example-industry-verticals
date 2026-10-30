@@ -1,0 +1,23 @@
+{
+  "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Project.Bupa-Arabia-Content",
+  "references": [
+    "Project.IndustryVerticals"
+  ],
+  "items": {
+    "includes": [
+      {
+        "name": "bupa-home",
+        "path": "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "site-presentation",
+        "path": "/sitecore/content/industry-verticals/bupa-arabia/Presentation/Available Renderings",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      }
+    ]
+  }
+}

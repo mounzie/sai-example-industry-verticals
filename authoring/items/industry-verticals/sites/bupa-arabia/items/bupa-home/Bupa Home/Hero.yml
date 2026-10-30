@@ -1,0 +1,36 @@
+---
+ID: "d9f7bbcb-2fe6-5089-8569-7c0364c99523"
+Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
+Template: "4b63e008-dfd5-5c21-b1a9-3e1e8feaa7a3"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Hero"
+SharedFields:
+- ID: "5fb52ff5-34e3-5df6-b86a-9d3b27f0f41a"
+  Hint: Products
+  Value: "{5078B118-14D0-5C8C-B0D6-DBBB498DDBBE}|{4CDAF8A2-9E8D-588C-8230-A5321089F716}|{16EA6887-B32E-550A-848F-541D74BCDFCE}|{882AD7AF-8F11-5147-BBAF-EF03FFD1D991}"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "5b22474f-f657-526d-b0c5-47160e0e1cd5"
+      Hint: Heading
+      Value: "Buy your health insurance within minutes in Saudi Arabia"
+    - ID: "145f6e6d-3481-51fa-9778-4ea3620417f0"
+      Hint: Subheading
+      Value: "Find the right health insurance plan that suits your needs."
+    - ID: "d25e9136-96fc-54b2-a5fd-59206df0c622"
+      Hint: CtaLink
+      Value: "<link text=\"View Our Products\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/estore\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "5b22474f-f657-526d-b0c5-47160e0e1cd5"
+      Hint: Heading
+      Value: "احصل على تأمين صحي خلال دقائق في السعودية"
+    - ID: "145f6e6d-3481-51fa-9778-4ea3620417f0"
+      Hint: Subheading
+      Value: "ابحث عن خطة التأمين الطبي المناسبة لك ولعائلتك"
+    - ID: "d25e9136-96fc-54b2-a5fd-59206df0c622"
+      Hint: CtaLink
+      Value: "<link text=\"اكتشف المزيد\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/estore\" anchor=\"\" target=\"_blank\" />"

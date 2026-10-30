@@ -51,6 +51,11 @@
             "path": "/gridwell",
             "scope": "SingleItem",
             "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/bupa-arabia",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateOnly"
           }
         ]
       },
@@ -253,6 +258,51 @@
       {
         "name": "sites-gridwell",
         "path": "/sitecore/content/industry-verticals/gridwell",
+        "rules": [
+          {
+            "path": "/home",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/Media",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateAndUpdate"
+          },
+          {
+            "path": "/Data",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/Settings/Site Grouping",
+            "scope": "ItemAndDescendants",
+            "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/Settings",
+            "scope": "ItemAndChildren",
+            "allowedPushOperations": "CreateAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "Ignored"
+          }
+        ]
+      },
+      {
+        "name": "sites-bupa-arabia",
+        "path": "/sitecore/content/industry-verticals/bupa-arabia",
         "rules": [
           {
             "path": "/home",

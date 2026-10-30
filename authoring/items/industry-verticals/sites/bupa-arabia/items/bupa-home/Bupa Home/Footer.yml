@@ -1,0 +1,33 @@
+---
+ID: "c92d381b-4548-55f5-9ac7-258a86d3bae1"
+Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
+Template: "f0a4dde8-eb46-5d2d-89d2-3ad3f14b04ff"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Footer"
+SharedFields:
+- ID: "a10514f6-5087-5026-8bf1-5b9dbe77f049"
+  Hint: Links
+  Value: "{92B93E17-C3CE-58BE-AB81-24119DD51EF7}|{26F95C21-A351-5F07-AFDB-2A02AB91820A}|{9C3BC2C6-F7D1-555F-9167-E355458911D1}|{43061122-CC64-58F0-9072-5C305174781D}|{673C24E4-D60F-5D6E-8722-321AED91BC12}|{F436CFAA-8011-5EB0-BD3F-A13F50E28B7F}|{3A263AF4-3A46-532C-8CE9-9FF05551C314}|{639993B5-EF91-5FF5-B961-FD52024260EF}"
+- ID: "4b668db0-c297-5088-a514-c4b40db51fa8"
+  Hint: SocialLinks
+  Value: "{94389D13-D0D2-5E71-A9ED-E4FCAC44ED51}|{B3CA436A-4571-56F8-B950-601AF8462BFF}|{8FF6DC88-7208-5412-9E0A-4A1011A14996}|{FC070118-9A49-5BF6-BEBE-9F50625AA4AB}|{560DC6F5-F65E-58C7-955A-6F9D0AC2A015}"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2d81753c-ab48-564a-83cb-0cbad5b56da5"
+      Hint: Copyright
+      Value: "© Bupa Arabia 2026, All Rights Reserved"
+    - ID: "b10364ed-df99-5bfa-83dd-5d66797bbe07"
+      Hint: Note
+      Value: "Bupa Arabia is subject to the supervision and control of the Insurance Authority."
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2d81753c-ab48-564a-83cb-0cbad5b56da5"
+      Hint: Copyright
+      Value: "© بوبا العربية 2026، جميع الحقوق محفوظة"
+    - ID: "b10364ed-df99-5bfa-83dd-5d66797bbe07"
+      Hint: Note
+      Value: "بوبا شركة مساهمة مدرجة خاضعة لإشراف ورقابة هيئة التأمين."

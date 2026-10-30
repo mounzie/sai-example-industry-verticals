@@ -1,0 +1,80 @@
+---
+ID: "4e3e04c1-7173-50e9-a059-600d1f719687"
+Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
+Template: "dd102981-df8b-511c-a42e-be0c67cee7f5"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Bupa Arabia App"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "b3f4887f-b070-5369-8406-058779ef9ac7"
+      Hint: Title
+      Value: "Utilize digital medical insurance services via Bupa Arabia App"
+    - ID: "12121c74-13a3-555e-ad47-49e1fd1f2f3c"
+      Hint: Subtitle
+      Value: "Ensuring the highest security measures to provide the best customer experience for our members"
+    - ID: "23dd0017-724f-574a-ab0d-8b6417bd4f77"
+      Hint: FirstTitle
+      Value: "Member Services"
+    - ID: "e9cb14b9-cc3a-5a4b-ad8a-ef975b26759f"
+      Hint: FirstItems
+      Value: |
+        Book a physical consultation with your doctor in major providers.
+        Book an online consultation with our Telemedicine service.
+        Submit your claim in easy steps.
+        Track the status of your medical approval.
+        Search for the nearest hospital within your network.
+    - ID: "db77468f-2aec-597c-bbef-d3a8e596d06e"
+      Hint: SecondTitle
+      Value: "Decision Maker Services"
+    - ID: "dc363dee-add8-5e52-a096-4f5e71814650"
+      Hint: SecondItems
+      Value: |
+        Add or remove employees and dependents.
+        Change your employees insurance scheme.
+        Correct the employees data.
+        View your reports.
+    - ID: "34a80ef5-753b-5314-91ca-ad8eaaffed9e"
+      Hint: AppStoreLink
+      Value: "<link text=\"Download on the App Store\" linktype=\"external\" url=\"https://apps.apple.com/us/app/bupa-arabia-%D8%A8%D9%88%D8%A8%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/id1479324240\" anchor=\"\" target=\"_blank\" />"
+    - ID: "8dee4a43-f0bc-5309-a6ed-60f7ef4572bb"
+      Hint: GooglePlayLink
+      Value: "<link text=\"Get it on Google Play\" linktype=\"external\" url=\"https://play.google.com/store/apps/details?id=com.buparabia.mobileapp.outsystems\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "b3f4887f-b070-5369-8406-058779ef9ac7"
+      Hint: Title
+      Value: "استفد من خدمات التأمين الطبي عبر تطبيق بوبا العربية"
+    - ID: "12121c74-13a3-555e-ad47-49e1fd1f2f3c"
+      Hint: Subtitle
+      Value: "ضمان أعلى معايير الأمان لتوفير أفضل تجربة عملاء لأعضائنا"
+    - ID: "23dd0017-724f-574a-ab0d-8b6417bd4f77"
+      Hint: FirstTitle
+      Value: "خدمات الأعضاء"
+    - ID: "e9cb14b9-cc3a-5a4b-ad8a-ef975b26759f"
+      Hint: FirstItems
+      Value: |
+        احجز استشارة مع طبيبك في أكبر المستشفيات.
+        احجز استشارة مرئية عبر خدمة التطبيب عن بعد.
+        ارفع مطالبتك المالية بكل سهولة.
+        تتبع حالة الموافقات الطبية الخاصة بك.
+        ابحث عن أقرب مستشفى داخل شبكتك.
+    - ID: "db77468f-2aec-597c-bbef-d3a8e596d06e"
+      Hint: SecondTitle
+      Value: "خدمات صانع القرار"
+    - ID: "dc363dee-add8-5e52-a096-4f5e71814650"
+      Hint: SecondItems
+      Value: |
+        إضافة وإزالة الموظفين والتابعين.
+        تغيير فئة التأمين الخاصة بموظفيك.
+        صحح بيانات الموظف.
+        عرض التقارير.
+    - ID: "34a80ef5-753b-5314-91ca-ad8eaaffed9e"
+      Hint: AppStoreLink
+      Value: "<link text=\"حمّل من App Store\" linktype=\"external\" url=\"https://apps.apple.com/us/app/bupa-arabia-%D8%A8%D9%88%D8%A8%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/id1479324240\" anchor=\"\" target=\"_blank\" />"
+    - ID: "8dee4a43-f0bc-5309-a6ed-60f7ef4572bb"
+      Hint: GooglePlayLink
+      Value: "<link text=\"احصل عليه من Google Play\" linktype=\"external\" url=\"https://play.google.com/store/apps/details?id=com.buparabia.mobileapp.outsystems\" anchor=\"\" target=\"_blank\" />"

@@ -1,0 +1,12 @@
+---
+ID: "33d034c6-a64f-5d43-824c-e6dc5d46a45a"
+Parent: "41f192b3-cfc9-594b-a431-8ebc435f59ad"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Bupa/Bupa Header/Data/SearchLink"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "General Link"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "900"

@@ -1,0 +1,24 @@
+---
+ID: "fc070118-9a49-5bf6-bebe-9f50625aa4ab"
+Parent: "b651814d-fb69-507e-8727-c732fdddf204"
+Template: "75696fad-9b8c-5c89-a2cd-1184c20e883a"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Social Links/Facebook"
+SharedFields:
+- ID: "b5c83812-dd15-541c-b23e-03d94822ae27"
+  Hint: Icon
+  Value: "facebook"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"Facebook\" linktype=\"external\" url=\"https://www.facebook.com/bupaarabia/\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"فيسبوك\" linktype=\"external\" url=\"https://www.facebook.com/bupaarabia/\" anchor=\"\" target=\"_blank\" />"

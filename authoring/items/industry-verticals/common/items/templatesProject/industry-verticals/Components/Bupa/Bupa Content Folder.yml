@@ -1,0 +1,12 @@
+---
+ID: "b201f19f-c96f-558c-a542-aa1eef8ed540"
+Parent: "ca6a014f-681e-5d65-b729-b39d86f12035"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Bupa/Bupa Content Folder"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/folder_window.png"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{69D251AF-B83A-5B85-ACAB-B184A2C7CF00}"

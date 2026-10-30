@@ -1,0 +1,32 @@
+---
+ID: "ee1a1125-65ac-54b4-a047-d84bfb0b5a6d"
+Parent: "5bbbf9d0-43eb-5207-ac4a-5be07a3a48c7"
+Template: "9a927d82-2929-5cf8-b753-0370854a29b9"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/FAQs/Buy a policy online"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "Sales"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "Can I buy or renew my policy online?"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>Yes. Choose the plan for your family or business in the Bupa Arabia e-Store and complete your purchase within minutes.</p>"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7a24b6e8-dec9-5df0-962e-dbb676be2a88"
+      Hint: Category
+      Value: "المبيعات"
+    - ID: "a92353a7-49c5-5514-a461-36a287d12058"
+      Hint: Question
+      Value: "هل يمكنني شراء أو تجديد وثيقتي إلكترونياً؟"
+    - ID: "6fbed748-08ff-5944-9b3e-3cd66018a44e"
+      Hint: Answer
+      Value: "<p>نعم. اختر الخطة المناسبة لعائلتك أو منشأتك عبر المتجر الإلكتروني لبوبا العربية وأكمل الشراء خلال دقائق.</p>"

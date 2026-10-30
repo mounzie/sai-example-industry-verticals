@@ -1,0 +1,20 @@
+---
+ID: "c72febf4-2f82-5e56-a31b-e9e6c6d09a37"
+Parent: "35a1d429-3383-5e04-adcd-bfb89abd2555"
+Template: "75696fad-9b8c-5c89-a2cd-1184c20e883a"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Navigation/Investor Relations"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"Investor Relations\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/investor-relations\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"علاقات المستثمرين\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/investor-relations\" anchor=\"\" target=\"_blank\" />"

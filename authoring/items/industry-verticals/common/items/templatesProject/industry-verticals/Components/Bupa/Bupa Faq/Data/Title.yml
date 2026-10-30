@@ -1,0 +1,12 @@
+---
+ID: "b1b4a98d-e43f-5610-a501-67d0a125b6d6"
+Parent: "5ed2f38c-d99a-56a5-b070-b5b86fda9c87"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Bupa/Bupa FAQ/Data/Title"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "100"

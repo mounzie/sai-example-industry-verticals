@@ -1,0 +1,30 @@
+---
+ID: "74aa070f-67f5-536d-b1d7-1f44f756b838"
+Parent: "76fb339b-5ea1-5618-8722-3851b16bc9f6"
+Template: "2600ce32-73e7-5cd8-ad22-323f143bf0c9"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Our Services"
+SharedFields:
+- ID: "ddb9bef1-2b53-5a0c-99a3-27e74ac00a68"
+  Hint: Services
+  Value: "{7E4CCD58-ED17-5B58-A7F5-06DDE64DBBDD}|{547403C0-899F-5769-8304-3F0C264B2E1C}|{FCC4018C-A328-5BF7-ADAA-AE0D196133CA}|{502D2995-7231-5619-AD58-26DA88147264}"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e8d12d8-dd73-5b23-9cce-57d56c51165b"
+      Hint: Title
+      Value: "Our Services"
+    - ID: "c3c998d9-aa2e-5f84-91fd-7fcc5cf550a5"
+      Hint: Intro
+      Value: "Care that comes to you, wherever you are."
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e8d12d8-dd73-5b23-9cce-57d56c51165b"
+      Hint: Title
+      Value: "خدماتنا"
+    - ID: "c3c998d9-aa2e-5f84-91fd-7fcc5cf550a5"
+      Hint: Intro
+      Value: "رعاية تصل إليك أينما كنت."

@@ -1,0 +1,30 @@
+---
+ID: "abfeebe0-9b8e-56e3-ace0-ae46b3220221"
+Parent: "9c1a5dc4-15cc-5975-9fa3-72931675bffa"
+Template: "e5606bac-51e5-53cc-8489-31e416055354"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Why Bupa/Real support"
+SharedFields:
+- ID: "2c28dfd6-5f96-56e6-b87b-2fd553098a7b"
+  Hint: Icon
+  Value: "support"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "Focused on real support"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "From digital tools to dedicated customer care, Bupa Arabia is committed to delivering a seamless and dependable healthcare experience."
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "دعم موثوق يمكنك الاعتماد عليه"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "من الأدوات الرقمية إلى فرق خدمة العملاء المتخصصة، نلتزم في بوبا العربية بتقديم تجربة رعاية صحية سلسة وجديرة بالثقة."

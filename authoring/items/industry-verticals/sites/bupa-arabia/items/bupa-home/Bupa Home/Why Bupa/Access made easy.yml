@@ -1,0 +1,30 @@
+---
+ID: "623c3497-a6d9-5b04-9bd0-e70f2e13c0de"
+Parent: "9c1a5dc4-15cc-5975-9fa3-72931675bffa"
+Template: "e5606bac-51e5-53cc-8489-31e416055354"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Why Bupa/Access made easy"
+SharedFields:
+- ID: "2c28dfd6-5f96-56e6-b87b-2fd553098a7b"
+  Hint: Icon
+  Value: "clock"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "Access Made Easy"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "Get 24/7 telehealth, fast approvals, medication delivery, and a wide network of leading hospitals and clinics across the Kingdom."
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3cb2edcc-ef74-578d-974c-c203a1c6ffa1"
+      Hint: Title
+      Value: "سهولة الوصول إلى الخدمات"
+    - ID: "032c3a86-ae3c-5e9c-b51f-306d5452ed40"
+      Hint: Description
+      Value: "استشارات طبية عن بُعد على مدار الساعة، موافقات سريعة، توصيل الأدوية، وشبكة واسعة من أفضل المستشفيات والعيادات في مختلف مناطق المملكة."

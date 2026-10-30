@@ -1,0 +1,20 @@
+---
+ID: "d07e8ee1-5fda-5fba-a8b4-6413ec888b34"
+Parent: "35a1d429-3383-5e04-adcd-bfb89abd2555"
+Template: "75696fad-9b8c-5c89-a2cd-1184c20e883a"
+Path: "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home/Navigation/Services"
+Languages:
+- Language: "en"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"Services\" linktype=\"external\" url=\"https://www.bupa.com.sa/en/services\" anchor=\"\" target=\"_blank\" />"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "cc19104f-b0a3-5e4e-80c2-4c66743b28b5"
+      Hint: Link
+      Value: "<link text=\"الخدمات\" linktype=\"external\" url=\"https://www.bupa.com.sa/ar/services\" anchor=\"\" target=\"_blank\" />"

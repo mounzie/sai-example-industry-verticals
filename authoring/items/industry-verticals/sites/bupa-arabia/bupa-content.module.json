@@ -7,15 +7,27 @@
   "items": {
     "includes": [
       {
-        "name": "bupa-home",
-        "path": "/sitecore/content/industry-verticals/bupa-arabia/Data/Bupa Home",
+        "name": "bupa-home-page",
+        "path": "/sitecore/content/industry-verticals/bupa-arabia/Home",
         "scope": "ItemAndDescendants",
         "allowedPushOperations": "CreateAndUpdate"
       },
       {
+        "name": "bupa-data",
+        "path": "/sitecore/content/industry-verticals/bupa-arabia/Data",
+        "scope": "DescendantsOnly",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "bupa-dictionary",
+        "path": "/sitecore/content/industry-verticals/bupa-arabia/Dictionary",
+        "scope": "DescendantsOnly",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
         "name": "site-presentation",
-        "path": "/sitecore/content/industry-verticals/bupa-arabia/Presentation/Available Renderings",
-        "scope": "ItemAndDescendants",
+        "path": "/sitecore/content/industry-verticals/bupa-arabia/Presentation",
+        "scope": "DescendantsOnly",
         "allowedPushOperations": "CreateAndUpdate"
       }
     ]

@@ -14,54 +14,40 @@ SharedFields:
     <r xmlns:p="p" xmlns:s="s" p:p="1">
       <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{E3A8A5B0-2915-5DD4-BCF3-4DCF2AD8004B}"
-          p:before="*"
-          s:ds="{E1B20646-345E-5FF3-9732-11C24C89B70B}"
-          s:id="{5F0344DC-80F2-5B9E-9A83-832580912A1C}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
-          s:ph="headless-header" />
-        <r
           uid="{C688EE80-7436-5ED1-8625-4392352E0670}"
-          p:after="r[@uid='{E3A8A5B0-2915-5DD4-BCF3-4DCF2AD8004B}']"
+          p:before="*"
           s:ds="{D9F7BBCB-2FE6-5089-8569-7C0364C99523}"
           s:id="{FD5DF6EA-F337-5074-99DA-EF95A0C38A23}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
           s:ph="headless-main" />
         <r
           uid="{1F6ADE38-A18E-58C1-AA83-3EC7CD449FD3}"
           p:after="r[@uid='{C688EE80-7436-5ED1-8625-4392352E0670}']"
           s:ds="{8FF476BB-5342-5A06-A39A-D0E65CA24C6C}"
           s:id="{3D815BBE-7C00-5E8A-8F79-9842AD93F7EC}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
           s:ph="headless-main" />
         <r
           uid="{C6FFA7B0-3DD9-5EC4-A9A6-1B70F2E480ED}"
           p:after="r[@uid='{1F6ADE38-A18E-58C1-AA83-3EC7CD449FD3}']"
           s:ds="{74AA070F-67F5-536D-B1D7-1F44F756B838}"
           s:id="{71172BF7-2B7F-5C87-B491-9653DCCC8941}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
           s:ph="headless-main" />
         <r
           uid="{78B5DD2A-1D3E-5EFE-BCCA-F6CDF77987FE}"
           p:after="r[@uid='{C6FFA7B0-3DD9-5EC4-A9A6-1B70F2E480ED}']"
           s:ds="{4E3E04C1-7173-50E9-A059-600D1F719687}"
           s:id="{1AB607C8-95F8-517B-8D48-4CFB18060B52}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
           s:ph="headless-main" />
         <r
           uid="{C3308744-23C1-5056-BA6A-D73BC411C40A}"
           p:after="r[@uid='{78B5DD2A-1D3E-5EFE-BCCA-F6CDF77987FE}']"
           s:ds="{1B5D465E-EB2F-5C04-BFC0-CA29DB15181B}"
           s:id="{3EBF48B7-DAB4-542B-A6E6-A5962A052C29}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
           s:ph="headless-main" />
-        <r
-          uid="{353E8E7D-8B5A-5256-8C77-BCD93E9942CB}"
-          p:after="r[@uid='{C3308744-23C1-5056-BA6A-D73BC411C40A}']"
-          s:ds="{C92D381B-4548-55F5-9AC7-258A86D3BAE1}"
-          s:id="{AFD0DFA4-18B2-5021-9D22-F4E214221E70}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
-          s:ph="headless-footer" />
       </d>
     </r>
 Languages:

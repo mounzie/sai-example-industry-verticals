@@ -1,0 +1,155 @@
+{
+  "type": "object",
+  "properties": {
+    "Title": {
+      "type": "string",
+      "description": "Heading shown above the carousel; also used as the page title and the carousel's accessible name"
+    },
+    "Subtitle": {
+      "type": "string",
+      "description": "Optional line shown under the heading; leave empty to hide it"
+    },
+    "Slide1Image": {
+      "type": "string",
+      "description": "URL of the image for slide 1; leave empty to skip this slide"
+    },
+    "Slide1Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 1"
+    },
+    "Slide1Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 1; leave empty to hide it"
+    },
+    "Slide2Image": {
+      "type": "string",
+      "description": "URL of the image for slide 2; leave empty to skip this slide"
+    },
+    "Slide2Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 2"
+    },
+    "Slide2Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 2; leave empty to hide it"
+    },
+    "Slide3Image": {
+      "type": "string",
+      "description": "URL of the image for slide 3; leave empty to skip this slide"
+    },
+    "Slide3Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 3"
+    },
+    "Slide3Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 3; leave empty to hide it"
+    },
+    "Slide4Image": {
+      "type": "string",
+      "description": "URL of the image for slide 4; leave empty to skip this slide"
+    },
+    "Slide4Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 4"
+    },
+    "Slide4Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 4; leave empty to hide it"
+    },
+    "Slide5Image": {
+      "type": "string",
+      "description": "URL of the image for slide 5; leave empty to skip this slide"
+    },
+    "Slide5Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 5"
+    },
+    "Slide5Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 5; leave empty to hide it"
+    },
+    "Slide6Image": {
+      "type": "string",
+      "description": "URL of the image for slide 6; leave empty to skip this slide"
+    },
+    "Slide6Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 6"
+    },
+    "Slide6Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 6; leave empty to hide it"
+    },
+    "Slide7Image": {
+      "type": "string",
+      "description": "URL of the image for slide 7; leave empty to skip this slide"
+    },
+    "Slide7Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 7"
+    },
+    "Slide7Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 7; leave empty to hide it"
+    },
+    "Slide8Image": {
+      "type": "string",
+      "description": "URL of the image for slide 8; leave empty to skip this slide"
+    },
+    "Slide8Alt": {
+      "type": "string",
+      "description": "Alternative text describing the image for slide 8"
+    },
+    "Slide8Caption": {
+      "type": "string",
+      "description": "Optional caption shown under the image for slide 8; leave empty to hide it"
+    },
+    "Direction": {
+      "type": "string",
+      "enum": [
+        "rtl",
+        "ltr"
+      ],
+      "description": "Reading direction of the carousel: rtl for Arabic, ltr for English"
+    },
+    "Language": {
+      "type": "string",
+      "description": "Language code of the content, for example ar or en"
+    },
+    "Autoplay": {
+      "type": "string",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "description": "Whether the carousel moves to the next slide on its own"
+    },
+    "IntervalSeconds": {
+      "type": "string",
+      "description": "Seconds between slides when autoplay is on, for example 5"
+    },
+    "AccentColor": {
+      "type": "string",
+      "description": "Colour of the active dot and arrow hover as a CSS colour, for example #b8945a"
+    },
+    "PreviousLabel": {
+      "type": "string",
+      "description": "Screen-reader label for the previous arrow, for example الشريحة السابقة"
+    },
+    "NextLabel": {
+      "type": "string",
+      "description": "Screen-reader label for the next arrow, for example الشريحة التالية"
+    },
+    "SlideLabel": {
+      "type": "string",
+      "description": "Screen-reader word placed before each dot's number, for example الشريحة"
+    }
+  },
+  "required": [
+    "Title",
+    "Slide1Image",
+    "Slide1Alt"
+  ],
+  "additionalProperties": false
+}

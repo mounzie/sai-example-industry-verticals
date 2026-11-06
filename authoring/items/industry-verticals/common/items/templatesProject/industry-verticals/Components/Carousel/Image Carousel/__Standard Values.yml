@@ -1,0 +1,18 @@
+---
+ID: "6d0a0844-ff03-53e4-a2c8-22e076466f46"
+Parent: "fc1b10b6-6a7f-57f0-9dac-a7f996fec79b"
+Template: "fc1b10b6-6a7f-57f0-9dac-a7f996fec79b"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Carousel/Image Carousel/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{4DB10C17-A38B-534F-8218-437E80A95B6F}"
+- ID: "e183cdc0-265f-57af-a144-de220354372a"
+  Hint: Autoplay
+  Value: "1"
+- ID: "e7ba84b3-9343-5296-96d0-784e3b8e3c12"
+  Hint: IntervalSeconds
+  Value: "5"
+- ID: "f213c899-e0e8-57a1-bff8-fc0a8d8a3be8"
+  Hint: RightToLeft
+  Value: "1"

@@ -1,0 +1,15 @@
+---
+ID: "0cd2acd4-1ac5-546c-8f5c-bab05ffad512"
+Parent: "b53de59b-0f8d-591f-b945-bf4be25cfb9c"
+Template: "b53de59b-0f8d-591f-b945-bf4be25cfb9c"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Carousel/Image Carousel Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {C2F6E5E7-BECB-4F3D-82B0-32890F1F174A}
+    {B8350F75-DB2E-45D6-8F41-EF5D86EFE0E3}
+    {FCAC485B-9F64-4B7A-9EE3-109A4049EFE7}
+    {D92E5D1A-9326-4C42-8F3E-733F3FA75DA2}
+    {FC1B10B6-6A7F-57F0-9DAC-A7F996FEC79B}
+    {B53DE59B-0F8D-591F-B945-BF4BE25CFB9C}

@@ -1,0 +1,12 @@
+---
+ID: "aef858ea-7c26-53f6-8686-7d86417ed6a5"
+Parent: "7c269c34-7105-5d9f-adba-65e7a52f1b89"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Carousel/Image Carousel Slide/Data/Caption"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "200"

@@ -1,0 +1,12 @@
+---
+ID: "b53de59b-0f8d-591f-b945-bf4be25cfb9c"
+Parent: "61fea604-3718-5e23-a1d8-dbe181d848a5"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Carousel/Image Carousel Folder"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/folder_window.png"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{0CD2ACD4-1AC5-546C-8F5C-BAB05FFAD512}"

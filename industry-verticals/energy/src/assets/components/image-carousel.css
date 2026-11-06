@@ -1,0 +1,197 @@
+/* ---------- Image Carousel (self-contained; no shared component styles) ---------- */
+.image-carousel {
+  --ic-accent: #b8945a;
+  --ic-surface: #1b1714;
+  --ic-text: inherit;
+  --ic-muted: rgba(127, 127, 127, 0.9);
+  --ic-gap: 16px;
+  --ic-per-view: 1.15;
+  padding-block: 32px;
+}
+
+@media (min-width: 640px) {
+  .image-carousel {
+    --ic-per-view: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-carousel {
+    --ic-gap: 20px;
+    --ic-per-view: 3;
+  }
+}
+
+.image-carousel__wrap {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.image-carousel__header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-carousel__title {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 700;
+  color: var(--ic-text);
+}
+
+.image-carousel__subtitle {
+  margin: 8px 0 0;
+  color: var(--ic-muted);
+}
+
+.image-carousel__hint {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border: 1px dashed var(--ic-accent);
+  border-radius: 8px;
+  font-size: 13px;
+  direction: ltr;
+  text-align: left;
+}
+
+.image-carousel__viewport {
+  position: relative;
+}
+
+.image-carousel__track {
+  display: flex;
+  gap: var(--ic-gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  border-radius: 14px;
+}
+
+.image-carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+.image-carousel__track:focus-visible {
+  outline: 2px solid var(--ic-accent);
+  outline-offset: 4px;
+}
+
+.image-carousel__slide {
+  flex: 0 0 calc((100% - (var(--ic-per-view) - 1) * var(--ic-gap)) / var(--ic-per-view));
+  margin: 0;
+  scroll-snap-align: start;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--ic-surface);
+}
+
+/* Lets mandatory snapping settle at the very end, so the last slide is fully visible */
+.image-carousel__slide:last-child {
+  scroll-snap-align: end;
+}
+
+.image-carousel__slide a {
+  display: block;
+}
+
+.image-carousel__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.image-carousel__caption {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #f3efe8;
+}
+
+.image-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(20, 17, 14, 0.72);
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease;
+}
+
+.image-carousel__arrow:hover,
+.image-carousel__arrow:focus-visible {
+  background: var(--ic-accent);
+}
+
+.image-carousel__arrow span {
+  display: block;
+  margin-top: -3px;
+}
+
+.image-carousel__arrow--prev {
+  inset-inline-start: 10px;
+}
+
+.image-carousel__arrow--next {
+  inset-inline-end: 10px;
+}
+
+/* The glyphs point left/right; mirror them when the carousel runs right to left */
+.image-carousel[dir='rtl'] .image-carousel__arrow span {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 640px) {
+  .image-carousel__arrow {
+    display: flex;
+  }
+}
+
+.image-carousel__dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.image-carousel__dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(127, 127, 127, 0.4);
+  cursor: pointer;
+  transition:
+    width 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.image-carousel__dot.is-active {
+  width: 26px;
+  background: var(--ic-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image-carousel__track {
+    scroll-behavior: auto;
+  }
+
+  .image-carousel__dot {
+    transition: none;
+  }
+}

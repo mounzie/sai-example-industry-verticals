@@ -1,0 +1,17 @@
+---
+ID: "fc1b10b6-6a7f-57f0-9dac-a7f996fec79b"
+Parent: "61fea604-3718-5e23-a1d8-dbe181d848a5"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/Carousel/Image Carousel"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/photo_scenery.png"
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+        {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{6D0A0844-FF03-53E4-A2C8-22E076466F46}"

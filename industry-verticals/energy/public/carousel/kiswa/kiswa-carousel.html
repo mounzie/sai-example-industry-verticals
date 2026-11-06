@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>كسوة الكعبة عبر التاريخ</title>
+<style>
+  html, body { margin: 0; background: transparent; }
+  .kc {
+    --kc-accent: #b8945a;
+    --kc-surface: #1b1714;
+    --kc-gap: 16px;
+    --kc-per-view: 1.15;
+    font-family: system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+    padding: 24px 0;
+  }
+  @media (min-width: 640px) { .kc { --kc-per-view: 2; } }
+  @media (min-width: 1024px) { .kc { --kc-gap: 20px; --kc-per-view: 3; } }
+  .kc *, .kc *::before, .kc *::after { box-sizing: border-box; }
+  .kc__wrap { max-width: 1280px; margin-inline: auto; padding-inline: 16px; }
+  .kc__viewport { position: relative; }
+  .kc__track {
+    display: flex; gap: var(--kc-gap);
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    overscroll-behavior-x: contain; scrollbar-width: none; border-radius: 14px;
+  }
+  .kc__track::-webkit-scrollbar { display: none; }
+  .kc__track:focus-visible { outline: 2px solid var(--kc-accent); outline-offset: 4px; }
+  .kc__slide {
+    flex: 0 0 calc((100% - (var(--kc-per-view) - 1) * var(--kc-gap)) / var(--kc-per-view));
+    margin: 0; scroll-snap-align: start; overflow: hidden;
+    border-radius: 14px; background: var(--kc-surface);
+  }
+  /* lets snapping settle at the very end so the last slide is fully visible */
+  .kc__slide:last-child { scroll-snap-align: end; }
+  .kc__slide img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+  .kc__arrow {
+    position: absolute; top: 50%; z-index: 1; display: none;
+    width: 44px; height: 44px; align-items: center; justify-content: center;
+    border: 0; border-radius: 50%; background: rgba(20, 17, 14, .72); color: #fff;
+    font-size: 28px; line-height: 1; cursor: pointer; transform: translateY(-50%);
+    transition: background-color .2s ease;
+  }
+  .kc__arrow:hover, .kc__arrow:focus-visible { background: var(--kc-accent); }
+  .kc__arrow span { display: block; margin-top: -3px; }
+  .kc__arrow--prev { inset-inline-start: 10px; }
+  .kc__arrow--next { inset-inline-end: 10px; }
+  .kc[dir='rtl'] .kc__arrow span { transform: scaleX(-1); }
+  @media (min-width: 640px) { .kc__arrow { display: flex; } }
+  .kc__dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+  .kc__dot {
+    width: 9px; height: 9px; padding: 0; border: 0; border-radius: 999px;
+    background: rgba(127, 127, 127, .4); cursor: pointer;
+    transition: width .25s ease, background-color .25s ease;
+  }
+  .kc__dot.is-active { width: 26px; background: var(--kc-accent); }
+  @media (prefers-reduced-motion: reduce) {
+    .kc__track { scroll-behavior: auto; }
+    .kc__dot { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="kc" dir="rtl" data-autoplay="true" data-interval="5">
+  <div class="kc__wrap">
+    <div class="kc__viewport">
+      <div class="kc__track" role="region" aria-roledescription="carousel" aria-label="كسوة الكعبة عبر التاريخ" tabindex="0">
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="1 / 8"><img src="kiswa-01.webp" alt="كسوة الكعبة عبر التاريخ" width="1080" height="1350" decoding="async"></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="2 / 8"><img src="kiswa-02.webp" alt="البداية الأولى: أول من كسا الكعبة" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="3 / 8"><img src="kiswa-03.webp" alt="في عهد النبي ﷺ والخلفاء الراشدين: الكسوة تصبح شعيرة منظمة" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="4 / 8"><img src="kiswa-04.webp" alt="العصور الإسلامية المتعاقبة: تنافس الحضارات على خدمة الكعبة" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="5 / 8"><img src="kiswa-05.webp" alt="نقطة التحول التاريخية: العهد السعودي" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="6 / 8"><img src="kiswa-06.webp" alt="مجمع الملك عبدالعزيز لكسوة الكعبة المشرفة: صناعة تتجاوز مفهوم الحرفة" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="7 / 8"><img src="kiswa-07.webp" alt="1448هـ: ذروة الإتقان التقني" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide" aria-label="8 / 8"><img src="kiswa-08.webp" alt="كسوة الكعبة تاريخٌ يُنسج بخيوط ذهب" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+      </div>
+      <button type="button" class="kc__arrow kc__arrow--prev" aria-label="الشريحة السابقة"><span aria-hidden="true">&lsaquo;</span></button>
+      <button type="button" class="kc__arrow kc__arrow--next" aria-label="الشريحة التالية"><span aria-hidden="true">&rsaquo;</span></button>
+    </div>
+    <div class="kc__dots"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  document.querySelectorAll('.kc').forEach(function (root) {
+    var track = root.querySelector('.kc__track');
+    var dotsBox = root.querySelector('.kc__dots');
+    var slides = Array.prototype.slice.call(track.querySelectorAll('.kc__slide'));
+    var rtl = root.getAttribute('dir') === 'rtl';
+    var autoplay = root.getAttribute('data-autoplay') !== 'false';
+    var intervalMs = (parseFloat(root.getAttribute('data-interval')) || 5) * 1000;
+    var active = 0, positions = slides.length, atStart = true, atEnd = false;
+    var paused = false, timer = null, frame = 0;
+
+    // Aligns a slide's leading edge with the track's leading edge (works LTR and RTL)
+    function goTo(i) {
+      var slide = slides[i];
+      if (!slide) return;
+      var t = track.getBoundingClientRect(), s = slide.getBoundingClientRect();
+      track.scrollBy({ left: rtl ? s.right - t.right : s.left - t.left, behavior: 'smooth' });
+    }
+
+    function renderDots() {
+      if (dotsBox.children.length !== positions) {
+        dotsBox.innerHTML = '';
+        for (var i = 0; i < positions; i++) {
+          var b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'kc__dot';
+          b.setAttribute('aria-label', 'الشريحة ' + (i + 1));
+          b.addEventListener('click', goTo.bind(null, i));
+          dotsBox.appendChild(b);
+        }
+        dotsBox.style.display = positions > 1 ? '' : 'none';
+      }
+      Array.prototype.forEach.call(dotsBox.children, function (d, i) {
+        d.classList.toggle('is-active', i === active);
+        if (i === active) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+      });
+    }
+
+    function sync() {
+      var t = track.getBoundingClientRect();
+      var first = slides[0].getBoundingClientRect();
+      var scrolled = Math.abs(track.scrollLeft);
+      var max = track.scrollWidth - track.clientWidth;
+      var reachable = 0, lastOffset = 0, closest = 0, best = Infinity;
+      slides.forEach(function (slide, i) {
+        var s = slide.getBoundingClientRect();
+        var offset = rtl ? first.right - s.right : s.left - first.left;
+        if (offset <= max + 1) { reachable = i + 1; lastOffset = offset; }
+        var d = Math.abs(rtl ? s.right - t.right : s.left - t.left);
+        if (d < best) { best = d; closest = i; }
+      });
+      atStart = scrolled <= 1;
+      atEnd = scrolled >= max - 1;
+      // when slides don't divide evenly, the fully scrolled end is one more position
+      positions = Math.max(reachable, 1) + (lastOffset < max - 1 ? 1 : 0);
+      active = atEnd ? positions - 1 : Math.min(closest, positions - 1);
+      renderDots();
+    }
+
+    function next() { goTo(atEnd ? 0 : active + 1); }
+    function prev() { goTo(atStart ? positions - 1 : active - 1); }
+
+    function restart() {
+      clearInterval(timer);
+      if (!autoplay || paused || slides.length < 2) return;
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      timer = setInterval(function () { if (!document.hidden) next(); }, intervalMs);
+    }
+
+    function onScroll() { cancelAnimationFrame(frame); frame = requestAnimationFrame(sync); }
+
+    root.querySelector('.kc__arrow--next').addEventListener('click', function () { next(); restart(); });
+    root.querySelector('.kc__arrow--prev').addEventListener('click', function () { prev(); restart(); });
+    track.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    track.addEventListener('keydown', function (e) {
+      var fwd = rtl ? 'ArrowLeft' : 'ArrowRight', back = rtl ? 'ArrowRight' : 'ArrowLeft';
+      if (e.key === fwd) { e.preventDefault(); next(); }
+      else if (e.key === back) { e.preventDefault(); prev(); }
+    });
+    root.addEventListener('mouseenter', function () { paused = true; restart(); });
+    root.addEventListener('mouseleave', function () { paused = false; restart(); });
+    root.addEventListener('focusin', function () { paused = true; restart(); });
+    root.addEventListener('focusout', function () { paused = false; restart(); });
+    if (slides.length < 2) root.querySelectorAll('.kc__arrow').forEach(function (a) { a.style.display = 'none'; });
+
+    sync();
+    restart();
+  });
+})();
+</script>
+</body>
+</html>

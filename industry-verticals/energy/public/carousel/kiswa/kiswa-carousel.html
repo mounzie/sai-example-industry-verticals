@@ -48,7 +48,8 @@
   .kc__arrow--prev { inset-inline-start: 10px; }
   .kc__arrow--next { inset-inline-end: 10px; }
   .kc[dir='rtl'] .kc__arrow span { transform: scaleX(-1); }
-  @media (min-width: 640px) { .kc--js .kc__arrow { display: flex; } }
+  .kc--js .kc__arrow { display: flex; }
+  @media (max-width: 639px) { .kc__arrow { width: 36px; height: 36px; font-size: 24px; inset-inline: auto; } .kc__arrow--prev { inset-inline-start: 6px; } .kc__arrow--next { inset-inline-end: 6px; } }
   .kc__dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
   .kc__dot {
     width: 9px; height: 9px; padding: 0; border: 0; border-radius: 999px;

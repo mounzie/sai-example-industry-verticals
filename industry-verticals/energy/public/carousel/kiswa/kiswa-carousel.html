@@ -22,9 +22,11 @@
   .kc__track {
     display: flex; gap: var(--kc-gap);
     overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
-    overscroll-behavior-x: contain; scrollbar-width: none; border-radius: 14px;
+    overscroll-behavior-x: contain; border-radius: 14px; padding-bottom: 8px;
   }
-  .kc__track::-webkit-scrollbar { display: none; }
+  /* the scrollbar is only hidden once the script has added arrows and dots */
+  .kc--js .kc__track { scrollbar-width: none; padding-bottom: 0; }
+  .kc--js .kc__track::-webkit-scrollbar { display: none; }
   .kc__track:focus-visible { outline: 2px solid var(--kc-accent); outline-offset: 4px; }
   .kc__slide {
     flex: 0 0 calc((100% - (var(--kc-per-view) - 1) * var(--kc-gap)) / var(--kc-per-view));
@@ -46,7 +48,7 @@
   .kc__arrow--prev { inset-inline-start: 10px; }
   .kc__arrow--next { inset-inline-end: 10px; }
   .kc[dir='rtl'] .kc__arrow span { transform: scaleX(-1); }
-  @media (min-width: 640px) { .kc__arrow { display: flex; } }
+  @media (min-width: 640px) { .kc--js .kc__arrow { display: flex; } }
   .kc__dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
   .kc__dot {
     width: 9px; height: 9px; padding: 0; border: 0; border-radius: 999px;
@@ -88,6 +90,7 @@
     var track = root.querySelector('.kc__track');
     var dotsBox = root.querySelector('.kc__dots');
     var slides = Array.prototype.slice.call(track.querySelectorAll('.kc__slide'));
+    root.classList.add('kc--js');
     var rtl = root.getAttribute('dir') === 'rtl';
     var autoplay = root.getAttribute('data-autoplay') !== 'false';
     var intervalMs = (parseFloat(root.getAttribute('data-interval')) || 5) * 1000;

@@ -7,11 +7,11 @@
     },
     "Subtitle": {
       "type": "string",
-      "description": "Optional line shown under the heading; leave empty to hide it"
+      "description": "Optional line shown under the heading; use an empty string to hide it"
     },
     "Slide1Image": {
       "type": "string",
-      "description": "URL of the image for slide 1; leave empty to skip this slide"
+      "description": "URL of the image for slide 1; use an empty string to skip this slide"
     },
     "Slide1Alt": {
       "type": "string",
@@ -19,11 +19,11 @@
     },
     "Slide1Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 1; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 1; use an empty string to hide it"
     },
     "Slide2Image": {
       "type": "string",
-      "description": "URL of the image for slide 2; leave empty to skip this slide"
+      "description": "URL of the image for slide 2; use an empty string to skip this slide"
     },
     "Slide2Alt": {
       "type": "string",
@@ -31,11 +31,11 @@
     },
     "Slide2Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 2; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 2; use an empty string to hide it"
     },
     "Slide3Image": {
       "type": "string",
-      "description": "URL of the image for slide 3; leave empty to skip this slide"
+      "description": "URL of the image for slide 3; use an empty string to skip this slide"
     },
     "Slide3Alt": {
       "type": "string",
@@ -43,11 +43,11 @@
     },
     "Slide3Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 3; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 3; use an empty string to hide it"
     },
     "Slide4Image": {
       "type": "string",
-      "description": "URL of the image for slide 4; leave empty to skip this slide"
+      "description": "URL of the image for slide 4; use an empty string to skip this slide"
     },
     "Slide4Alt": {
       "type": "string",
@@ -55,11 +55,11 @@
     },
     "Slide4Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 4; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 4; use an empty string to hide it"
     },
     "Slide5Image": {
       "type": "string",
-      "description": "URL of the image for slide 5; leave empty to skip this slide"
+      "description": "URL of the image for slide 5; use an empty string to skip this slide"
     },
     "Slide5Alt": {
       "type": "string",
@@ -67,11 +67,11 @@
     },
     "Slide5Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 5; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 5; use an empty string to hide it"
     },
     "Slide6Image": {
       "type": "string",
-      "description": "URL of the image for slide 6; leave empty to skip this slide"
+      "description": "URL of the image for slide 6; use an empty string to skip this slide"
     },
     "Slide6Alt": {
       "type": "string",
@@ -79,11 +79,11 @@
     },
     "Slide6Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 6; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 6; use an empty string to hide it"
     },
     "Slide7Image": {
       "type": "string",
-      "description": "URL of the image for slide 7; leave empty to skip this slide"
+      "description": "URL of the image for slide 7; use an empty string to skip this slide"
     },
     "Slide7Alt": {
       "type": "string",
@@ -91,11 +91,11 @@
     },
     "Slide7Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 7; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 7; use an empty string to hide it"
     },
     "Slide8Image": {
       "type": "string",
-      "description": "URL of the image for slide 8; leave empty to skip this slide"
+      "description": "URL of the image for slide 8; use an empty string to skip this slide"
     },
     "Slide8Alt": {
       "type": "string",
@@ -103,7 +103,7 @@
     },
     "Slide8Caption": {
       "type": "string",
-      "description": "Optional caption shown under the image for slide 8; leave empty to hide it"
+      "description": "Optional caption shown under the image for slide 8; use an empty string to hide it"
     },
     "Direction": {
       "type": "string",
@@ -148,8 +148,39 @@
   },
   "required": [
     "Title",
+    "Subtitle",
     "Slide1Image",
-    "Slide1Alt"
+    "Slide1Alt",
+    "Slide1Caption",
+    "Slide2Image",
+    "Slide2Alt",
+    "Slide2Caption",
+    "Slide3Image",
+    "Slide3Alt",
+    "Slide3Caption",
+    "Slide4Image",
+    "Slide4Alt",
+    "Slide4Caption",
+    "Slide5Image",
+    "Slide5Alt",
+    "Slide5Caption",
+    "Slide6Image",
+    "Slide6Alt",
+    "Slide6Caption",
+    "Slide7Image",
+    "Slide7Alt",
+    "Slide7Caption",
+    "Slide8Image",
+    "Slide8Alt",
+    "Slide8Caption",
+    "Direction",
+    "Language",
+    "Autoplay",
+    "IntervalSeconds",
+    "AccentColor",
+    "PreviousLabel",
+    "NextLabel",
+    "SlideLabel"
   ],
   "additionalProperties": false
 }

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="{{Language}}" dir="{{Direction}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{Title}}</title>
+<style>
+  html, body { margin: 0; background: transparent; }
+  .kc {
+    --kc-accent: #b8945a;
+    --kc-text: inherit;
+    --kc-muted: rgba(127, 127, 127, .9);
+    --kc-surface: #1b1714;
+    --kc-gap: 16px;
+    --kc-per-view: 1.15;
+    font-family: system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+    padding: 24px 0;
+  }
+  @media (min-width: 640px) { .kc { --kc-per-view: 2; } }
+  @media (min-width: 1024px) { .kc { --kc-gap: 20px; --kc-per-view: 3; } }
+  .kc *, .kc *::before, .kc *::after { box-sizing: border-box; }
+  .kc__wrap { max-width: 1280px; margin-inline: auto; padding-inline: 16px; }
+  .kc__header { margin-bottom: 20px; text-align: center; }
+  .kc__title { margin: 0; font-size: clamp(1.5rem, 2.5vw, 2.25rem); font-weight: 700; color: var(--kc-text); }
+  .kc__subtitle { margin: 8px 0 0; color: var(--kc-muted); }
+  .kc__caption { padding: 10px 14px; font-size: 14px; color: #f3efe8; }
+  .kc__viewport { position: relative; }
+  .kc__track {
+    display: flex; align-items: flex-start; gap: var(--kc-gap);
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    overscroll-behavior-x: contain; border-radius: 14px; padding-bottom: 8px;
+  }
+  /* the scrollbar is only hidden once the script has added arrows and dots */
+  .kc--js .kc__track { scrollbar-width: none; padding-bottom: 0; }
+  .kc--js .kc__track::-webkit-scrollbar { display: none; }
+  .kc__track:focus-visible { outline: 2px solid var(--kc-accent); outline-offset: 4px; }
+  .kc__slide {
+    flex: 0 0 calc((100% - (var(--kc-per-view) - 1) * var(--kc-gap)) / var(--kc-per-view));
+    margin: 0; scroll-snap-align: start; overflow: hidden;
+    border-radius: 14px; background: var(--kc-surface);
+  }
+  /* lets snapping settle at the very end so the last slide is fully visible */
+  .kc__slide:last-child { scroll-snap-align: end; }
+  .kc__slide img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+  .kc__arrow {
+    position: absolute; top: 50%; z-index: 1; display: none;
+    width: 44px; height: 44px; align-items: center; justify-content: center;
+    border: 0; border-radius: 50%; background: rgba(20, 17, 14, .72); color: #fff;
+    font-size: 28px; line-height: 1; cursor: pointer; transform: translateY(-50%);
+    transition: background-color .2s ease;
+  }
+  .kc__arrow:hover, .kc__arrow:focus-visible { background: var(--kc-accent); }
+  .kc__arrow span { display: block; margin-top: -3px; }
+  .kc__arrow--prev { inset-inline-start: 10px; }
+  .kc__arrow--next { inset-inline-end: 10px; }
+  .kc[dir='rtl'] .kc__arrow span { transform: scaleX(-1); }
+  .kc--js .kc__arrow { display: flex; }
+  @media (max-width: 639px) { .kc__arrow { width: 36px; height: 36px; font-size: 24px; inset-inline: auto; } .kc__arrow--prev { inset-inline-start: 6px; } .kc__arrow--next { inset-inline-end: 6px; } }
+  .kc__dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+  .kc__dot {
+    width: 9px; height: 9px; padding: 0; border: 0; border-radius: 999px;
+    background: rgba(127, 127, 127, .4); cursor: pointer;
+    transition: width .25s ease, background-color .25s ease;
+  }
+  .kc__dot.is-active { width: 26px; background: var(--kc-accent); }
+  @media (prefers-reduced-motion: reduce) {
+    .kc__track { scroll-behavior: auto; }
+    .kc__dot { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="kc" dir="{{Direction}}" data-autoplay="{{Autoplay}}" data-interval="{{IntervalSeconds}}"
+     data-accent="{{AccentColor}}" data-slide-label="{{SlideLabel}}">
+  <div class="kc__wrap">
+    <div class="kc__header">
+      <h2 class="kc__title" data-kc-optional>{{Title}}</h2>
+      <p class="kc__subtitle" data-kc-optional>{{Subtitle}}</p>
+    </div>
+    <div class="kc__viewport">
+      <div class="kc__track" role="region" aria-roledescription="carousel" aria-label="{{Title}}" tabindex="0">
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide1Image}}" alt="{{Slide1Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide1Caption}}</figcaption></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide2Image}}" alt="{{Slide2Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide2Caption}}</figcaption></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide3Image}}" alt="{{Slide3Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide3Caption}}</figcaption></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide4Image}}" alt="{{Slide4Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide4Caption}}</figcaption></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide5Image}}" alt="{{Slide5Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide5Caption}}</figcaption></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide6Image}}" alt="{{Slide6Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide6Caption}}</figcaption></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide7Image}}" alt="{{Slide7Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide7Caption}}</figcaption></figure>
+        <figure class="kc__slide" role="group" aria-roledescription="slide"><img src="{{Slide8Image}}" alt="{{Slide8Alt}}" width="1080" height="1350" decoding="async"><figcaption class="kc__caption" data-kc-optional>{{Slide8Caption}}</figcaption></figure>
+      </div>
+      <button type="button" class="kc__arrow kc__arrow--prev" aria-label="{{PreviousLabel}}"><span aria-hidden="true">&lsaquo;</span></button>
+      <button type="button" class="kc__arrow kc__arrow--next" aria-label="{{NextLabel}}"><span aria-hidden="true">&rsaquo;</span></button>
+    </div>
+    <div class="kc__dots"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // Anything still empty or still an unreplaced placeholder counts as "not provided"
+  function missing(v) { return v == null || !String(v).trim() || /\{\{[^}]*\}\}/.test(v); }
+  function attr(el, name, fallback) { var v = el.getAttribute(name); return missing(v) ? fallback : v.trim(); }
+
+  var html = document.documentElement;
+  html.setAttribute('lang', attr(html, 'lang', 'ar'));
+  html.setAttribute('dir', attr(html, 'dir', 'rtl'));
+  if (missing(document.title)) document.title = 'Carousel';
+
+  document.querySelectorAll('.kc').forEach(function (root) {
+    root.setAttribute('dir', attr(root, 'dir', 'rtl') === 'ltr' ? 'ltr' : 'rtl');
+    var accent = attr(root, 'data-accent', '');
+    if (accent) root.style.setProperty('--kc-accent', accent);
+    root.querySelectorAll('[data-kc-optional]').forEach(function (el) { if (missing(el.textContent)) el.remove(); });
+    var header = root.querySelector('.kc__header');
+    if (header && !header.children.length) header.remove();
+    root.querySelectorAll('.kc__slide').forEach(function (slide) {
+      var img = slide.querySelector('img');
+      if (!img || missing(img.getAttribute('src'))) { slide.remove(); return; }
+      if (missing(img.getAttribute('alt'))) img.setAttribute('alt', '');
+    });
+    var total = root.querySelectorAll('.kc__slide').length;
+    root.querySelectorAll('.kc__slide').forEach(function (slide, i) {
+      slide.setAttribute('aria-label', (i + 1) + ' / ' + total);
+      if (i > 0) slide.querySelector('img').setAttribute('loading', 'lazy');
+    });
+    root.querySelectorAll('[aria-label]').forEach(function (el) {
+      if (missing(el.getAttribute('aria-label'))) {
+        el.setAttribute('aria-label', el.classList.contains('kc__arrow--prev') ? 'Previous slide'
+          : el.classList.contains('kc__arrow--next') ? 'Next slide' : 'Carousel');
+      }
+    });
+  });
+
+  document.querySelectorAll('.kc').forEach(function (root) {
+    var track = root.querySelector('.kc__track');
+    var dotsBox = root.querySelector('.kc__dots');
+    var slides = Array.prototype.slice.call(track.querySelectorAll('.kc__slide'));
+    if (!slides.length) { root.style.display = 'none'; return; }
+    root.classList.add('kc--js');
+    var rtl = root.getAttribute('dir') === 'rtl';
+    var autoplay = attr(root, 'data-autoplay', 'true') !== 'false';
+    var intervalMs = (parseFloat(attr(root, 'data-interval', '5')) || 5) * 1000;
+    var slideLabel = attr(root, 'data-slide-label', 'Slide');
+    var active = 0, positions = slides.length, atStart = true, atEnd = false;
+    var paused = false, timer = null, frame = 0;
+
+    // Aligns a slide's leading edge with the track's leading edge (works LTR and RTL)
+    function goTo(i) {
+      var slide = slides[i];
+      if (!slide) return;
+      var t = track.getBoundingClientRect(), s = slide.getBoundingClientRect();
+      track.scrollBy({ left: rtl ? s.right - t.right : s.left - t.left, behavior: 'smooth' });
+    }
+
+    function renderDots() {
+      if (dotsBox.children.length !== positions) {
+        dotsBox.innerHTML = '';
+        for (var i = 0; i < positions; i++) {
+          var b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'kc__dot';
+          b.setAttribute('aria-label', slideLabel + ' ' + (i + 1));
+          b.addEventListener('click', goTo.bind(null, i));
+          dotsBox.appendChild(b);
+        }
+        dotsBox.style.display = positions > 1 ? '' : 'none';
+      }
+      Array.prototype.forEach.call(dotsBox.children, function (d, i) {
+        d.classList.toggle('is-active', i === active);
+        if (i === active) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+      });
+    }
+
+    function sync() {
+      var t = track.getBoundingClientRect();
+      var first = slides[0].getBoundingClientRect();
+      var scrolled = Math.abs(track.scrollLeft);
+      var max = track.scrollWidth - track.clientWidth;
+      var reachable = 0, lastOffset = 0, closest = 0, best = Infinity;
+      slides.forEach(function (slide, i) {
+        var s = slide.getBoundingClientRect();
+        var offset = rtl ? first.right - s.right : s.left - first.left;
+        if (offset <= max + 1) { reachable = i + 1; lastOffset = offset; }
+        var d = Math.abs(rtl ? s.right - t.right : s.left - t.left);
+        if (d < best) { best = d; closest = i; }
+      });
+      atStart = scrolled <= 1;
+      atEnd = scrolled >= max - 1;
+      // when slides don't divide evenly, the fully scrolled end is one more position
+      positions = Math.max(reachable, 1) + (lastOffset < max - 1 ? 1 : 0);
+      active = atEnd ? positions - 1 : Math.min(closest, positions - 1);
+      renderDots();
+    }
+
+    function next() { goTo(atEnd ? 0 : active + 1); }
+    function prev() { goTo(atStart ? positions - 1 : active - 1); }
+
+    function restart() {
+      clearInterval(timer);
+      if (!autoplay || paused || slides.length < 2) return;
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      timer = setInterval(function () { if (!document.hidden) next(); }, intervalMs);
+    }
+
+    function onScroll() { cancelAnimationFrame(frame); frame = requestAnimationFrame(sync); }
+
+    root.querySelector('.kc__arrow--next').addEventListener('click', function () { next(); restart(); });
+    root.querySelector('.kc__arrow--prev').addEventListener('click', function () { prev(); restart(); });
+    track.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    track.addEventListener('keydown', function (e) {
+      var fwd = rtl ? 'ArrowLeft' : 'ArrowRight', back = rtl ? 'ArrowRight' : 'ArrowLeft';
+      if (e.key === fwd) { e.preventDefault(); next(); }
+      else if (e.key === back) { e.preventDefault(); prev(); }
+    });
+    root.addEventListener('mouseenter', function () { paused = true; restart(); });
+    root.addEventListener('mouseleave', function () { paused = false; restart(); });
+    root.addEventListener('focusin', function () { paused = true; restart(); });
+    root.addEventListener('focusout', function () { paused = false; restart(); });
+    if (slides.length < 2) root.querySelectorAll('.kc__arrow').forEach(function (a) { a.style.display = 'none'; });
+
+    sync();
+    restart();
+  });
+})();
+</script>
+</body>
+</html>

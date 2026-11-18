@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#0b1f3a}svg{display:block}</style></head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1080" viewBox="0 0 960 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06162e"/>
+      <stop offset="0.45" stop-color="#0d3566"/>
+      <stop offset="0.72" stop-color="#2a6fa8"/>
+      <stop offset="0.86" stop-color="#e9a86a"/>
+      <stop offset="1" stop-color="#f3c58a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.72" cy="0.80" r="0.42">
+      <stop offset="0" stop-color="#ffd9a0" stop-opacity="0.95"/>
+      <stop offset="0.25" stop-color="#ffb46b" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff9a4d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cool" cx="0.15" cy="0.25" r="0.75">
+      <stop offset="0" stop-color="#7fe3ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7fe3ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dune1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c98a52"/><stop offset="1" stop-color="#8a5530"/>
+    </linearGradient>
+    <linearGradient id="dune2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a5683b"/><stop offset="1" stop-color="#5e3820"/>
+    </linearGradient>
+    <linearGradient id="dune3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b1a12"/><stop offset="1" stop-color="#4a2c19"/>
+    </linearGradient>
+    <linearGradient id="city" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14304f"/><stop offset="1" stop-color="#2c4a66"/>
+    </linearGradient>
+    <linearGradient id="air" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#bff3ff" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#bff3ff" stop-opacity="0.9"/>
+      <stop offset="0.8" stop-color="#e8fbff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="airSoft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7fd6ff" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="#7fd6ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7fd6ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1160" height="1280">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blur18" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1160" height="1280"><feGaussianBlur stdDeviation="18"/></filter>
+    <!-- 8-point star lattice -->
+    <pattern id="star" width="120" height="120" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#9fdcff" stroke-width="1.1" stroke-opacity="0.5">
+        <rect x="35" y="35" width="50" height="50"/>
+        <rect x="35" y="35" width="50" height="50" transform="rotate(45 60 60)"/>
+        <circle cx="60" cy="60" r="10"/>
+        <path d="M0 60H25M95 60H120M60 0V25M60 95V120"/>
+      </g>
+    </pattern>
+    <linearGradient id="patFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="patMask"><rect width="960" height="1080" fill="url(#patFade)"/></mask>
+  </defs>
+
+  <!-- sky -->
+  <rect width="960" height="1080" fill="url(#sky)"/>
+  <rect width="960" height="1080" fill="url(#cool)"/>
+  <rect width="960" height="1080" fill="url(#sun)"/>
+  <rect width="960" height="1080" fill="url(#star)" mask="url(#patMask)" opacity="0.35"/>
+
+  <!-- sun disc -->
+  <circle cx="700" cy="842" r="70" fill="#ffe3b3" opacity="0.9" filter="url(#blur18)"/>
+  <circle cx="700" cy="842" r="46" fill="#fff1d6"/>
+
+  <!-- generic skyline silhouette -->
+  <g fill="url(#city)" opacity="0.92">
+    <rect x="70" y="760" width="40" height="140"/>
+    <rect x="118" y="720" width="34" height="180"/>
+    <rect x="160" y="790" width="46" height="110"/>
+    <path d="M232 900V640l22-40 22 40v260z"/>
+    <rect x="290" y="770" width="38" height="130"/>
+    <!-- tapered tower with sky-bridge -->
+    <path d="M360 900 L380 600 L440 600 L460 900 Z M392 640 L428 640 L424 700 L396 700 Z" fill-rule="evenodd"/>
+    <rect x="478" y="745" width="44" height="155"/>
+    <rect x="530" y="705" width="30" height="195"/>
+    <path d="M572 900V760h52v140z"/>
+    <rect x="800" y="780" width="40" height="120"/>
+    <rect x="848" y="740" width="30" height="160"/>
+    <rect x="886" y="800" width="54" height="100"/>
+  </g>
+
+  <!-- dunes -->
+  <path d="M0 880 C180 830 330 900 520 860 S820 820 960 870 V1080 H0Z" fill="url(#dune1)"/>
+  <path d="M0 950 C200 900 380 990 600 940 S880 920 960 950 V1080 H0Z" fill="url(#dune2)"/>
+  <path d="M0 1020 C240 980 480 1050 700 1010 S900 1000 960 1015 V1080 H0Z" fill="url(#dune3)"/>
+
+  <!-- cool airflow streams -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-40 300 C200 220 380 420 620 330 S900 240 1000 300" stroke="url(#airSoft)" stroke-width="34" filter="url(#blur18)"/>
+    <path d="M-40 420 C220 330 420 540 660 450 S900 380 1000 430" stroke="url(#airSoft)" stroke-width="28" filter="url(#blur18)"/>
+    <g filter="url(#glow)">
+      <path d="M-40 300 C200 220 380 420 620 330 S900 240 1000 300" stroke="url(#air)" stroke-width="3"/>
+      <path d="M-40 330 C210 255 390 450 630 360 S900 275 1000 330" stroke="url(#air)" stroke-width="1.6" opacity="0.8"/>
+      <path d="M-40 420 C220 330 420 540 660 450 S900 380 1000 430" stroke="url(#air)" stroke-width="2.6"/>
+      <path d="M-40 455 C230 368 430 572 670 482 S900 418 1000 462" stroke="url(#air)" stroke-width="1.4" opacity="0.7"/>
+      <path d="M-40 540 C240 470 450 660 700 575 S910 520 1000 560" stroke="url(#air)" stroke-width="2"/>
+      <path d="M-40 610 C260 550 470 720 720 640 S920 600 1000 630" stroke="url(#air)" stroke-width="1.2" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- frost particles -->
+  <g fill="#e6fbff">
+    <circle cx="140" cy="250" r="2.4" opacity="0.9"/><circle cx="210" cy="380" r="1.6" opacity="0.7"/>
+    <circle cx="300" cy="300" r="2" opacity="0.8"/><circle cx="360" cy="470" r="1.4" opacity="0.6"/>
+    <circle cx="455" cy="360" r="2.6" opacity="0.9"/><circle cx="520" cy="520" r="1.8" opacity="0.7"/>
+    <circle cx="590" cy="410" r="1.4" opacity="0.6"/><circle cx="660" cy="300" r="2.2" opacity="0.8"/>
+    <circle cx="730" cy="470" r="1.6" opacity="0.7"/><circle cx="800" cy="350" r="2.4" opacity="0.85"/>
+    <circle cx="870" cy="520" r="1.4" opacity="0.6"/><circle cx="910" cy="280" r="1.8" opacity="0.7"/>
+    <circle cx="250" cy="560" r="1.6" opacity="0.5"/><circle cx="420" cy="620" r="1.2" opacity="0.45"/>
+    <circle cx="600" cy="230" r="1.4" opacity="0.6"/><circle cx="90" cy="460" r="1.8" opacity="0.6"/>
+  </g>
+  <!-- snowflake accents -->
+  <g stroke="#e6fbff" stroke-width="2" stroke-linecap="round" fill="none" filter="url(#glow)">
+    <g transform="translate(770 210)" opacity="0.85">
+      <path d="M0-18V18M-15.6-9L15.6 9M-15.6 9L15.6-9"/>
+      <path d="M-5-13L0-8L5-13M-5 13L0 8L5 13"/>
+    </g>
+    <g transform="translate(250 180) scale(0.6)" opacity="0.7">
+      <path d="M0-18V18M-15.6-9L15.6 9M-15.6 9L15.6-9"/>
+    </g>
+  </g>
+
+  <!-- subtle left-edge blend for slide seam -->
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#06162e" stop-opacity="0.35"/><stop offset="0.12" stop-color="#06162e" stop-opacity="0"/>
+  </linearGradient>
+  <rect width="960" height="1080" fill="url(#edge)"/>
+</svg>
+</body></html>

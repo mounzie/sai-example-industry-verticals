@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>وزارة المالية – تقرير الظهور في الذكاء الاصطناعي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1B8354; --green-800:#0E4B30; --green-900:#0A3622; --green-50:#ECF7F1; --green-100:#D3EDDF;
+  --gold:#B07A12; --ink:#161B22; --ink-2:#4A5565; --muted:#7B8594; --line:#E3E7EC; --grid:#EDF0F3;
+  --bg:#F5F7F6; --card:#FFFFFF; --bar-gray:#BCC5CF; --warn:#B45309; --warn-50:#FEF3E2;
+  --s1:#1B8354; --s2:#B07A12;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;font-size:15px;line-height:1.7}
+.page{max-width:1080px;margin:0 auto;padding:0 16px 48px}
+.num{font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
+span.num,b.num,div.num{display:inline-block}
+.en{direction:ltr;unicode-bidi:isolate}
+
+.hero{background:var(--green-900);background-image:linear-gradient(240deg,var(--green-900) 0%,var(--green-800) 55%,var(--green) 100%);color:#fff;padding:28px 0 40px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23fff' stroke-width='1.2'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3C/g%3E%3C/svg%3E")}
+.hero .page{position:relative;padding-bottom:0}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.org{display:flex;flex-direction:column;line-height:1.3}
+.org .t{font-size:22px;font-weight:700}
+.org .s{font-size:13px;opacity:.85}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:6px 14px;border-radius:999px;font-size:13px}
+.hero h1{font-size:34px;font-weight:700;margin:28px 0 6px;line-height:1.35}
+.hero p{margin:0;opacity:.9;font-size:16px;max-width:780px}
+.hero .rule{display:block;width:96px;height:4px;background:var(--gold);border-radius:2px;margin-top:20px}
+
+h2{font-size:21px;font-weight:700;margin:40px 0 4px;color:var(--green-800);display:flex;align-items:center;gap:10px}
+h2::before{content:"";width:5px;height:22px;background:var(--gold);border-radius:2px}
+.sub{color:var(--ink-2);margin:0 0 16px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+
+.summary{margin-top:-20px;position:relative;border-inline-start:5px solid var(--green);box-shadow:0 6px 24px rgba(10,54,34,.08)}
+.summary ul{margin:8px 0 0;padding-inline-start:20px}
+.summary li{margin:6px 0}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi .label{color:var(--ink-2);font-size:13px;font-weight:500}
+.kpi .value{font-size:30px;font-weight:700;color:var(--green-800);margin:2px 0}
+.delta{font-size:12px;font-weight:600;padding:1px 8px;border-radius:999px;display:inline-block}
+.delta.up{background:var(--green-50);color:#11663F}
+.delta.down{background:var(--warn-50);color:var(--warn)}
+.delta.flat{background:#F0F2F5;color:var(--ink-2)}
+.kpi .hint{color:var(--muted);font-size:12px;margin-top:4px}
+
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar-row{display:grid;grid-template-columns:230px 1fr 64px;align-items:center;gap:12px}
+.bar-row .name{font-size:14px;font-weight:600}
+.bar-row .name small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.track{height:20px;background:#F1F3F5;border-radius:4px;position:relative}
+.fill{position:absolute;inset-block:0;inset-inline-start:0;background:var(--bar-gray);border-radius:4px}
+.fill.brand{background:var(--green)}
+.bar-row .val{font-weight:700;text-align:end}
+.bar-row.is-brand .name{color:var(--green-800)}
+.bar-row:hover .fill{filter:brightness(.92)}
+
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{color:var(--ink-2);font-weight:600;font-size:12.5px;text-align:start;padding:10px 8px;border-bottom:2px solid var(--line);background:#FAFBFB}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+td.r,th.r{text-align:end}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--green-50)}
+.mini{display:inline-block;height:8px;border-radius:2px;background:var(--green);vertical-align:middle;margin-inline-end:8px}
+.tag{display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:999px;font-weight:600}
+.tag.low{background:var(--warn-50);color:var(--warn)}
+.tag.ok{background:var(--green-50);color:#11663F}
+.tag.own{background:var(--green-100);color:var(--green-800)}
+.tag.gov{background:#EEF1F5;color:var(--ink-2)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stack{display:flex;height:26px;border-radius:6px;overflow:hidden;gap:2px;margin:8px 0 12px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}
+.legend i.dash{height:0;border-top:3px dashed var(--s2);border-radius:0;width:18px;vertical-align:3px}
+.chart .ax{font-size:12px;fill:var(--muted);font-family:inherit}
+.chart .dl{font-size:12.5px;font-weight:600;font-family:inherit}
+
+.signal{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.signal:last-child{border-bottom:0}
+.signal .dot{flex:none;width:10px;height:10px;border-radius:50%;margin-top:9px}
+.signal .dot.up{background:var(--green)} .signal .dot.down{background:var(--warn)} .signal .dot.comp{background:var(--gold)}
+.signal .meta{color:var(--muted);font-size:12px}
+
+.recs{counter-reset:r;display:grid;gap:12px}
+.rec{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;padding-inline-start:64px;position:relative}
+.rec::before{counter-increment:r;content:counter(r);position:absolute;inset-inline-start:18px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;display:grid;place-items:center}
+.rec h3{margin:0 0 4px;font-size:16px}
+.rec p{margin:0;color:var(--ink-2);font-size:14px}
+
+.foot{margin-top:40px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:760px){.kpis{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.bar-row{grid-template-columns:120px 1fr 52px}.hero h1{font-size:26px}}
+@media print{body{background:#fff}.card,.kpi,.rec,.signal{break-inside:avoid}h2{break-after:avoid}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="page">
+    <div class="hero-top">
+      <div class="org"><span class="t">وزارة المالية</span><span class="s">المملكة العربية السعودية</span></div>
+      <span class="badge"><span class="num">20</span> أكتوبر – <span class="num">18</span> نوفمبر <span class="num">2026</span> · مقارنة بالـ<span class="num">30</span> يوماً السابقة</span>
+    </div>
+    <h1>تقرير الظهور في محركات البحث بالذكاء الاصطناعي</h1>
+    <p>كيف تتحدث المساعدات الذكية مثل ChatGPT وGemini وGoogle AI وClaude وCopilot وPerplexity عن وزارة المالية، وكيف تقارَن بالجهات الحكومية السعودية الأخرى. البيانات من Scrunch.</p>
+    <span class="rule"></span>
+  </div>
+</header>
+
+<main class="page">
+
+<section class="card summary">
+  <strong style="font-size:17px;color:var(--green-800)">الملخص التنفيذي</strong>
+  <ul>
+    <li>تظهر الوزارة في <b class="num">70.2%</b> من <b class="num">3,728</b> إجابة، بارتفاع <b class="num">3.4</b> نقطة عن الـ<span class="num">30</span> يوماً السابقة، وغالباً ما تكون <b>أول جهة تُذكر</b> (متوسط الترتيب <b class="num">1.07</b>).</li>
+    <li>تتحدث المساعدات الذكية عن الوزارة بإيجابية كبيرة: درجة المشاعر <b class="num">97.8</b> من <span class="num">100</span>، ولا توجد سوى <b class="num">10</b> إجابات سلبية من أصل <b class="num">1,880</b> إجابة تذكرها.</li>
+    <li><b>الاستشهاد بالموقع يتراجع:</b> انخفضت نسبة الإجابات التي تستشهد بموقع mof.gov.sa من <b class="num">39.8%</b> إلى <b class="num">37.0%</b>، كما تراجعت حصة الصوت من <b class="num">55.4%</b> إلى <b class="num">52.7%</b>.</li>
+    <li>أضعف المواضيع هو <b>الضرائب والزكاة والجمارك</b> (ذكر <span class="num">27.5%</span>، استشهاد <span class="num">2.7%</span>) حيث تتصدر هيئة الزكاة والضريبة والجمارك، يليه <b>المشتريات والمنافسات الحكومية</b> (<span class="num">44.9%</span>).</li>
+    <li>موقع mof.gov.sa هو <b>أكثر النطاقات تأثيراً</b> في هذا المجال، ويأتي موقعا منصة اعتماد والمركز الوطني لإدارة الدين ضمن أول <span class="num">4</span> نطاقات.</li>
+  </ul>
+</section>
+
+<h2>المؤشرات الرئيسية</h2>
+<p class="sub">الفترة من <span class="num">20</span> أكتوبر إلى <span class="num">18</span> نوفمبر <span class="num">2026</span> مقارنة بالفترة من <span class="num">20</span> سبتمبر إلى <span class="num">19</span> أكتوبر <span class="num">2026</span>، وتشمل جميع الأسئلة المتتبَّعة (<span class="num">405</span> سؤالاً) على <span class="num">9</span> منصات.</p>
+<div class="kpis">
+  <div class="kpi"><div class="label">معدل الذكر</div><div class="value num">70.2%</div><span class="delta up">▲ <span class="num">3.4</span> نقطة</span><div class="hint">إجابات تذكر اسم الوزارة</div></div>
+  <div class="kpi"><div class="label">معدل الاستشهاد</div><div class="value num">37.0%</div><span class="delta down">▼ <span class="num">2.8</span> نقطة</span><div class="hint">إجابات تستشهد بموقع mof.gov.sa</div></div>
+  <div class="kpi"><div class="label">حصة الصوت</div><div class="value num">52.7%</div><span class="delta down">▼ <span class="num">2.7</span> نقطة</span><div class="hint">من إجمالي ذكر الجهات المتتبَّعة</div></div>
+  <div class="kpi"><div class="label">درجة المشاعر</div><div class="value num">97.8</div><span class="delta flat">▼ <span class="num">0.5</span></span><div class="hint">من <span class="num">100</span></div></div>
+  <div class="kpi"><div class="label">متوسط الترتيب</div><div class="value num">1.07</div><span class="delta flat">السابق <span class="num">1.06</span></span><div class="hint"><span class="num">1</span> = تُذكر أولاً</div></div>
+  <div class="kpi"><div class="label">درجة الموقع في الإجابة</div><div class="value num">89.9</div><span class="delta flat">▼ <span class="num">0.5</span></span><div class="hint">من <span class="num">100</span> (الأعلى = أبكر)</div></div>
+  <div class="kpi"><div class="label">أسئلة تذكر الوزارة بالاسم</div><div class="value num">99.7%</div><span class="delta flat"><span class="num">662</span> إجابة</span><div class="hint">معدل الذكر عندما يُسمّى اسم الوزارة في السؤال</div></div>
+  <div class="kpi"><div class="label">أسئلة عامة</div><div class="value num">63.8%</div><span class="delta flat"><span class="num">3,066</span> إجابة</span><div class="hint">معدل الذكر في الأسئلة التي لا تسمّي الوزارة</div></div>
+</div>
+
+<h2>الاتجاه الأسبوعي</h2>
+<p class="sub">معدل الذكر ومعدل الاستشهاد أسبوعياً، من أسبوع <span class="num">8</span> سبتمبر إلى أسبوع <span class="num">10</span> نوفمبر <span class="num">2026</span>. استُبعد الأسبوع الحالي لأنه غير مكتمل.</p>
+<div class="card chart">
+  <div class="legend" style="margin-bottom:8px"><span><i style="background:var(--s1)"></i>معدل الذكر</span><span><i class="dash"></i>معدل الاستشهاد</span></div>
+  <svg viewBox="0 0 850 300" width="100%" role="img" aria-label="معدل الذكر ومعدل الاستشهاد أسبوعياً" style="direction:ltr"><line x1="56" x2="724" y1="260.0" y2="260.0" stroke="var(--grid)"/><text x="46" y="264.0" text-anchor="end" class="ax">30%</text><line x1="56" x2="724" y1="211.2" y2="211.2" stroke="var(--grid)"/><text x="46" y="215.2" text-anchor="end" class="ax">40%</text><line x1="56" x2="724" y1="162.4" y2="162.4" stroke="var(--grid)"/><text x="46" y="166.4" text-anchor="end" class="ax">50%</text><line x1="56" x2="724" y1="113.6" y2="113.6" stroke="var(--grid)"/><text x="46" y="117.6" text-anchor="end" class="ax">60%</text><line x1="56" x2="724" y1="64.8" y2="64.8" stroke="var(--grid)"/><text x="46" y="68.8" text-anchor="end" class="ax">70%</text><line x1="56" x2="724" y1="16.0" y2="16.0" stroke="var(--grid)"/><text x="46" y="20.0" text-anchor="end" class="ax">80%</text><text x="56.0" y="286" text-anchor="middle" class="ax">8 سبت</text><text x="130.2" y="286" text-anchor="middle" class="ax">15 سبت</text><text x="204.4" y="286" text-anchor="middle" class="ax">22 سبت</text><text x="278.7" y="286" text-anchor="middle" class="ax">29 سبت</text><text x="352.9" y="286" text-anchor="middle" class="ax">6 أكت</text><text x="427.1" y="286" text-anchor="middle" class="ax">13 أكت</text><text x="501.3" y="286" text-anchor="middle" class="ax">20 أكت</text><text x="575.6" y="286" text-anchor="middle" class="ax">27 أكت</text><text x="649.8" y="286" text-anchor="middle" class="ax">3 نوف</text><text x="724.0" y="286" text-anchor="middle" class="ax">10 نوف</text><polyline points="56.0,79.3 130.2,78.4 204.4,83.3 278.7,72.0 352.9,83.1 427.1,80.5 501.3,67.8 575.6,66.5 649.8,59.6 724.0,62.9" fill="none" stroke="var(--s1)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" /><circle cx="56.0" cy="79.3" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 8 سبتمبر: الذكر 67.0% (2,420 إجابة)</title></circle><circle cx="130.2" cy="78.4" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 15 سبتمبر: الذكر 67.2% (2,635 إجابة)</title></circle><circle cx="204.4" cy="83.3" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 22 سبتمبر: الذكر 66.2% (1,033 إجابة)</title></circle><circle cx="278.7" cy="72.0" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 29 سبتمبر: الذكر 68.5% (991 إجابة)</title></circle><circle cx="352.9" cy="83.1" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 6 أكتوبر: الذكر 66.2% (850 إجابة)</title></circle><circle cx="427.1" cy="80.5" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 13 أكتوبر: الذكر 66.8% (840 إجابة)</title></circle><circle cx="501.3" cy="67.8" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 20 أكتوبر: الذكر 69.4% (1,045 إجابة)</title></circle><circle cx="575.6" cy="66.5" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 27 أكتوبر: الذكر 69.7% (903 إجابة)</title></circle><circle cx="649.8" cy="59.6" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 3 نوفمبر: الذكر 71.1% (743 إجابة)</title></circle><circle cx="724.0" cy="62.9" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>أسبوع 10 نوفمبر: الذكر 70.4% (915 إجابة)</title></circle><text x="736.0" y="66.9" class="dl" fill="var(--ink)">70.4% الذكر</text><polyline points="56.0,212.0 130.2,221.6 204.4,219.3 278.7,204.0 352.9,198.0 427.1,210.0 501.3,216.3 575.6,214.6 649.8,237.0 724.0,241.1" fill="none" stroke="var(--s2)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/><circle cx="56.0" cy="212.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 8 سبتمبر: الاستشهاد 39.8% (2,420 إجابة)</title></circle><circle cx="130.2" cy="221.6" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 15 سبتمبر: الاستشهاد 37.9% (2,635 إجابة)</title></circle><circle cx="204.4" cy="219.3" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 22 سبتمبر: الاستشهاد 38.3% (1,033 إجابة)</title></circle><circle cx="278.7" cy="204.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 29 سبتمبر: الاستشهاد 41.5% (991 إجابة)</title></circle><circle cx="352.9" cy="198.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 6 أكتوبر: الاستشهاد 42.7% (850 إجابة)</title></circle><circle cx="427.1" cy="210.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 13 أكتوبر: الاستشهاد 40.2% (840 إجابة)</title></circle><circle cx="501.3" cy="216.3" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 20 أكتوبر: الاستشهاد 39.0% (1,045 إجابة)</title></circle><circle cx="575.6" cy="214.6" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 27 أكتوبر: الاستشهاد 39.3% (903 إجابة)</title></circle><circle cx="649.8" cy="237.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 3 نوفمبر: الاستشهاد 34.7% (743 إجابة)</title></circle><circle cx="724.0" cy="241.1" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>أسبوع 10 نوفمبر: الاستشهاد 33.9% (915 إجابة)</title></circle><text x="736.0" y="245.1" class="dl" fill="var(--ink)">33.9% الاستشهاد</text></svg>
+
+  <p class="sub" style="margin:8px 0 0">ارتفع معدل الذكر بثبات منذ منتصف أكتوبر، بينما انخفض الاستشهاد في نوفمبر. أي أن المساعدات الذكية تذكر الوزارة أكثر، لكنها تربط بموقعها أقل.</p>
+</div>
+
+<h2>المشهد التنافسي</h2>
+<p class="sub">معدل الذكر لكل جهة في الإجابات نفسها (<span class="num">3,728</span> إجابة)، من <span class="num">20</span> أكتوبر إلى <span class="num">18</span> نوفمبر <span class="num">2026</span>.</p>
+<div class="card">
+  <div class="bars">
+    <div class="bar-row is-brand" title="وزارة المالية: 70.2%"><span class="name">وزارة المالية</span><div class="track"><div class="fill brand" style="width:100%"></div></div><span class="val num">70.2%</span></div>
+    <div class="bar-row" title="هيئة الزكاة والضريبة والجمارك: 27.0%"><span class="name">هيئة الزكاة والضريبة والجمارك<small class="en">ZATCA</small></span><div class="track"><div class="fill" style="width:38.5%"></div></div><span class="val num">27.0%</span></div>
+    <div class="bar-row" title="البنك المركزي السعودي: 19.7%"><span class="name">البنك المركزي السعودي<small class="en">SAMA</small></span><div class="track"><div class="fill" style="width:28.1%"></div></div><span class="val num">19.7%</span></div>
+    <div class="bar-row" title="صندوق الاستثمارات العامة: 8.2%"><span class="name">صندوق الاستثمارات العامة<small class="en">PIF</small></span><div class="track"><div class="fill" style="width:11.7%"></div></div><span class="val num">8.2%</span></div>
+    <div class="bar-row" title="الهيئة العامة للإحصاء: 5.4%"><span class="name">الهيئة العامة للإحصاء<small class="en">GASTAT</small></span><div class="track"><div class="fill" style="width:7.7%"></div></div><span class="val num">5.4%</span></div>
+    <div class="bar-row" title="وزارة الاقتصاد والتخطيط: 2.2%"><span class="name">وزارة الاقتصاد والتخطيط<small class="en">MEP</small></span><div class="track"><div class="fill" style="width:3.2%"></div></div><span class="val num">2.2%</span></div>
+    <div class="bar-row" title="صندوق التنمية الوطني: 0.4%"><span class="name">صندوق التنمية الوطني<small class="en">NDF</small></span><div class="track"><div class="fill" style="width:0.6%;min-width:3px"></div></div><span class="val num">0.4%</span></div>
+  </div>
+  <table style="margin-top:20px">
+    <thead><tr><th>الجهة</th><th class="r">معدل الذكر</th><th class="r">حصة الصوت</th><th class="r">درجة المشاعر</th></tr></thead>
+    <tbody>
+      <tr style="background:var(--green-50)"><td><b>وزارة المالية</b></td><td class="r num"><b>70.2%</b></td><td class="r num"><b>52.7%</b></td><td class="r num"><b>97.8</b></td></tr>
+      <tr><td>هيئة الزكاة والضريبة والجمارك</td><td class="r num">27.0%</td><td class="r num">20.3%</td><td class="r num">93.1</td></tr>
+      <tr><td>البنك المركزي السعودي</td><td class="r num">19.7%</td><td class="r num">14.8%</td><td class="r num">98.4</td></tr>
+      <tr><td>صندوق الاستثمارات العامة</td><td class="r num">8.2%</td><td class="r num">6.2%</td><td class="r num">91.0</td></tr>
+      <tr><td>الهيئة العامة للإحصاء</td><td class="r num">5.4%</td><td class="r num">4.0%</td><td class="r num">99.3</td></tr>
+      <tr><td>وزارة الاقتصاد والتخطيط</td><td class="r num">2.2%</td><td class="r num">1.7%</td><td class="r num">100</td></tr>
+      <tr><td>صندوق التنمية الوطني</td><td class="r num">0.4%</td><td class="r num">0.3%</td><td class="r num">100</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>الأداء حسب منصة الذكاء الاصطناعي</h2>
+<p class="sub">معدل ذكر الوزارة ومعدل الاستشهاد بموقعها ودرجة المشاعر على كل منصة، من <span class="num">20</span> أكتوبر إلى <span class="num">18</span> نوفمبر <span class="num">2026</span>.</p>
+<div class="card">
+<table>
+  <thead><tr><th>المنصة</th><th class="r">الإجابات</th><th>معدل الذكر</th><th class="r">معدل الاستشهاد</th><th class="r">المشاعر</th><th></th></tr></thead>
+  <tbody>
+    <tr><td class="en">ChatGPT</td><td class="r num">445</td><td><span class="mini" style="width:83px"></span><span class="num">82.7%</span></td><td class="r num">86.7%</td><td class="r num">96.6</td><td><span class="tag ok">الأقوى</span></td></tr>
+    <tr><td class="en">Meta AI</td><td class="r num">450</td><td><span class="mini" style="width:75px"></span><span class="num">75.1%</span></td><td class="r num">0.0%</td><td class="r num">98.4</td><td><span class="tag gov">لا استشهادات</span></td></tr>
+    <tr><td class="en">Google AI Overview</td><td class="r num">437</td><td><span class="mini" style="width:71px"></span><span class="num">70.9%</span></td><td class="r num">41.4%</td><td class="r num">98.6</td><td></td></tr>
+    <tr><td class="en">Gemini</td><td class="r num">450</td><td><span class="mini" style="width:70px"></span><span class="num">70.4%</span></td><td class="r num">37.1%</td><td class="r num">99.4</td><td></td></tr>
+    <tr><td class="en">Google AI Mode</td><td class="r num">450</td><td><span class="mini" style="width:70px"></span><span class="num">69.6%</span></td><td class="r num">58.9%</td><td class="r num">99.4</td><td></td></tr>
+    <tr><td class="en">Grok</td><td class="r num">448</td><td><span class="mini" style="width:69px"></span><span class="num">69.4%</span></td><td class="r num">0.0%</td><td class="r num">96.2</td><td><span class="tag gov">لا استشهادات</span></td></tr>
+    <tr><td class="en">Claude</td><td class="r num">450</td><td><span class="mini" style="width:67px"></span><span class="num">66.7%</span></td><td class="r num">0.0%</td><td class="r num">97.1</td><td><span class="tag gov">لا استشهادات</span></td></tr>
+    <tr><td class="en">Microsoft Copilot</td><td class="r num">181</td><td><span class="mini" style="width:64px"></span><span class="num">64.1%</span></td><td class="r num">60.2%</td><td class="r num">99.5</td><td></td></tr>
+    <tr><td class="en">Perplexity</td><td class="r num">417</td><td><span class="mini" style="width:58px"></span><span class="num">58.3%</span></td><td class="r num">65.2%</td><td class="r num">94.1</td><td><span class="tag low">أقل ذكر</span></td></tr>
+  </tbody>
+</table>
+<p class="sub" style="margin:12px 0 0">لم يرصد Scrunch أي استشهاد بموقع mof.gov.sa على Meta AI وGrok وClaude خلال هذه الفترة. هذه المساعدات تجيب غالباً دون روابط للمصادر، لذا يعود ذلك على الأرجح إلى طريقة إجابتها وليس إلى مشكلة في الموقع.</p>
+</div>
+
+<h2>الأداء حسب الموضوع</h2>
+<p class="sub">أين تتصدر الوزارة في إجابات الذكاء الاصطناعي وأين تتأخر. لكل موضوع نحو <span class="num">415</span> إجابة.</p>
+<div class="card">
+<table>
+  <thead><tr><th>الموضوع</th><th>معدل الذكر</th><th class="r">معدل الاستشهاد</th><th class="r">المشاعر</th></tr></thead>
+  <tbody>
+    <tr><td>الشفافية والبيانات المفتوحة والتقارير المالية</td><td><span class="mini" style="width:99px"></span><span class="num">98.5%</span></td><td class="r num">58.4%</td><td class="r num">96.6</td></tr>
+    <tr><td>الميزانية العامة والإنفاق الحكومي</td><td><span class="mini" style="width:89px"></span><span class="num">88.9%</span></td><td class="r num">53.6%</td><td class="r num">100</td></tr>
+    <tr><td>السياسة المالية والاستقرار الاقتصادي</td><td><span class="mini" style="width:83px"></span><span class="num">83.0%</span></td><td class="r num">40.3%</td><td class="r num">99.3</td></tr>
+    <tr><td>الأنظمة المالية الحكومية والخدمات الرقمية</td><td><span class="mini" style="width:83px"></span><span class="num">82.5%</span></td><td class="r num">48.8%</td><td class="r num">100</td></tr>
+    <tr><td>الدين العام وإصدار الصكوك</td><td><span class="mini" style="width:77px"></span><span class="num">77.4%</span></td><td class="r num">32.5%</td><td class="r num">99.4</td></tr>
+    <tr><td>المدفوعات الحكومية والمستحقات المالية</td><td><span class="mini" style="width:69px"></span><span class="num">69.4%</span></td><td class="r num">39.3%</td><td class="r num">98.4</td></tr>
+    <tr><td>التعامل التجاري مع الجهات الحكومية</td><td><span class="mini" style="width:59px"></span><span class="num">59.5%</span></td><td class="r num">31.7%</td><td class="r num">87.2</td></tr>
+    <tr><td>المشتريات والمنافسات الحكومية</td><td><span class="mini" style="width:45px"></span><span class="num">44.9%</span></td><td class="r num">26.2%</td><td class="r num">97.5</td></tr>
+    <tr><td>الضرائب والزكاة والجمارك</td><td><span class="mini" style="width:27px"></span><span class="num">27.5%</span></td><td class="r num">2.7%</td><td class="r num">98.9</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="grid2">
+<div>
+<h2>المشاعر</h2>
+<p class="sub">تصنيف المشاعر في الإجابات التي تذكر الوزارة (<span class="num">1,880</span> إجابة).</p>
+<div class="card">
+  <div class="stack" role="img" aria-label="إيجابي 1,807، مختلط 63، سلبي 10">
+    <span style="flex:1807;background:var(--green)" title="إيجابي: 1,807"></span>
+    <span style="flex:63;background:#A9B4C0" title="مختلط: 63"></span>
+    <span style="flex:10;min-width:3px;background:#C2410C" title="سلبي: 10"></span>
+  </div>
+  <div class="legend"><span><i style="background:var(--green)"></i>إيجابي <b class="num">1,807</b></span><span><i style="background:#A9B4C0"></i>مختلط <b class="num">63</b></span><span><i style="background:#C2410C"></i>سلبي <b class="num">10</b></span></div>
+</div>
+</div>
+<div>
+<h2>من يُستشهد به؟</h2>
+<p class="sub">الجهات المالكة للمصادر المستشهد بها، ويُحتسب كل موقع مرة واحدة في كل إجابة.</p>
+<div class="card">
+  <div class="stack" role="img" aria-label="الوزارة 1,380، جهات متتبَّعة أخرى 493، جهات أخرى 6,247">
+    <span style="flex:1380;background:var(--green)" title="مواقع الوزارة: 1,380"></span>
+    <span style="flex:493;background:var(--gold)" title="جهات متتبَّعة أخرى: 493"></span>
+    <span style="flex:6247;background:#D7DDE3" title="جهات أخرى: 6,247"></span>
+  </div>
+  <div class="legend"><span><i style="background:var(--green)"></i>الوزارة <b class="num">1,380</b> (<span class="num">17.0%</span>)</span><span><i style="background:var(--gold)"></i>جهات متتبَّعة أخرى <b class="num">493</b> (<span class="num">6.1%</span>)</span><span><i style="background:#D7DDE3"></i>جهات أخرى <b class="num">6,247</b> (<span class="num">76.9%</span>)</span></div>
+</div>
+</div>
+</div>
+
+<h2>أكثر النطاقات المستشهد بها تأثيراً</h2>
+<p class="sub">مرتبة حسب مؤشر التأثير في Scrunch، من <span class="num">20</span> أكتوبر إلى <span class="num">18</span> نوفمبر <span class="num">2026</span>.</p>
+<div class="card">
+<table>
+  <thead><tr><th>#</th><th>النطاق</th><th class="r">إجابات تستشهد به</th><th class="r">مؤشر التأثير</th><th></th></tr></thead>
+  <tbody>
+    <tr style="background:var(--green-50)"><td class="num">1</td><td class="en"><b>mof.gov.sa</b></td><td class="r num">1,380</td><td class="r num">16.66</td><td><span class="tag own">الوزارة</span></td></tr>
+    <tr><td class="num">2</td><td class="en">my.gov.sa</td><td class="r num">672</td><td class="r num">8.11</td><td><span class="tag gov">بوابة حكومية</span></td></tr>
+    <tr><td class="num">3</td><td class="en">etimad.sa</td><td class="r num">450</td><td class="r num">5.44</td><td><span class="tag own">منصة تابعة للوزارة</span></td></tr>
+    <tr><td class="num">4</td><td class="en">ndmc.gov.sa</td><td class="r num">317</td><td class="r num">3.82</td><td><span class="tag own">مركز تابع للوزارة</span></td></tr>
+    <tr><td class="num">5</td><td class="en">saudipedia.com</td><td class="r num">312</td><td class="r num">3.77</td><td></td></tr>
+    <tr><td class="num">6</td><td class="en">zatca.gov.sa</td><td class="r num">271</td><td class="r num">3.27</td><td><span class="tag low">جهة متتبَّعة</span></td></tr>
+    <tr><td class="num">7</td><td class="en">boe.gov.sa</td><td class="r num">196</td><td class="r num">2.36</td><td><span class="tag gov">حكومي</span></td></tr>
+    <tr><td class="num">8</td><td class="en">ncgr.gov.sa</td><td class="r num">186</td><td class="r num">2.25</td><td><span class="tag gov">حكومي</span></td></tr>
+    <tr><td class="num">9</td><td class="en">sama.gov.sa</td><td class="r num">146</td><td class="r num">1.77</td><td><span class="tag low">جهة متتبَّعة</span></td></tr>
+    <tr><td class="num">10</td><td class="en">vision2030.ai</td><td class="r num">103</td><td class="r num">1.24</td><td></td></tr>
+  </tbody>
+</table>
+<p class="sub" style="margin:12px 0 0">منصة اعتماد والمركز الوطني لإدارة الدين تابعان للوزارة، لكن Scrunch يعدّهما نطاقين خارجيين لأن موقع mof.gov.sa وحده مسجَّل كموقع للعلامة.</p>
+</div>
+
+<h2>تنبيهات Scrunch</h2>
+<p class="sub">تغيّرات رصدتها الفحوصات الإحصائية الليلية في Scrunch، مع مستوى الثقة وتاريخ الرصد.</p>
+<div class="card">
+  <div class="signal"><span class="dot comp"></span><div><b>صندوق الاستثمارات العامة يتقدم في موضوع السياسة المالية والاستقرار الاقتصادي.</b> بلغ متوسط معدل ذكره على جميع المساعدات <span class="num">47.8%</span> خلال آخر <span class="num">30</span> يوماً، مقارنة بـ<span class="num">34.1%</span>.<div class="meta">جهة منافسة · الثقة: عالية · تاريخ الرصد <span class="num">2026-11-18</span></div></div></div>
+  <div class="signal"><span class="dot comp"></span><div><b>ارتفاع الاستشهاد بموقع هيئة الزكاة والضريبة والجمارك في موضوع الضرائب والزكاة والجمارك على Gemini:</b> <span class="num">74.0%</span> مقارنة بـ<span class="num">50.9%</span>.<div class="meta">جهة منافسة · الثقة: مؤكدة · تاريخ الرصد <span class="num">2026-11-18</span></div></div></div>
+  <div class="signal"><span class="dot comp"></span><div><b>ارتفاع الاستشهاد بموقع البنك المركزي السعودي في موضوع السياسة المالية على Perplexity:</b> <span class="num">55.6%</span> مقارنة بـ<span class="num">32.0%</span>.<div class="meta">جهة منافسة · الثقة: مؤكدة · تاريخ الرصد <span class="num">2026-11-18</span></div></div></div>
+  <div class="signal"><span class="dot down"></span><div><b>تراجع الاستشهاد بموقع mof.gov.sa في موضوع الأنظمة المالية الحكومية والخدمات الرقمية على Google AI Mode:</b> <span class="num">74.0%</span> مقارنة بـ<span class="num">94.5%</span>.<div class="meta">الوزارة · الثقة: تستحق المتابعة · تاريخ الرصد <span class="num">2026-11-17</span></div></div></div>
+  <div class="signal"><span class="dot up"></span><div><b>ارتفاع ذكر الوزارة في موضوع المشتريات والمنافسات الحكومية على ChatGPT</b> بنحو <span class="num">2.1</span> نقطة يومياً خلال <span class="num">60</span> يوماً.<div class="meta">الوزارة · الثقة: أولية · تاريخ الرصد <span class="num">2026-11-16</span></div></div></div>
+  <div class="signal"><span class="dot up"></span><div><b>ارتفاع ذكر الوزارة في موضوع الأنظمة المالية الحكومية والخدمات الرقمية على Google AI Overviews:</b> <span class="num">97.9%</span> مقارنة بـ<span class="num">85.4%</span>.<div class="meta">الوزارة · الثقة: تستحق المتابعة · تاريخ الرصد <span class="num">2026-11-09</span></div></div></div>
+</div>
+
+<h2>التوصيات</h2>
+<p class="sub">خطوات مقترحة بناءً على النتائج أعلاه.</p>
+<div class="recs">
+  <div class="rec"><h3>استعادة الاستشهاد بالموقع وليس الذكر فقط</h3><p>ارتفع الذكر لكن الاستشهاد انخفض من <span class="num">39.8%</span> إلى <span class="num">37.0%</span>، وتراجع بشكل حاد على Google AI Mode في الخدمات الرقمية. خصّصوا لكل خدمة صفحة واضحة البنية تتضمن الأسئلة الشائعة وشروط الأهلية والخطوات والرسوم، لتجد المساعدات الذكية صفحة مرجعية على mof.gov.sa تربط بها.</p></div>
+  <div class="rec"><h3>توضيح دور الوزارة في الضرائب والزكاة والجمارك</h3><p>هذا أضعف المواضيع (ذكر <span class="num">27.5%</span> واستشهاد <span class="num">2.7%</span>)، والاستشهاد بموقع هيئة الزكاة والضريبة والجمارك في ازدياد. انشروا محتوى يوضح توزيع المسؤوليات بين الوزارة والهيئة، مع روابط متبادلة بين الموقعين، حتى تصف المساعدات الذكية الجهة المسؤولة عن السياسة بشكل صحيح.</p></div>
+  <div class="rec"><h3>تسهيل قراءة محتوى اعتماد والمشتريات على الذكاء الاصطناعي</h3><p>معدل الذكر في المشتريات <span class="num">44.9%</span> رغم ارتفاعه على ChatGPT. تأكدوا من أن أدلة الموردين وأنظمة المنافسات وخطوات التسجيل في منصة اعتماد قابلة للفهرسة ومحدّثة، وتذكر الوزارة بالاسم.</p></div>
+  <div class="rec"><h3>الحفاظ على الصدارة في السياسة المالية</h3><p>صندوق الاستثمارات العامة والبنك المركزي يتقدمان في موضوع السياسة المالية والاستقرار الاقتصادي. انشروا بيانات الميزانية وتقارير الأداء الربعية وتحديثات الدين والصكوك كصفحات ويب مع ملخصات، وليس كملفات PDF فقط، لتستشهد المساعدات الذكية بالوزارة كمصدر رئيسي.</p></div>
+  <div class="rec"><h3>تتبّع الأسئلة باللغة العربية</h3><p>جميع الأسئلة المتتبَّعة في هذه الفترة كانت باللغة الإنجليزية. إضافة نسخ عربية منها ستوضح كيف تظهر الوزارة للمواطنين والشركات في المملكة عندما يسألون بالعربية.</p></div>
+</div>
+
+<div class="foot">
+  <b>المنهجية:</b> بيانات Scrunch للعلامة «Ministry of Finance Saudi Arabia» للفترة من <span class="num">20</span> أكتوبر إلى <span class="num">18</span> نوفمبر <span class="num">2026</span> مقارنة بالـ<span class="num">30</span> يوماً السابقة، وتشمل <span class="num">405</span> أسئلة على <span class="num">9</span> منصات ذكاء اصطناعي و<span class="num">3,728</span> إجابة. «معدل الذكر» هو نسبة الإجابات التي تذكر اسم الوزارة نصاً، و«معدل الاستشهاد» هو نسبة الإجابات التي تستشهد بموقع الوزارة، وهما مقياسان منفصلان. في توزيع ملكية المصادر يُحتسب كل موقع مرة واحدة في كل إجابة. التنبيهات مصدرها الفحوصات الإحصائية الليلية في Scrunch.<br>
+  الهوية البصرية: مستوحاة من الطابع الموحد للمواقع الحكومية السعودية (اللون الأخضر وخط IBM Plex Sans Arabic)، وليست القالب الرسمي للوزارة.
+</div>
+</main>
+</body>
+</html>

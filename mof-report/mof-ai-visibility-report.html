@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoF Saudi Arabia – AI Visibility Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1B8354; --green-800:#0E4B30; --green-900:#0A3622; --green-50:#ECF7F1; --green-100:#D3EDDF;
+  --gold:#B07A12; --gold-50:#FBF4E4;
+  --ink:#161B22; --ink-2:#4A5565; --muted:#7B8594; --line:#E3E7EC; --grid:#EDF0F3;
+  --bg:#F5F7F6; --card:#FFFFFF; --bar-gray:#BCC5CF; --warn:#B45309; --warn-50:#FEF3E2;
+  --s1:#1B8354; --s2:#B07A12;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans","IBM Plex Sans Arabic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+.ar{font-family:"IBM Plex Sans Arabic",sans-serif}
+.page{max-width:1080px;margin:0 auto;padding:0 16px 48px}
+.num{font-variant-numeric:tabular-nums}
+
+.hero{background:var(--green-900);background-image:linear-gradient(120deg,var(--green-900) 0%,var(--green-800) 55%,var(--green) 100%);color:#fff;padding:28px 0 40px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23fff' stroke-width='1.2'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3C/g%3E%3C/svg%3E")}
+.hero .page{position:relative;padding-bottom:0}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.org{display:flex;flex-direction:column;line-height:1.25}
+.org .ar{font-size:20px;font-weight:700}
+.org .en{font-size:13px;opacity:.85;letter-spacing:.02em}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:6px 14px;border-radius:999px;font-size:13px}
+.hero h1{font-size:34px;font-weight:700;margin:30px 0 6px;line-height:1.25}
+.hero p{margin:0;opacity:.9;font-size:16px;max-width:760px}
+.hero .rule{display:block;width:96px;height:4px;background:var(--gold);border-radius:2px;margin-top:20px}
+
+h2{font-size:21px;font-weight:700;margin:40px 0 4px;color:var(--green-800);display:flex;align-items:center;gap:10px}
+h2::before{content:"";width:5px;height:22px;background:var(--gold);border-radius:2px}
+.sub{color:var(--ink-2);margin:0 0 16px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+
+.summary{margin-top:-20px;position:relative;border-inline-start:5px solid var(--green);box-shadow:0 6px 24px rgba(10,54,34,.08)}
+.summary ul{margin:8px 0 0;padding-inline-start:20px}
+.summary li{margin:6px 0}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi .label{color:var(--ink-2);font-size:13px;font-weight:500}
+.kpi .value{font-size:30px;font-weight:700;color:var(--green-800);margin:2px 0}
+.delta{font-size:12px;font-weight:600;padding:1px 8px;border-radius:999px;display:inline-block}
+.delta.up{background:var(--green-50);color:#11663F}
+.delta.down{background:var(--warn-50);color:var(--warn)}
+.delta.flat{background:#F0F2F5;color:var(--ink-2)}
+.kpi .hint{color:var(--muted);font-size:12px;margin-top:4px}
+
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar-row{display:grid;grid-template-columns:230px 1fr 64px;align-items:center;gap:12px}
+.bar-row .name{font-size:14px;font-weight:600}
+.bar-row .name small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.track{height:20px;background:#F1F3F5;border-radius:4px;position:relative}
+.fill{position:absolute;inset-block:0;left:0;background:var(--bar-gray);border-radius:4px}
+.fill.brand{background:var(--green)}
+.bar-row .val{font-weight:700;text-align:right}
+.bar-row.is-brand .name{color:var(--green-800)}
+.bar-row:hover .fill{filter:brightness(.92)}
+
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{color:var(--ink-2);font-weight:600;font-size:12.5px;text-align:left;padding:10px 8px;border-bottom:2px solid var(--line);background:#FAFBFB}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+td.r,th.r{text-align:right}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--green-50)}
+.mini{display:inline-block;height:8px;border-radius:2px;background:var(--green);vertical-align:middle;margin-right:8px}
+.tag{display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:999px;font-weight:600}
+.tag.low{background:var(--warn-50);color:var(--warn)}
+.tag.ok{background:var(--green-50);color:#11663F}
+.tag.own{background:var(--green-100);color:var(--green-800)}
+.tag.gov{background:#EEF1F5;color:var(--ink-2)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stack{display:flex;height:26px;border-radius:6px;overflow:hidden;gap:2px;margin:8px 0 12px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legend i.dash{height:0;border-top:3px dashed var(--s2);border-radius:0;width:18px;vertical-align:3px}
+.chart .ax{font-size:12px;fill:var(--muted);font-family:inherit}
+.chart .dl{font-size:12.5px;font-weight:600;font-family:inherit}
+
+.signal{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.signal:last-child{border-bottom:0}
+.signal .dot{flex:none;width:10px;height:10px;border-radius:50%;margin-top:7px}
+.signal .dot.up{background:var(--green)} .signal .dot.down{background:var(--warn)} .signal .dot.comp{background:var(--gold)}
+.signal .meta{color:var(--muted);font-size:12px}
+
+.recs{counter-reset:r;display:grid;gap:12px}
+.rec{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 64px;position:relative}
+.rec::before{counter-increment:r;content:counter(r);position:absolute;left:18px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;display:grid;place-items:center}
+.rec h3{margin:0 0 4px;font-size:16px}
+.rec p{margin:0;color:var(--ink-2);font-size:14px}
+
+.foot{margin-top:40px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:16px}
+.foot a{color:var(--green)}
+@media (max-width:760px){.kpis{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.bar-row{grid-template-columns:120px 1fr 52px}.hero h1{font-size:26px}}
+@media print{body{background:#fff}.card,.kpi,.rec,.signal{break-inside:avoid}h2{break-after:avoid}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="page">
+    <div class="hero-top">
+      <div class="org"><span class="ar">وزارة المالية</span><span class="en">Ministry of Finance · Kingdom of Saudi Arabia</span></div>
+      <span class="badge">20 Oct – 18 Nov 2026 · vs prior 30 days</span>
+    </div>
+    <h1>AI Search Visibility Report</h1>
+    <p>How AI assistants such as ChatGPT, Gemini, Google AI, Claude, Copilot and Perplexity describe the Ministry of Finance, and how it compares with other Saudi government entities. Data from Scrunch.</p>
+    <span class="rule"></span>
+  </div>
+</header>
+
+<main class="page">
+
+<section class="card summary">
+  <strong style="font-size:17px;color:var(--green-800)">Executive summary</strong>
+  <ul>
+    <li>The Ministry appears in <b class="num">70.2%</b> of <b class="num">3,728</b> AI answers, up <b class="num">3.4 pts</b> on the prior 30 days. It is usually the <b>first entity named</b> (average rank <b class="num">1.07</b>).</li>
+    <li>AI talks about the Ministry very positively: sentiment is <b class="num">97.8</b>/100, with only <b class="num">10</b> negative answers out of <b class="num">1,880</b> that mention it.</li>
+    <li><b>Citations are slipping.</b> The share of answers that cite mof.gov.sa fell from <b class="num">39.8%</b> to <b class="num">37.0%</b>. Share of voice also eased, from <b class="num">55.4%</b> to <b class="num">52.7%</b>.</li>
+    <li>The weakest topics are <b>Taxation, Zakat &amp; Customs</b> (<span class="num">27.5%</span> mention, <span class="num">2.7%</span> citation), where ZATCA dominates, and <b>Government Procurement &amp; Tenders</b> (<span class="num">44.9%</span>).</li>
+    <li>mof.gov.sa is the <b>most influential cited domain</b> in this space. Etimad and the National Debt Management Center (NDMC) sites also rank in the top 4.</li>
+  </ul>
+</section>
+
+<h2>Headline metrics</h2>
+<p class="sub">20 Oct – 18 Nov 2026, compared with 20 Sep – 19 Oct 2026. Covers all 405 tracked prompts across 9 AI platforms.</p>
+<div class="kpis">
+  <div class="kpi"><div class="label">Mention rate</div><div class="value num">70.2%</div><span class="delta up num">▲ 3.4 pts</span><div class="hint">Answers that name the Ministry</div></div>
+  <div class="kpi"><div class="label">Citation rate</div><div class="value num">37.0%</div><span class="delta down num">▼ 2.8 pts</span><div class="hint">Answers that cite mof.gov.sa</div></div>
+  <div class="kpi"><div class="label">Share of voice</div><div class="value num">52.7%</div><span class="delta down num">▼ 2.7 pts</span><div class="hint">Of all tracked-entity mentions</div></div>
+  <div class="kpi"><div class="label">Sentiment</div><div class="value num">97.8</div><span class="delta flat num">▼ 0.5</span><div class="hint">Out of 100</div></div>
+  <div class="kpi"><div class="label">Average rank</div><div class="value num">1.07</div><span class="delta flat num">1.06 prior</span><div class="hint">1 = mentioned first</div></div>
+  <div class="kpi"><div class="label">Position score</div><div class="value num">89.9</div><span class="delta flat num">▼ 0.5</span><div class="hint">Out of 100 (higher = earlier)</div></div>
+  <div class="kpi"><div class="label">Branded prompts</div><div class="value num">99.7%</div><span class="delta flat num">662 answers</span><div class="hint">Mention rate when the Ministry is named</div></div>
+  <div class="kpi"><div class="label">Non-branded prompts</div><div class="value num">63.8%</div><span class="delta flat num">3,066 answers</span><div class="hint">Mention rate on generic questions</div></div>
+</div>
+
+<h2>Weekly trend</h2>
+<p class="sub">Mention rate and citation rate by week, from the week of 8 Sep to the week of 10 Nov 2026. The current week is incomplete, so it is left out.</p>
+<div class="card chart">
+  <div class="legend" style="margin-bottom:8px"><span><i style="background:var(--s1)"></i>Mention rate</span><span><i class="dash"></i>Citation rate</span></div>
+  <svg viewBox="0 0 850 300" width="100%" role="img" aria-label="Weekly mention rate and citation rate, 8 Sep to 16 Nov 2026" style="direction:ltr"><line x1="56" x2="724" y1="260.0" y2="260.0" stroke="var(--grid)" stroke-width="1"/><text x="46" y="264.0" text-anchor="end" class="ax">30%</text><line x1="56" x2="724" y1="211.2" y2="211.2" stroke="var(--grid)" stroke-width="1"/><text x="46" y="215.2" text-anchor="end" class="ax">40%</text><line x1="56" x2="724" y1="162.4" y2="162.4" stroke="var(--grid)" stroke-width="1"/><text x="46" y="166.4" text-anchor="end" class="ax">50%</text><line x1="56" x2="724" y1="113.6" y2="113.6" stroke="var(--grid)" stroke-width="1"/><text x="46" y="117.6" text-anchor="end" class="ax">60%</text><line x1="56" x2="724" y1="64.8" y2="64.8" stroke="var(--grid)" stroke-width="1"/><text x="46" y="68.8" text-anchor="end" class="ax">70%</text><line x1="56" x2="724" y1="16.0" y2="16.0" stroke="var(--grid)" stroke-width="1"/><text x="46" y="20.0" text-anchor="end" class="ax">80%</text><text x="56.0" y="286" text-anchor="middle" class="ax">8 Sep</text><text x="130.2" y="286" text-anchor="middle" class="ax">15 Sep</text><text x="204.4" y="286" text-anchor="middle" class="ax">22 Sep</text><text x="278.7" y="286" text-anchor="middle" class="ax">29 Sep</text><text x="352.9" y="286" text-anchor="middle" class="ax">6 Oct</text><text x="427.1" y="286" text-anchor="middle" class="ax">13 Oct</text><text x="501.3" y="286" text-anchor="middle" class="ax">20 Oct</text><text x="575.6" y="286" text-anchor="middle" class="ax">27 Oct</text><text x="649.8" y="286" text-anchor="middle" class="ax">3 Nov</text><text x="724.0" y="286" text-anchor="middle" class="ax">10 Nov</text><polyline points="56.0,79.3 130.2,78.4 204.4,83.3 278.7,72.0 352.9,83.1 427.1,80.5 501.3,67.8 575.6,66.5 649.8,59.6 724.0,62.9" fill="none" stroke="var(--s1)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" /><circle cx="56.0" cy="79.3" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 8 Sep: Mention 67.0% (2,420 responses)</title></circle><circle cx="130.2" cy="78.4" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 15 Sep: Mention 67.2% (2,635 responses)</title></circle><circle cx="204.4" cy="83.3" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 22 Sep: Mention 66.2% (1,033 responses)</title></circle><circle cx="278.7" cy="72.0" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 29 Sep: Mention 68.5% (991 responses)</title></circle><circle cx="352.9" cy="83.1" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 6 Oct: Mention 66.2% (850 responses)</title></circle><circle cx="427.1" cy="80.5" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 13 Oct: Mention 66.8% (840 responses)</title></circle><circle cx="501.3" cy="67.8" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 20 Oct: Mention 69.4% (1,045 responses)</title></circle><circle cx="575.6" cy="66.5" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 27 Oct: Mention 69.7% (903 responses)</title></circle><circle cx="649.8" cy="59.6" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 3 Nov: Mention 71.1% (743 responses)</title></circle><circle cx="724.0" cy="62.9" r="4.5" fill="var(--s1)" stroke="var(--card)" stroke-width="2"><title>Week of 10 Nov: Mention 70.4% (915 responses)</title></circle><text x="736.0" y="66.9" class="dl" fill="var(--ink)">Mention 70.4%</text><polyline points="56.0,212.0 130.2,221.6 204.4,219.3 278.7,204.0 352.9,198.0 427.1,210.0 501.3,216.3 575.6,214.6 649.8,237.0 724.0,241.1" fill="none" stroke="var(--s2)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/><circle cx="56.0" cy="212.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 8 Sep: Citation 39.8% (2,420 responses)</title></circle><circle cx="130.2" cy="221.6" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 15 Sep: Citation 37.9% (2,635 responses)</title></circle><circle cx="204.4" cy="219.3" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 22 Sep: Citation 38.3% (1,033 responses)</title></circle><circle cx="278.7" cy="204.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 29 Sep: Citation 41.5% (991 responses)</title></circle><circle cx="352.9" cy="198.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 6 Oct: Citation 42.7% (850 responses)</title></circle><circle cx="427.1" cy="210.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 13 Oct: Citation 40.2% (840 responses)</title></circle><circle cx="501.3" cy="216.3" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 20 Oct: Citation 39.0% (1,045 responses)</title></circle><circle cx="575.6" cy="214.6" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 27 Oct: Citation 39.3% (903 responses)</title></circle><circle cx="649.8" cy="237.0" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 3 Nov: Citation 34.7% (743 responses)</title></circle><circle cx="724.0" cy="241.1" r="4.5" fill="var(--s2)" stroke="var(--card)" stroke-width="2"><title>Week of 10 Nov: Citation 33.9% (915 responses)</title></circle><text x="736.0" y="245.1" class="dl" fill="var(--ink)">Citation 33.9%</text></svg>
+
+  <p class="sub" style="margin:8px 0 0">Mentions have risen steadily since mid-October, while citations dropped in November. AI names the Ministry more often but links to its website less.</p>
+</div>
+
+<h2>Competitive landscape</h2>
+<p class="sub">Mention rate for each entity across the same 3,728 answers, 20 Oct – 18 Nov 2026.</p>
+<div class="card">
+  <div class="bars">
+    <div class="bar-row is-brand" title="Ministry of Finance: 70.2% · SoV 52.7% · sentiment 97.8"><span class="name">Ministry of Finance<small class="ar">وزارة المالية</small></span><div class="track"><div class="fill brand" style="width:100%"></div></div><span class="val num">70.2%</span></div>
+    <div class="bar-row" title="ZATCA: 27.0% · SoV 20.3% · sentiment 93.1"><span class="name">ZATCA<small class="ar">هيئة الزكاة والضريبة والجمارك</small></span><div class="track"><div class="fill" style="width:38.5%"></div></div><span class="val num">27.0%</span></div>
+    <div class="bar-row" title="SAMA: 19.7% · SoV 14.8% · sentiment 98.4"><span class="name">Saudi Central Bank (SAMA)<small class="ar">البنك المركزي السعودي</small></span><div class="track"><div class="fill" style="width:28.1%"></div></div><span class="val num">19.7%</span></div>
+    <div class="bar-row" title="PIF: 8.2% · SoV 6.2% · sentiment 91.0"><span class="name">Public Investment Fund<small class="ar">صندوق الاستثمارات العامة</small></span><div class="track"><div class="fill" style="width:11.7%"></div></div><span class="val num">8.2%</span></div>
+    <div class="bar-row" title="GASTAT: 5.4% · SoV 4.0% · sentiment 99.3"><span class="name">GASTAT<small class="ar">الهيئة العامة للإحصاء</small></span><div class="track"><div class="fill" style="width:7.7%"></div></div><span class="val num">5.4%</span></div>
+    <div class="bar-row" title="MEP: 2.2% · SoV 1.7% · sentiment 100"><span class="name">Ministry of Economy &amp; Planning<small class="ar">وزارة الاقتصاد والتخطيط</small></span><div class="track"><div class="fill" style="width:3.2%"></div></div><span class="val num">2.2%</span></div>
+    <div class="bar-row" title="NDF: 0.4% · SoV 0.3% · sentiment 100"><span class="name">National Development Fund<small class="ar">صندوق التنمية الوطني</small></span><div class="track"><div class="fill" style="width:0.6%;min-width:3px"></div></div><span class="val num">0.4%</span></div>
+  </div>
+  <table style="margin-top:20px">
+    <thead><tr><th>Entity</th><th class="r">Mention rate</th><th class="r">Share of voice</th><th class="r">Sentiment</th></tr></thead>
+    <tbody>
+      <tr style="background:var(--green-50)"><td><b>Ministry of Finance</b></td><td class="r num"><b>70.2%</b></td><td class="r num"><b>52.7%</b></td><td class="r num"><b>97.8</b></td></tr>
+      <tr><td>ZATCA</td><td class="r num">27.0%</td><td class="r num">20.3%</td><td class="r num">93.1</td></tr>
+      <tr><td>Saudi Central Bank (SAMA)</td><td class="r num">19.7%</td><td class="r num">14.8%</td><td class="r num">98.4</td></tr>
+      <tr><td>Public Investment Fund</td><td class="r num">8.2%</td><td class="r num">6.2%</td><td class="r num">91.0</td></tr>
+      <tr><td>GASTAT</td><td class="r num">5.4%</td><td class="r num">4.0%</td><td class="r num">99.3</td></tr>
+      <tr><td>Ministry of Economy &amp; Planning</td><td class="r num">2.2%</td><td class="r num">1.7%</td><td class="r num">100</td></tr>
+      <tr><td>National Development Fund</td><td class="r num">0.4%</td><td class="r num">0.3%</td><td class="r num">100</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Performance by AI platform</h2>
+<p class="sub">The Ministry's mention rate, citation rate and sentiment on each platform, 20 Oct – 18 Nov 2026.</p>
+<div class="card">
+<table>
+  <thead><tr><th>Platform</th><th class="r">Answers</th><th>Mention rate</th><th class="r">Citation rate</th><th class="r">Sentiment</th><th></th></tr></thead>
+  <tbody>
+    <tr><td>ChatGPT</td><td class="r num">445</td><td><span class="mini" style="width:83px"></span><span class="num">82.7%</span></td><td class="r num">86.7%</td><td class="r num">96.6</td><td><span class="tag ok">Strongest</span></td></tr>
+    <tr><td>Meta AI</td><td class="r num">450</td><td><span class="mini" style="width:75px"></span><span class="num">75.1%</span></td><td class="r num">0.0%</td><td class="r num">98.4</td><td><span class="tag gov">No citations</span></td></tr>
+    <tr><td>Google AI Overview</td><td class="r num">437</td><td><span class="mini" style="width:71px"></span><span class="num">70.9%</span></td><td class="r num">41.4%</td><td class="r num">98.6</td><td></td></tr>
+    <tr><td>Gemini</td><td class="r num">450</td><td><span class="mini" style="width:70px"></span><span class="num">70.4%</span></td><td class="r num">37.1%</td><td class="r num">99.4</td><td></td></tr>
+    <tr><td>Google AI Mode</td><td class="r num">450</td><td><span class="mini" style="width:70px"></span><span class="num">69.6%</span></td><td class="r num">58.9%</td><td class="r num">99.4</td><td></td></tr>
+    <tr><td>Grok</td><td class="r num">448</td><td><span class="mini" style="width:69px"></span><span class="num">69.4%</span></td><td class="r num">0.0%</td><td class="r num">96.2</td><td><span class="tag gov">No citations</span></td></tr>
+    <tr><td>Claude</td><td class="r num">450</td><td><span class="mini" style="width:67px"></span><span class="num">66.7%</span></td><td class="r num">0.0%</td><td class="r num">97.1</td><td><span class="tag gov">No citations</span></td></tr>
+    <tr><td>Microsoft Copilot</td><td class="r num">181</td><td><span class="mini" style="width:64px"></span><span class="num">64.1%</span></td><td class="r num">60.2%</td><td class="r num">99.5</td><td></td></tr>
+    <tr><td>Perplexity</td><td class="r num">417</td><td><span class="mini" style="width:58px"></span><span class="num">58.3%</span></td><td class="r num">65.2%</td><td class="r num">94.1</td><td><span class="tag low">Lowest mention</span></td></tr>
+  </tbody>
+</table>
+<p class="sub" style="margin:12px 0 0">Scrunch recorded no citations of mof.gov.sa on Meta AI, Grok or Claude in this period. These assistants often answer without linking to sources, so this is probably how they answer rather than a problem with the website.</p>
+</div>
+
+<h2>Performance by topic</h2>
+<p class="sub">Where the Ministry leads in AI answers and where it falls behind. Each topic has about 415 answers.</p>
+<div class="card">
+<table>
+  <thead><tr><th>Topic</th><th>Mention rate</th><th class="r">Citation rate</th><th class="r">Sentiment</th></tr></thead>
+  <tbody>
+    <tr><td>Transparency, Open Data &amp; Financial Reporting</td><td><span class="mini" style="width:99px"></span><span class="num">98.5%</span></td><td class="r num">58.4%</td><td class="r num">96.6</td></tr>
+    <tr><td>National Budget &amp; Public Spending</td><td><span class="mini" style="width:89px"></span><span class="num">88.9%</span></td><td class="r num">53.6%</td><td class="r num">100</td></tr>
+    <tr><td>Fiscal Policy &amp; Economic Stability</td><td><span class="mini" style="width:83px"></span><span class="num">83.0%</span></td><td class="r num">40.3%</td><td class="r num">99.3</td></tr>
+    <tr><td>Government Financial Systems &amp; Digital Services</td><td><span class="mini" style="width:83px"></span><span class="num">82.5%</span></td><td class="r num">48.8%</td><td class="r num">100</td></tr>
+    <tr><td>Public Debt &amp; Sukuk Issuance</td><td><span class="mini" style="width:77px"></span><span class="num">77.4%</span></td><td class="r num">32.5%</td><td class="r num">99.4</td></tr>
+    <tr><td>Government Payments &amp; Financial Dues</td><td><span class="mini" style="width:69px"></span><span class="num">69.4%</span></td><td class="r num">39.3%</td><td class="r num">98.4</td></tr>
+    <tr><td>Doing Business with Saudi Government</td><td><span class="mini" style="width:59px"></span><span class="num">59.5%</span></td><td class="r num">31.7%</td><td class="r num">87.2</td></tr>
+    <tr><td>Government Procurement &amp; Tenders</td><td><span class="mini" style="width:45px"></span><span class="num">44.9%</span></td><td class="r num">26.2%</td><td class="r num">97.5</td></tr>
+    <tr><td>Taxation, Zakat &amp; Customs</td><td><span class="mini" style="width:27px"></span><span class="num">27.5%</span></td><td class="r num">2.7%</td><td class="r num">98.9</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="grid2">
+<div>
+<h2>Sentiment</h2>
+<p class="sub">Sentiment of the 1,880 answers that mention the Ministry.</p>
+<div class="card">
+  <div class="stack" role="img" aria-label="Positive 1,807, mixed 63, negative 10">
+    <span style="flex:1807;background:var(--green)" title="Positive: 1,807"></span>
+    <span style="flex:63;background:#A9B4C0" title="Mixed: 63"></span>
+    <span style="flex:10;min-width:3px;background:#C2410C" title="Negative: 10"></span>
+  </div>
+  <div class="legend"><span><i style="background:var(--green)"></i>Positive <b class="num">1,807</b></span><span><i style="background:#A9B4C0"></i>Mixed <b class="num">63</b></span><span><i style="background:#C2410C"></i>Negative <b class="num">10</b></span></div>
+</div>
+</div>
+<div>
+<h2>Who gets cited</h2>
+<p class="sub">Owners of the cited sources. Each site counts once per answer.</p>
+<div class="card">
+  <div class="stack" role="img" aria-label="Ministry 1,380, other entities 493, third parties 6,247">
+    <span style="flex:1380;background:var(--green)" title="Ministry sites: 1,380"></span>
+    <span style="flex:493;background:var(--gold)" title="Tracked entities: 493"></span>
+    <span style="flex:6247;background:#D7DDE3" title="Third parties: 6,247"></span>
+  </div>
+  <div class="legend"><span><i style="background:var(--green)"></i>Ministry <b class="num">1,380</b> (17.0%)</span><span><i style="background:var(--gold)"></i>Other tracked entities <b class="num">493</b> (6.1%)</span><span><i style="background:#D7DDE3"></i>Third parties <b class="num">6,247</b> (76.9%)</span></div>
+</div>
+</div>
+</div>
+
+<h2>Most influential cited domains</h2>
+<p class="sub">Ranked by Scrunch influence score, 20 Oct – 18 Nov 2026.</p>
+<div class="card">
+<table>
+  <thead><tr><th>#</th><th>Domain</th><th class="r">Answers citing it</th><th class="r">Influence score</th><th></th></tr></thead>
+  <tbody>
+    <tr style="background:var(--green-50)"><td class="num">1</td><td><b>mof.gov.sa</b></td><td class="r num">1,380</td><td class="r num">16.66</td><td><span class="tag own">Ministry</span></td></tr>
+    <tr><td class="num">2</td><td>my.gov.sa</td><td class="r num">672</td><td class="r num">8.11</td><td><span class="tag gov">Gov portal</span></td></tr>
+    <tr><td class="num">3</td><td>etimad.sa</td><td class="r num">450</td><td class="r num">5.44</td><td><span class="tag own">MoF platform</span></td></tr>
+    <tr><td class="num">4</td><td>ndmc.gov.sa</td><td class="r num">317</td><td class="r num">3.82</td><td><span class="tag own">MoF centre</span></td></tr>
+    <tr><td class="num">5</td><td>saudipedia.com</td><td class="r num">312</td><td class="r num">3.77</td><td></td></tr>
+    <tr><td class="num">6</td><td>zatca.gov.sa</td><td class="r num">271</td><td class="r num">3.27</td><td><span class="tag low">Tracked entity</span></td></tr>
+    <tr><td class="num">7</td><td>boe.gov.sa</td><td class="r num">196</td><td class="r num">2.36</td><td><span class="tag gov">Gov</span></td></tr>
+    <tr><td class="num">8</td><td>ncgr.gov.sa</td><td class="r num">186</td><td class="r num">2.25</td><td><span class="tag gov">Gov</span></td></tr>
+    <tr><td class="num">9</td><td>sama.gov.sa</td><td class="r num">146</td><td class="r num">1.77</td><td><span class="tag low">Tracked entity</span></td></tr>
+    <tr><td class="num">10</td><td>vision2030.ai</td><td class="r num">103</td><td class="r num">1.24</td><td></td></tr>
+  </tbody>
+</table>
+<p class="sub" style="margin:12px 0 0">Etimad and the NDMC are run by or under the Ministry. Scrunch counts them as third-party domains because only mof.gov.sa is set as the brand's website.</p>
+</div>
+
+<h2>Scrunch signals</h2>
+<p class="sub">Movements found by Scrunch's nightly statistical checks, shown with confidence tier and detection date.</p>
+<div class="card">
+  <div class="signal"><span class="dot comp"></span><div><b>PIF gaining on Fiscal Policy &amp; Economic Stability.</b> Its mention rate across all assistants averaged <span class="num">47.8%</span> over the last 30 days, up from <span class="num">34.1%</span>.<div class="meta">Competitor · tier: high · detected 2026-11-18</div></div></div>
+  <div class="signal"><span class="dot comp"></span><div><b>ZATCA's website cited more for Taxation, Zakat &amp; Customs on Gemini:</b> <span class="num">74.0%</span>, up from <span class="num">50.9%</span>.<div class="meta">Competitor · tier: confident · detected 2026-11-18</div></div></div>
+  <div class="signal"><span class="dot comp"></span><div><b>SAMA's website cited more for Fiscal Policy on Perplexity:</b> <span class="num">55.6%</span>, up from <span class="num">32.0%</span>.<div class="meta">Competitor · tier: confident · detected 2026-11-18</div></div></div>
+  <div class="signal"><span class="dot down"></span><div><b>mof.gov.sa cited less for Government Financial Systems &amp; Digital Services on Google AI Mode:</b> <span class="num">74.0%</span>, down from <span class="num">94.5%</span>.<div class="meta">Ministry · tier: worth a look · detected 2026-11-17</div></div></div>
+  <div class="signal"><span class="dot up"></span><div><b>Mentions climbing for Government Procurement &amp; Tenders on ChatGPT,</b> by about <span class="num">2.1 pts</span> a day over 60 days.<div class="meta">Ministry · tier: provisional · detected 2026-11-16</div></div></div>
+  <div class="signal"><span class="dot up"></span><div><b>Mentions up for Government Financial Systems &amp; Digital Services on Google AI Overviews:</b> <span class="num">97.9%</span>, up from <span class="num">85.4%</span>.<div class="meta">Ministry · tier: worth a look · detected 2026-11-09</div></div></div>
+</div>
+
+<h2>Recommendations</h2>
+<p class="sub">Suggested next steps based on the findings above.</p>
+<div class="recs">
+  <div class="rec"><h3>Win back citations, not just mentions</h3><p>Mentions are up but citations fell from 39.8% to 37.0%, and on Google AI Mode they fell sharply for digital services. Give each service its own clearly structured page with an FAQ, eligibility, steps and fees, so AI assistants have a definitive mof.gov.sa page to link to.</p></div>
+  <div class="rec"><h3>Clarify the Ministry's role in tax, zakat and customs</h3><p>This is the weakest topic: 27.5% mention and 2.7% citation, with ZATCA's citations rising. Publish content that explains how the Ministry and ZATCA divide responsibility, linked from both sites, so AI describes the policy owner correctly.</p></div>
+  <div class="rec"><h3>Make Etimad and procurement content easier for AI to read</h3><p>Procurement is at 44.9% mention, though rising on ChatGPT. Make sure the Etimad guides for suppliers, tender rules and registration steps are crawlable, current and linked to the Ministry by name.</p></div>
+  <div class="rec"><h3>Hold the lead on fiscal policy</h3><p>PIF and SAMA are gaining on Fiscal Policy &amp; Economic Stability. Publish budget statements, quarterly performance reports and debt and sukuk updates as HTML pages with summaries, not only PDFs, so AI cites the Ministry as the main source.</p></div>
+  <div class="rec"><h3>Track Arabic-language prompts</h3><p>All prompts tracked in this period were in English. Adding Arabic versions would show how the Ministry appears to Saudi citizens and businesses asking in Arabic.</p></div>
+</div>
+
+<div class="foot">
+  <b>Methodology.</b> Scrunch data for the brand "Ministry of Finance Saudi Arabia", 20 Oct – 18 Nov 2026, compared with the prior 30 days. It covers 405 prompts across 9 AI platforms and 3,728 answers. <i>Mention rate</i> is the share of answers that name the Ministry in the text. <i>Citation rate</i> is the share of answers that cite the Ministry's website. These are separate measures. Citation ownership counts each site once per answer. Signals come from Scrunch's nightly statistical checks.<br>
+  Visual theme: modelled on the Saudi government's unified digital design style (green and IBM Plex Sans Arabic). This is not the Ministry's official template.
+</div>
+</main>
+</body>
+</html>

@@ -19,7 +19,7 @@ SharedFields:
           text: field(name: "Text") { jsonValue }
           image: field(name: "Image") { jsonValue }
           viewAllLink: field(name: "ViewAllLink") { jsonValue }
-          children(first: 50) {
+          children {
             results {
               id
               title: field(name: "Title") { jsonValue }

@@ -28,6 +28,15 @@ export interface DetNewsItem {
   link: DetGqlField<LinkField>;
 }
 
+/** Child item based on the "DET Link Group" template (a menu or footer column) */
+export interface DetLinkGroup {
+  id: string;
+  title: DetGqlField<TextField>;
+  link: DetGqlField<LinkField>;
+  value: DetGqlField<TextField>;
+  children: { results: DetCard[] };
+}
+
 /** Datasource based on the "DET Section" template */
 export interface DetSectionDatasource<TChild> {
   title: DetGqlField<TextField>;

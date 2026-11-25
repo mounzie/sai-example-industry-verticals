@@ -1,0 +1,66 @@
+---
+ID: "41b287e5-9fda-5219-8626-801f8388a490"
+Parent: "ccb33b53-bbf6-5531-a5c1-97fc542941b7"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/industry-verticals/DET/DET Footer"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: "DetFooter"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/document_footer.png"
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query DetFooterQuery($datasource: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+          logo: field(name: "Logo") { jsonValue }
+          logoLink: field(name: "LogoLink") { jsonValue }
+          linkedIn: field(name: "LinkedIn") { jsonValue }
+          facebook: field(name: "Facebook") { jsonValue }
+          instagram: field(name: "Instagram") { jsonValue }
+          x: field(name: "X") { jsonValue }
+          copyright: field(name: "Copyright") { jsonValue }
+          note: field(name: "Note") { jsonValue }
+          children(first: 50) {
+            results {
+              id
+              title: field(name: "Title") { jsonValue }
+              link: field(name: "Link") { jsonValue }
+              value: field(name: "Value") { jsonValue }
+              children(first: 50) {
+                results {
+                  id
+                  title: field(name: "Title") { jsonValue }
+                  link: field(name: "Link") { jsonValue }
+                  value: field(name: "Value") { jsonValue }
+                }
+              }
+            }
+          }
+      }
+    }
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Project/industry-verticals/Components/DET/DET Footer"
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: "0"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{C4ED2903-EF83-4E44-BDC0-0559C8BA66B7}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='DET Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='DET Folder']"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T130000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8a59ef7b-c06d-5d4e-82de-2bf92559a356"

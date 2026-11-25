@@ -1,0 +1,21 @@
+---
+ID: "a31e95d7-3799-51b2-a1b5-2e4b28769bc1"
+Parent: "b2538c2d-b271-5cfd-a803-6c6369249d25"
+Template: "b2538c2d-b271-5cfd-a803-6c6369249d25"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET Header/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {3A640DBF-BB16-5A1F-9ABD-5428FA15B9E9}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T130000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5fb88939-a13c-5375-911a-0e6223458960"

@@ -18,7 +18,7 @@ SharedFields:
           title: field(name: "Title") { jsonValue }
           subtitle: field(name: "Subtitle") { jsonValue }
           viewAllLink: field(name: "ViewAllLink") { jsonValue }
-          children(first: 50) {
+          children {
             results {
               id
               category: field(name: "Category") { jsonValue }

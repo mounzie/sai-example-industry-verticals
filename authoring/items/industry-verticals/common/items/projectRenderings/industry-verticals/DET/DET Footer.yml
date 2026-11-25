@@ -23,13 +23,13 @@ SharedFields:
           x: field(name: "X") { jsonValue }
           copyright: field(name: "Copyright") { jsonValue }
           note: field(name: "Note") { jsonValue }
-          children(first: 50) {
+          children {
             results {
               id
               title: field(name: "Title") { jsonValue }
               link: field(name: "Link") { jsonValue }
               value: field(name: "Value") { jsonValue }
-              children(first: 50) {
+              children {
                 results {
                   id
                   title: field(name: "Title") { jsonValue }

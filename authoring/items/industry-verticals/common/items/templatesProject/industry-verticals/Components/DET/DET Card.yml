@@ -1,0 +1,15 @@
+---
+ID: "7300c3ca-250e-5a9f-a6f4-532c05219184"
+Parent: "56f67dc9-9cb5-5c8b-9cb1-b9955b31712a"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET Card"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/window_star.png"
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{50594DC9-60EB-50C2-9934-CD2AC058B28C}"

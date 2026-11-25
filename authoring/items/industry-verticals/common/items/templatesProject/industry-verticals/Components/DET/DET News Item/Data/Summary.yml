@@ -1,0 +1,12 @@
+---
+ID: "83ec4e99-c978-5e43-8ab3-a2d457ab003f"
+Parent: "f2182d6d-21ba-547b-8521-8e5112b8aba7"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET News Item/Data/Summary"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Multi-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "500"

@@ -1,0 +1,17 @@
+---
+ID: "e3b40ab9-dd11-5a3a-bf48-73de49c5ad8e"
+Parent: "56f67dc9-9cb5-5c8b-9cb1-b9955b31712a"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET Section"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/window_split_hor.png"
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{0E458851-7C63-5161-9E3A-B5E2CFCC0C14}"

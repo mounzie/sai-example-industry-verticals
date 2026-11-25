@@ -1,0 +1,12 @@
+---
+ID: "8bc118f1-2c83-5125-a962-3bd4f023b9b1"
+Parent: "9eee2ec3-c636-5228-944f-a9af2642090c"
+Template: "9eee2ec3-c636-5228-944f-a9af2642090c"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {DAA42882-A729-56B7-A0E4-E6D29659E936}
+    {E3B40AB9-DD11-5A3A-BF48-73DE49C5AD8E}
+    {9EEE2EC3-C636-5228-944F-A9AF2642090C}

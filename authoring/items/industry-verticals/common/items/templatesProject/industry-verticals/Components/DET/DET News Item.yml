@@ -1,0 +1,15 @@
+---
+ID: "0ead0685-6ecd-5a69-a809-571c5713f0df"
+Parent: "56f67dc9-9cb5-5c8b-9cb1-b9955b31712a"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET News Item"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "Office/32x32/newspaper.png"
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{1C0B4BB3-E43F-5630-A8C2-630AC2287A17}"

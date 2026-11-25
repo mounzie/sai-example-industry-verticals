@@ -41,6 +41,13 @@ import * as HeroBanner from 'src/components/hero-banner/HeroBanner';
 import * as Header from 'src/components/header/Header';
 import * as Footer from 'src/components/footer/Footer';
 import * as Features from 'src/components/features/Features';
+import * as DetStickyBar from 'src/components/det-sticky-bar/DetStickyBar';
+import * as DetResults from 'src/components/det-results/DetResults';
+import * as DetResources from 'src/components/det-resources/DetResources';
+import * as DetNews from 'src/components/det-news/DetNews';
+import * as DetLinkTiles from 'src/components/det-link-tiles/DetLinkTiles';
+import * as DetIndustryCards from 'src/components/det-industry-cards/DetIndustryCards';
+import * as DetHero from 'src/components/det-hero/DetHero';
 import * as DestinationListing from 'src/components/destination-listing/DestinationListing';
 import * as DestinationDetails from 'src/components/destination-details/DestinationDetails';
 import * as Deals from 'src/components/deals/Deals';
@@ -91,6 +98,13 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Header', { ...Header, componentType: 'client' }],
   ['Footer', { ...Footer }],
   ['Features', { ...Features }],
+  ['DetStickyBar', { ...DetStickyBar }],
+  ['DetResults', { ...DetResults }],
+  ['DetResources', { ...DetResources }],
+  ['DetNews', { ...DetNews }],
+  ['DetLinkTiles', { ...DetLinkTiles }],
+  ['DetIndustryCards', { ...DetIndustryCards }],
+  ['DetHero', { ...DetHero }],
   ['DestinationListing', { ...DestinationListing, componentType: 'client' }],
   ['DestinationDetails', { ...DestinationDetails }],
   ['Deals', { ...Deals }],

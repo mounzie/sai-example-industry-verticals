@@ -1,0 +1,12 @@
+---
+ID: "18ef3c3c-a40c-5ac6-ba2a-e5803e17ed36"
+Parent: "f2182d6d-21ba-547b-8521-8e5112b8aba7"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET News Item/Data/Location"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "300"

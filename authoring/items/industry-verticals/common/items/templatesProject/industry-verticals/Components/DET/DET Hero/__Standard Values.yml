@@ -8,3 +8,14 @@ SharedFields:
   Hint: __Masters
   Value: |
     {7300C3CA-250E-5A9F-A6F4-532C05219184}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T130000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "42d5a6b3-2fb5-5318-8e3a-c3c4670c2feb"

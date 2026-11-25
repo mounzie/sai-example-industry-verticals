@@ -1,0 +1,16 @@
+---
+ID: "eb19be9a-acac-5045-805b-db4b890b3805"
+Parent: "3a640dbf-bb16-5a1f-9abd-5428fa15b9e9"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET Link Group/Data"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T130000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9fd50c16-abf0-58b8-8b83-2ba72f84426e"

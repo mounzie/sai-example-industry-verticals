@@ -1,0 +1,16 @@
+---
+ID: "bcbf865a-73ca-5c70-929d-362910c3f6f3"
+Parent: "6bdb48f1-7a32-5d74-ac78-6e2f73f98192"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET Footer/Data"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T130000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d85cc977-e1e6-52b8-a550-32b9a050f31c"

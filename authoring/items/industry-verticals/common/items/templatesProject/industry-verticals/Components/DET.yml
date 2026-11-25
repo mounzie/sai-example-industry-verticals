@@ -3,3 +3,14 @@ ID: "56f67dc9-9cb5-5c8b-9cb1-b9955b31712a"
 Parent: "102468b5-fe47-495a-b1a5-3fba0da18e99"
 Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
 Path: "/sitecore/templates/Project/industry-verticals/Components/DET"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T130000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3f72343b-34a4-5d19-9493-127538a5d572"

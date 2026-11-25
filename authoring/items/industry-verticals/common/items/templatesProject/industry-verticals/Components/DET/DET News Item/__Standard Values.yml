@@ -3,3 +3,14 @@ ID: "1c0b4bb3-e43f-5630-a8c2-630ac2287a17"
 Parent: "0ead0685-6ecd-5a69-a809-571c5713f0df"
 Template: "0ead0685-6ecd-5a69-a809-571c5713f0df"
 Path: "/sitecore/templates/Project/industry-verticals/Components/DET/DET News Item/__Standard Values"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261125T130000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "988e5bb5-3246-5b7c-b230-bfbbf8817497"

@@ -25,16 +25,12 @@ SharedFields:
           note: field(name: "Note") { jsonValue }
           children {
             results {
-              id
+              id: name
               title: field(name: "Title") { jsonValue }
-              link: field(name: "Link") { jsonValue }
-              value: field(name: "Value") { jsonValue }
               children {
                 results {
-                  id
-                  title: field(name: "Title") { jsonValue }
+                  id: name
                   link: field(name: "Link") { jsonValue }
-                  value: field(name: "Value") { jsonValue }
                 }
               }
             }

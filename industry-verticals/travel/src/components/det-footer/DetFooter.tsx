@@ -59,10 +59,14 @@ export const Default = (props: DetFooterProps): JSX.Element => {
   }
 
   const groups = ds.children?.results ?? [];
+  // The legal row is the group whose Value is "legal" (or whose title mentions "legal").
   const isLegal = (g: DetLinkGroup) =>
     String(g.value?.jsonValue?.value ?? '')
       .toLowerCase()
-      .trim() === 'legal';
+      .trim() === 'legal' ||
+    String(g.title?.jsonValue?.value ?? g.id ?? '')
+      .toLowerCase()
+      .includes('legal');
   const columns = groups.filter((g) => !isLegal(g));
   const legalLinks = groups.filter(isLegal).flatMap((g) => g.children?.results ?? []);
   const socials = (['linkedIn', 'facebook', 'instagram', 'x'] as const).filter(
@@ -117,7 +121,9 @@ export const Default = (props: DetFooterProps): JSX.Element => {
                       field={l.link?.jsonValue}
                       className="text-sm text-neutral-600 no-underline hover:text-[#005F66]"
                     >
-                      <Text tag="span" field={l.title?.jsonValue} />
+                      {l.title?.jsonValue?.value ? (
+                        <Text tag="span" field={l.title.jsonValue} />
+                      ) : null}
                     </Link>
                   </li>
                 ))}
@@ -137,7 +143,9 @@ export const Default = (props: DetFooterProps): JSX.Element => {
                     field={l.link?.jsonValue}
                     className="text-neutral-700 no-underline hover:text-[#005F66]"
                   >
-                    <Text tag="span" field={l.title?.jsonValue} />
+                    {l.title?.jsonValue?.value ? (
+                      <Text tag="span" field={l.title.jsonValue} />
+                    ) : null}
                   </Link>
                 </li>
               ))}

@@ -35,8 +35,7 @@ Languages:
         sitecore\neli.kostadinova@sitecore.com
     - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
       Hint: Link
-      Value: |
-        <link linktype="external" url="#" target="" text="Sign In" title="" class=""/>
+      Value: ""
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "a9477497-88bd-4c77-b33f-09b01f7dea33"

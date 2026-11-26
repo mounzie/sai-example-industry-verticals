@@ -31,8 +31,7 @@ Languages:
         sitecore\neli.kostadinova@sitecore.com
     - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
       Hint: Link
-      Value: |
-        <link linktype="external" url="#" target="" text="Join SkyWings" title="" class=""/>
+      Value: '<link linktype="external" url="https://www.dubaidet.gov.ae/ar/" target="_blank" text="عربي" />'
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "a5c789fa-69b5-42eb-b66c-54dee06b0c40"
